@@ -1,0 +1,148 @@
+.mobile__menu{
+    width:100vw;
+    height:100vh;
+    background:var(--first-color);
+    display: none;
+}
+
+
+/* Menu Fixed  */
+
+.menu__fixed{
+    position: fixed; 
+    height: 100vh;
+    width: 300px;
+    background: var(--white);
+    color: var(--black);
+    box-shadow: var(--shadow-4);
+    z-index: 99999;
+
+    /* fade */
+    visibility: hidden;
+    height: 0;
+    transform: translate(-100%);
+    transition:all ,.4s;
+}
+
+.menu__fixed.fade{
+}
+
+.menu__fixed.active{
+    visibility: visible;
+    height: 100vh;
+    transform: translate(0);
+    transition: .3s;
+}
+
+.menu__fixed .wrapper{
+}
+
+.menu__fixed .header{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-6);
+    margin-block-end: 20px;
+    padding-block: var(--padding-block-20);
+    padding-inline: var(--padding-inline-20);
+}
+
+.menu__fixed .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu__fixed ul .sub__menu{
+    padding-left: 30px;
+}
+
+.menu__fixed ul .menu__item > a{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: var(--fs-6);
+    padding-block: 10px;
+}
+
+.menu__fixed ul  p{
+    font-weight:100;
+    font-size: var(--fs-7);
+    text-transform: uppercase;
+    padding-block: 20px;
+    padding-inline-start: 10px;
+}
+
+.menu__fixed ul li h6{
+    font-weight:500;
+    font-size: var(--fs-8);
+    text-transform: capitalize;
+    padding-inline-start: 20px;
+}
+
+.menu__fixed ul li .ri-arrow-right-s-line{
+    margin-left: auto;
+}
+
+.sub__menu{
+    display: none;
+    padding-inline-start: 20px;
+}
+
+.sub__menu li{
+    padding-block: 10px;
+}
+
+.sub__menu li a{
+    font-size: 13px;
+}
+
+.sub__menu li:hover a{
+    color: var(--first-color);
+    padding-inline-start: 20px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+
+
+.menu__item:hover > a{
+    border-left: 5px solid var(--first-color);
+    transition: .2s;
+    background: var(--white_a15);
+}
+
+
+.menu__item:hover a > h6{
+    font-weight: 800;
+}
+
+.menu__item:hover .sub__menu{
+    display: block;
+    animation: growDown .2s ease;
+}
+
+.menu__item:hover .ri-arrow-right-s-line{
+    display: none;
+}
+
+.menu__item:hover .ri-arrow-down-s-line{
+    display: block;
+    margin-left: auto;
+    transition: .2s;
+}
+
+.menu__item .ri-arrow-down-s-line{
+    display: none;
+}
+
+.menu__item .ri-arrow-down-s-line{
+    /* display: none; */
+}
+
+
+.logo span{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: var(--ff-gordita);
+}

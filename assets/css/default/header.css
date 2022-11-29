@@ -1,0 +1,102 @@
+header{
+
+}
+
+
+/* HEADER TOP */
+header .top__header  {
+    background: var(--white);
+    color: var(--black);
+    display: none;
+}
+
+header .top__header .container {
+    padding-block:var(--padding-block-10);
+    padding-inline:var(--padding-inline-20);
+}
+
+header .top__header .container .wrapper{
+    display: flex;
+    justify-content:center;
+}
+
+header .top__header .container .wrapper p{
+    text-align: center;
+}
+
+/* HEADER MIDDLE */
+header .middle__header {
+    background: var(--first-color);
+    color: var(--white);
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 150px;
+    animation: show .4s var( --cubic-in) ;
+    z-index: 99;
+}
+
+header .middle__header .container {
+    padding-block:var(--padding-block-20);
+    padding-inline:var(--padding-inline-40);
+    }
+
+
+header .middle__header .container .wrapper{
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+
+}
+
+header .middle__header .container .wrapper .icon{
+   font-weight: bold;
+}
+
+header .middle__header .container  .left{
+    display:flex;
+    justify-content:space-between;
+    column-gap: 30px;
+
+}
+
+header .middle__header .container  .right{
+    display:flex;
+    justify-content:space-between;
+    column-gap: 30px;
+    align-items: center;
+
+}
+
+.commandes__button{
+    position: relative;
+}
+
+.indicator__value{
+    background: var(--radical-red);
+    color: var(--white);
+    width: 8px;
+    height: 8px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 19px;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--fs-8);
+    animation: notif 1s infinite;
+}
+
+
+.commandes__button i{
+    color: var(--white);
+}
+
+.user__account{
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+
+.user__account h6{
+    color: var(--white);
+}
