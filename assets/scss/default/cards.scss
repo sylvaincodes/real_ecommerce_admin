@@ -8,6 +8,7 @@
   .container {
     padding-inline:$padding-inline-40;
     padding-block-start: 90px;
+    padding-block-end: 10px;
     .wrapper {
       display: grid;
       grid-template-columns: 1fr;

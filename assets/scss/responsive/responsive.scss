@@ -16,6 +16,17 @@
       flex-basis: 49%;
     }
   }
+
+  .content-widget{
+    display: grid !important;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+
+    .number_active{
+      // padding-inline: 10px;
+    }
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -77,6 +88,32 @@
   .close-btn {
     display: none;
   }
+
+  .content-widget{
+    display: grid !important;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+
+    .number_active{
+      // padding-inline: 10px;
+    }
+  }
+
+  
+.charts{
+  .container{
+    display: grid !important;
+    grid-template-columns: 49% 49%;
+    gap: 20px;
+
+    .chart-bar{
+      height: fit-content;
+    }
+  }
+}
+
+
+  
 }
 
 @media (min-width: 1200px) {

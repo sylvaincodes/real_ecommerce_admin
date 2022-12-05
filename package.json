@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sylvaincodes/real_ecommerce_admin#readme",
   "dependencies": {
+    "chart.js": "^4.0.1",
     "node-sass": "^8.0.0"
   }
 }
