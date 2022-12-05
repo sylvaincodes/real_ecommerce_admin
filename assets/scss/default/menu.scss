@@ -1,0 +1,169 @@
+.mobile__menu {
+  width: 100vw;
+  height: 100vh;
+  background: $first-color;
+  display: none;
+}
+
+/* Menu Fixed  */
+
+.menu__fixed {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+  background: $white;
+  color: $black;
+  box-shadow: $shadow-4;
+  z-index: 99999;
+
+  /* fade */
+  visibility: hidden;
+  height: 0;
+  transform: translate(-100%);
+  transition: all, 0.4s;
+}
+
+.menu__fixed {
+  background: $first-color;
+  h6,p,i{
+    color: $white;
+  }
+  &.active {
+    visibility: visible;
+    height: 100vh;
+    transform: translate(0);
+    transition: 0.3s;
+    width: 200px;
+  }
+
+
+  .wrapper{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    height: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: $fs-6;
+    padding-block: $padding-block-20;
+    padding-inline: 20px;
+    align-items: center;
+
+    .logo {
+      h6 {
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: $ff-gordita;
+      }
+    }
+  }
+
+  .menu__container
+  {
+
+    ul {
+    
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    .menu__item 
+    {
+      &.active{
+        background: $white;
+        border-radius: 5px;
+        margin-inline: 20px;
+        :is(i,h6){
+          color: $black;
+        }
+      }
+
+      a {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        font-size: $fs-6;
+        padding-block: 10px;
+        justify-content: center;
+      }
+
+      h6 {
+        font-weight: 900;
+        font-size: $fs-7;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-weight: 900;
+        font-size: $fs-8;
+        text-transform: capitalize;
+        padding-block: 20px;
+        padding-inline: 20px;
+        color: $silver;
+      }
+  
+      .ri-arrow-right-s-line {
+        margin-left: auto;
+      }
+      
+      .ri-arrow-down-s-line {
+        display: none;
+      }
+
+      &:is(:hover, :focus-visible) 
+      {
+        background: $white;
+        border-radius: 5px;
+        margin-inline: 20px;
+
+        :is(i,h6){
+          color: $black;
+        }
+
+        a{
+          animation: growDown .2s ease;
+        }
+
+      }
+
+      .sub__menu {
+        display: none;
+        padding-inline-start: 20px;
+        padding-left: 30px;
+
+        li {
+          padding-block: 10px;
+          a {
+            font-size: 13px;
+          }
+
+          &:hover {
+            a {
+              color: $white;
+              padding-inline-start: 20px;
+              font-weight: bold;
+              transition: 1s;
+            }
+          }
+        }
+      }
+
+    }
+
+   
+  }
+}
+
+
+.footer{
+  margin-top: auto;
+  display: flex;
+  font-size: $fs-7;
+  justify-content: center;
+}
+
+}  
+
+}

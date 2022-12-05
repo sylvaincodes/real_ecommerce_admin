@@ -1,0 +1,106 @@
+
+/* ------------------------
+    - RESET CSS
+--------------------------*/
+
+html {
+    font-family: $ff-recoleta,$ff-gordita;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    background:$shadow-5;
+  }
+  
+  body {
+    background: $black;
+    font-size: 1rem;
+    font-weight: $fw-400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: $black;
+    animation: opacity 1s ease;
+  }
+
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $jet-2;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .text-link {
+    text-decoration: underline;
+    color: $black;
+  }
+  
+  img {
+    height: auto;
+  }
+  
+  
+  button {
+    background: none;
+    border: none;
+    cursor:pointer;
+  }
+  
+  
+  em,
+  strong,
+  a {
+    color: $black;
+  }
+  
+  
+  h1 {
+    color: $black;
+    font-size: $fs-1;
+  }
+  
+  h2 {
+    color: $black;
+    font-size: $fs-2;
+  }
+  
+  h3 {
+    color: $black;
+    font-size: $fs-3;
+  }
+  
+  h4 {
+    color: $black;
+    font-size: $fs-4;
+  }
+  
+  h5 {
+    color: $black;
+    font-size: $fs-5;
+  }
+  
+  h6 {
+    color: $black;
+    font-size: $fs-6;
+  }

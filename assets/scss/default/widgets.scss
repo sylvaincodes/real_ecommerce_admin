@@ -1,0 +1,51 @@
+.widgets {
+    .container{
+        padding-inline: 40px;
+        padding-block: 20px;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            background: $white;
+            .header-widget{
+
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $black;
+                padding:20px;
+            }
+            .number_active{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background: $third-color;
+               margin: 20px;
+               padding: 40px;
+
+               p{
+                color: $white;
+                font-size: $fs-5;
+               }
+            }
+
+            .details{
+                padding:20px;
+                table{
+                    width: 100%;
+
+                    thead{
+                        border-bottom: 1px solid $silver;
+                        padding-block: 10px;
+                    }
+                    :is(td,th){
+                        font-size: $fs-7;
+                    }
+                    .text-end{
+                        margin-left: -100px;
+                    }
+                }
+            }
+    }
+  }
+
+}

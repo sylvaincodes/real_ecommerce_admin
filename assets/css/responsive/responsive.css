@@ -1,74 +1,57 @@
-@media  (min-width:575px) {
-    /* Cards */
+@media (min-width: 575px) {
+  .card__list .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px; } }
 
-    /* .card__list .card__item{
-       flex-basis: 49%;
-    } */
+@media (min-width: 768px) {
+  /* Cards */
+  .card__list .card__item {
+    flex-basis: 49%; } }
 
-    .card__list .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    
-
-}
-
-@media  (min-width:768px) {
-    /* Cards */
-
-    .card__list .card__item{
-        flex-basis: 49%;
-    }
-
-   
-    
-}
-
-@media  (min-width:992px) {
-    /* Cards */
-
-    .card__list .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-    }
-
-    .user__account h6{
-        display:block;
-    }
-
-    
-.search__content{
-    position:absolute;
-    top:16px;
-    line-height:40px;
+@media (min-width: 992px) {
+  /* Cards */
+  .card__list .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 10px; }
+  .user__account h6 {
+    display: block; }
+  .search__btn {
+    display: none; }
+  .search__content {
+    position: absolute;
+    top: 9px;
+    line-height: 30px;
     background: var(--white);
     color: var(--black);
-    font-size: var(--fs-6);
+    font-size: var(--fs-8);
     z-index: 999;
-    left: 285px;
-    width: 200px;
+    width: 545px;
     display: flex;
     visibility: visible;
     height: auto;
-    animation: growDown .2s ease;
-}
+    z-index: 99999;
+    left: 686px;
+    transition: 1s; }
+    .search__content form {
+      width: 100%; }
+      .search__content form .search__input {
+        padding-inline-start: 10px;
+        padding-block: 12px;
+        background: white;
+        color: black;
+        font-size: var(--fs-8);
+        border-radius: 21px; }
+    .search__content i {
+      background: white;
+      color: black; }
+  .close-btn {
+    display: none; } }
 
-.close-btn{
-    display: none;
-}
-}
-
-
-@media  (min-width:1200px) {
-    /* Cards */
-
-    .card__list .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-    }
-    
-    
-}
+@media (min-width: 1200px) {
+  /* Cards */
+  .card__list .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    gap: 10px; } }

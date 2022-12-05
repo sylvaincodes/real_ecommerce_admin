@@ -1,0 +1,311 @@
+.capitalize:first-letter {
+  text-transform: capitalize;
+}
+
+.icon {
+  font-size: $fs-6;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: $second-color;
+}
+
+.dropdown__btn {
+  position: relative;
+}
+
+.dropdown__content {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.dropdown__content.active {
+  visibility: visible;
+  height: 98px;
+  top: 58px;
+  right: 42px;
+  box-shadow: $shadow-2;
+  width: 233px;
+  background: $white;
+  color: black;
+  font-size: $fs-8;
+  animation: growDown 0.2s ease-out;
+  z-index: 99999;
+  border-radius: $radius-xm;
+  box-shadow: $shadow;
+}
+
+.dropdown__content {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.dropdown__item:hover {
+  background: $first-color;
+  color: $white;
+}
+
+.dropdown__content {
+  ul {
+    li {
+      i {
+        font-weight: bold;
+        font-size: $fs-6;
+      }
+    }
+  }
+}
+
+.dropdown__content {
+  ul {
+    li {
+      span {
+        margin-inline-start: 10px;
+        font-weight: $fw-300;
+        font-size: $fs-6;
+      }
+    }
+  }
+}
+
+img {
+  cursor: pointer;
+}
+
+.img__avatar {
+  border-radius: $radius-circle;
+}
+
+li,
+ul {
+  cursor: pointer;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.m-l-auto {
+  margin-left: auto;
+}
+
+.icon-large {
+  font-size: $fs-3;
+  font-weight: $fw-500;
+  text-shadow: 14px 14px 34px $first-color;
+}
+
+span {
+  font-weight: $fw-300;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+  cursor: drag;
+}
+
+.drag-over {
+  border: dashed 3px red;
+}
+
+.ri-logout-circle-r-line {
+  color: $radical-red;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+}
+.search__content {
+  transform: translateX(-100%);
+  height: 0;
+  transition: 0.5s;
+  visibility: hidden;
+
+  width: 100vw;
+  background: $black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.search__content.active {
+  transform: translateX(0%);
+  height: 100%;
+  transition: 0.5s;
+  visibility: visible;
+}
+
+.search__content {
+  form {
+    line-height: 40px;
+    color: $black;
+    font-size: $fs-6;
+    z-index: 999;
+    display: flex;
+    width: auto;
+  }
+}
+
+.search__content {
+}
+.close-btn {
+  position: absolute;
+  top: 60px;
+  background: $black;
+  color: $white;
+  font-size: $fs-3;
+}
+
+.btn {
+  height: auto;
+  cursor: pointer;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border: none;
+}
+
+.bg {
+  background: $white;
+  padding-block: 10px;
+  color: $first-color;
+  border: 1px solid $first-color;
+}
+
+.btn:hover {
+  background: $first-color;
+  color: $white;
+}
+.overlay.active {
+  position: absolute;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  background: $black;
+}
+
+i {
+  cursor: pointer;
+}
+
+.close__menufixed {
+  color: $white;
+}
+
+.close__menufixed:hover {
+  background: $first-color;
+  color: $white;
+}
+
+/* INPUT GROUP */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.alert-info {
+  display: flex;
+  align-items: center;
+  color: $black;
+  padding-block: 10px;
+}
+
+.alert-info {
+  i {
+    color: $info;
+    font-size: $fs-6;
+  }
+}
+
+.alert-info {
+  p {
+    margin-left: 10px;
+  }
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  width: 100%;
+  border-width: 0px;
+}
+
+input[type="radio"] {
+  width: auto;
+}
+
+.animated:after {
+  content: "";
+  position: absolute;
+  background: $first-color;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 0;
+  transition: width 500ms ease;
+  z-index: -1;
+}
+
+.animated:hover {
+  color: #fff;
+}
+
+.animated:hover:after {
+  width: 100%;
+}
+
+
+.search__input{
+  padding-inline-start: 10px;
+  padding-block: 20px;
+  background: transparent;
+  color: white;
+  font-size: $fs-5;
+}
+
+.text-end{
+  margin-left: auto;
+  float: right;
+}
+
+.text-start{
+  margin-right: auto;
+  float: left;
+
+}
+
+table{
+  border-collapse: collapse;
+}
+thead, tbody, tfoot, tr, td, th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}

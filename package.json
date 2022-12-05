@@ -1,0 +1,24 @@
+{
+  "name": "real_ecommerce_admin",
+  "version": "1.0.0",
+  "description": "template admin ecommerce",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass assets/scss/style.scss assets/css/style.css",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylvaincodes/real_ecommerce_admin.git"
+  },
+  "author": "adande sylvain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylvaincodes/real_ecommerce_admin/issues"
+  },
+  "homepage": "https://github.com/sylvaincodes/real_ecommerce_admin#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

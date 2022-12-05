@@ -1,61 +1,38 @@
-
 .card__list {
-  position: relative;
-}
+  position: relative; }
 
 .card__list .container {
-  padding-inline:var(--padding-inline-40);
-  padding-block-start: 90px;
-}
-
-.card__list .wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  animation: show .6s var( --cubic-out) 
-}
-
-.card__list .card__item {
-  background: var(--white);
-  color: var(--black);
-  box-shadow: var(--shadow-2);
-  padding: 40px;
-  width: 100%;
-  cursor: pointer;
-  border-radius: var(--radius-xm);
-  z-index: 99;
-}
-
-.card__list .card__item:hover {
-     border-bottom: 4px solid var(--first-color); 
-     z-index: 99;  
-}
-
-.card__list .card__item:hover :is(i,span,h6){
-     transition: .5s ease;
-}
-
-.card__list .card__item:hover :is(i){
-        text-shadow: 14px 14px 14px var(--black);
-}
-
-.card__list .content__item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card__list .content__item span {
-  font-size: var(--fs-5);
-  font-weight: bold;
-}
-
-.card__list .content__item h6 {
-  font-size: var(--fs-7);
-  font-weight:100;
-}
-
-.card__list .content__item .icon-large {
-  color: var(--first-color);
-}
+  padding-inline: var(--padding-inline-40);
+  padding-block-start: 90px; }
+  .card__list .container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    animation: show 0.6s var(--cubic-out); }
+    .card__list .container .wrapper .card__item {
+      background: var(--white);
+      color: var(--black);
+      box-shadow: var(--shadow-2);
+      padding: 40px;
+      width: 100%;
+      cursor: pointer;
+      border-radius: var(--radius-xm);
+      z-index: 99; }
+      .card__list .container .wrapper .card__item .content__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        .card__list .container .wrapper .card__item .content__item span {
+          font-size: var(--fs-5);
+          font-weight: bold; }
+        .card__list .container .wrapper .card__item .content__item .icon-large {
+          color: var(--first-color); }
+        .card__list .container .wrapper .card__item .content__item h6 {
+          font-size: var(--fs-7);
+          font-weight: 100; }
+      .card__list .container .wrapper .card__item:hover {
+        border-bottom: 4px solid var(--first-color);
+        z-index: 99; }
+        .card__list .container .wrapper .card__item:hover i {
+          text-shadow: 14px 14px 14px var(--black); }

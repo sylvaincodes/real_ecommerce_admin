@@ -1,0 +1,85 @@
+/* HEADER TOP */
+header {
+
+  .top__header {
+    background: $white;
+    color: $black;
+    display: none;
+    .container {
+      padding-block: $padding-block-10;
+      padding-inline: $padding-inline-20;
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .middle__header {
+    background: $first-color;
+    color: $white;
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 150px;
+    animation: show 0.4s $cubic-in;
+    z-index: 99;
+
+    .container {
+      padding-block: $padding-block-20;
+      padding-inline: $padding-inline-40;
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .left {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 30px;
+        }
+
+        .right {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 30px;
+          align-items: center;
+          .commandes__button {
+            position: relative;
+            i {
+              color: $white;
+            }
+            .indicator__value {
+              background: $radical-red;
+              color: $white;
+              width: 8px;
+              height: 8px;
+              border-radius: 25px;
+              position: absolute;
+              top: 0;
+              left: 19px;
+              text-align: center;
+              font-weight: bold;
+              font-size: $fs-8;
+              animation: notif 1s infinite;
+            }
+          }
+
+          .user__account {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            h6 {
+              color: $white;
+            }
+          }
+        }
+        .icon {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

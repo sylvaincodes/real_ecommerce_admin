@@ -44,65 +44,47 @@
       </div>
       
       <div class="search__content">
-
         <i class="ri-close-line btn close-btn" title="GO"></i>
-
         <form>
-          
-        <div class="">
-          <input type="text" name="search" class="search__input" placeholder="Recherche">
-        </div>
-        
-        <i class="ri-search-line btn" title="GO"></i>
+          <input type="text" name="search" class="search__input" placeholder="Recherche"  id="search__input" autofocus>
+        <!-- <i class="ri-search-line btn" title="GO"></i> -->
       </form>
-    </div>
+      </div>
 
       <!-- Menu fixed -->
       <div class="menu__fixed">
         <div class="wrapper">
           <div class="header">
             <div class="logo">
-              <span>
-                Real Ecommerce <br> Admin
-              </span> 
+              <h6>
+                ADMIN
+              </h6> 
             </div>
             <i title="fermer le menu" class="ri-close-fill close__menufixed"></i>
           </div>
           <div class="menu__container">
 
             <ul>
-              <p>Tableau de Bord</p>
-              <li class="menu__item"> 
+        
+              <li class="menu__item active"> 
                 <a href="/">
                   <i class="ri-home-line"></i>
                   <h6>
-                    Tableau de Bord
+                    Tableau de Bord 1 
                   </h6>
                 </a> 
               </li>
-              <p>Paramètres</p>
+              
               <li class="menu__item"> 
-                <a href="#">
+                <a href="">
                   <i class="ri-list-settings-line"></i>
                   <h6>
                     Paramètres
                   </h6>
-                  <i class="ri-arrow-right-s-line"></i>
-                  <i class="ri-arrow-down-s-line"></i>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
                 </a> 
-                  <ul class="sub__menu">
-                    <li>
-                      <a href="./pages/parametres/generales.html">Générales</a>
-                    </li><li>
-                      <a href="#">Email</a>
-                    </li><li>
-                      <a href="#">Média</a>
-                    </li><li>
-                      <a href="#">Permalink</a>
-                    </li><li>
-                      <a href="#">Social Login</a>
-                    </li>
-                  </ul>
+                  
               </li>
               
               <li class="menu__item"> 
@@ -111,27 +93,17 @@
                   <h6>
                     Administrations
                   </h6>
-                  <i class="ri-arrow-right-s-line"></i>
-                  <i class="ri-arrow-down-s-line"></i>
+                 
                 </a> 
-                  <ul class="sub__menu">
-                    <li>
-                      <a href="#">Rôles et Permissions</a>
-                    </li><li>
-                      <a href="#">Utilisateurs</a>
-                    </li><li>
-                      <a href="#">Systémes</a>
-                    </li><li>
-                      <a href="#">Gestion des caches</a>
-                    </li><li>
-                      <a href="#">Activités</a>
-                    </li><li>
-                      <a href="#">Sauvegardes</a>
-                    </li>
-                  </ul>
+                  
               </li>
             </ul>
           </div>
+
+          <div class="footer"> 
+              <p>2022 Template</p>
+          </div>
+
         </div>
       </div>
 
@@ -187,13 +159,13 @@
                 </a>
 
                 <div class="dropdown__btn user__account">
-                  <h6 class="hide">John Doe</h6>
                   <img
-                    src="./assets/images/avatar/avatar-1.png"
+                  src="./assets/images/avatar/avatar-1.png"
                     alt="avatar__profil"
                     width="35"
                     height="35" class="img__avatar"
                     />
+                    <h6 class="hide">John Doe</h6>
                     <i class="ri-arrow-down-s-line icon" title=""></i>
                   
                 </div>
@@ -282,6 +254,46 @@
           </div>
         </div>
 
+        <!-- Statistics -->
+        <div class="widgets statistics">
+            <div class="container">
+              <div class="wrapper">
+                  <div class="header-widget">
+                    <h6>Utilisateurs actifs</h6>
+                    <i class="ri-more-2-line icon"></i>
+                  </div>
+                  <div class="number_active">
+                    <p>148</p>
+                  </div>
+                  <div class="details">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="text-start">Pages actives</th>
+                          <th class="text-end">Visiteurs</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>/product/iphone-12-9989</td>
+                          <td class="text-end">14</td>
+                        </tr>
+                        <tr>
+                          <td>/product/iphone-12-9989</td>
+                          <td class="text-end">14</td>
+                        </tr>
+                        <tr>
+                          <td>/product/iphone-12-9989</td>
+                          <td class="text-end">14</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+
       </main>
 
       <!-- footer 
@@ -291,6 +303,7 @@
 
       <!-- Scripts -->
       <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/drag_drop.js"> </script>
     </div>
   </body>
 </html>

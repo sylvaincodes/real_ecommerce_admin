@@ -1,25 +1,16 @@
 .breadcrumbs {
-    background: var(--white);
-    box-shadow: var(--shadow);
-}
-
-.breadcrumbs .container{
-    padding-inline : 40px;
-    padding-block : 20px;
-}
-
-.breadcrumbs .wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-
-.breadcrumbs .container nav{
-    font-size: var(--fs-8);
-    align-self: center;
-}
-
-.breadcrumbs .container nav ol {
-    display:flex;
-    align-items: center;
-    gap:10px
-}
+  background: var(--white);
+  box-shadow: var(--shadow); }
+  .breadcrumbs .container {
+    padding-inline: 40px;
+    padding-block: 20px; }
+    .breadcrumbs .container .wrapper {
+      display: flex;
+      justify-content: space-between; }
+      .breadcrumbs .container .wrapper nav {
+        font-size: var(--fs-8);
+        align-self: center; }
+        .breadcrumbs .container .wrapper nav ol {
+          display: flex;
+          align-items: center;
+          gap: 10px; }
