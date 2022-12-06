@@ -41,6 +41,12 @@ header {
           column-gap: 30px;
         }
 
+        .center{
+          .search__content_desktop{
+            display:none;
+          }
+        }
+
         .right {
           display: flex;
           justify-content: space-between;

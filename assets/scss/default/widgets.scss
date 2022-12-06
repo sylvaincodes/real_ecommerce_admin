@@ -1,20 +1,26 @@
 .widgets {
+
+  &.charts {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
   .container {
     padding-inline: 40px;
     padding-block: 10px;
 
-    .wrapper 
-    {
-
-      &.chart-bar{
-        gap: 20px;
-  
-      }
-
+    .wrapper {
       display: flex;
       flex-direction: column;
 
-      h6{
+      &.chart-bar {
+        gap: 20px;
+      }
+
+      h6 {
         font-size: $fs-8;
         padding-block: 10px;
         text-align: center;
@@ -28,58 +34,51 @@
         padding-block: 10px;
       }
 
-      .content-widget{
+      .content-widget {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-          .number_active {
-              display: flex;
-              align-items: center;
-        justify-content: center;
-        background: $third-color;
-        margin: 20px;
-        padding: 40px;
-        width: 100%;
-
-        p {
-            color: $white;
-            font-size: $fs-5;
-        }
-        
-      }
-
-      .details {
-        width: 100%;
-
-          padding: 20px;
-        table {
+        .number_active {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $third-color;
+          margin: 20px;
+          padding: 40px;
           width: 100%;
 
-          thead {
-            border-bottom: 1px solid $silver;
-            padding-block: 10px;
+          p {
+            color: $white;
+            font-size: $fs-5;
           }
-          :is(td, th) {
-            font-size: $fs-7;
-          }
-          .text-end {
-            margin-left: -100px;
+        }
+
+        .details {
+          width: 100%;
+
+          padding: 20px;
+          table {
+            width: 100%;
+
+            thead {
+              border-bottom: 1px solid $silver;
+              padding-block: 10px;
+            }
+            :is(td, th) {
+              font-size: $fs-7;
+            }
+            .text-end {
+              margin-left: -100px;
+            }
           }
         }
       }
-    }
-      #myChart{
+      #myChart {
         padding-inline: 20px;
       }
     }
   }
+ 
 }
 
-.charts{
-  .container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-}
