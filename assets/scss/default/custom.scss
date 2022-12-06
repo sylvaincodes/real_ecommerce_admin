@@ -303,11 +303,19 @@ input[type="radio"] {
 
 table{
   border-collapse: collapse;
+  padding: 10px;
 }
+
+
 thead, tbody, tfoot, tr, td, th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+  text-align: left;
+}
+
+thead{
+  border-bottom: 1px solid $silver;
 }
 
 .text-center{
@@ -315,4 +323,45 @@ thead, tbody, tfoot, tr, td, th {
 }
 .bg-white{
   background:$white;
+}
+
+.badge{
+
+  display: inline-block;
+  padding: 2px 10px;
+  background: $first-color;
+  color: $white;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+
+.round__badge{
+  display: inline-block;
+  padding: 5px 5px;
+  background: $first-color;
+  color: $white;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.red{
+  background: $red;
+}
+
+.yellow{
+  background: $yellow;
+}
+
+.green{
+  background: $green;
+}
+
+.container{
+  transition: 1s;
+}
+
+.p__inline__20{
+  padding-inline: 20px;
 }

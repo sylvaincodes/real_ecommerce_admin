@@ -295,7 +295,6 @@
         </div>
 
         <!-- Chart js -->
-  
         <div class="widgets charts">
           <div class="container">
             <div class="wrapper chart-bar">
@@ -334,6 +333,99 @@
                 </table>
               </div> -->
 
+            </div>
+          </div>
+        </div>
+
+        <!-- recents order -->
+        <div class="widgets recents__orders">
+          <div class="container">
+            <div class="wrapper bg-white p__inline__20">
+              <h6>Commandes récentes</h6>
+              <table>
+                <thead>
+                  <tr>
+                    <th>N°</th>
+                    <th>Status</th>
+                    <th>Pays</th>
+                    <th>Client</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>#001</td>
+                    <td>
+                      <span class="badge yellow">En attente</span>
+                    </td>
+                    <td>
+                      <img src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/vendor/flag-icons/24/IT.png" alt="">
+                    </td>
+                    <td>
+                      <span class="round__badge">GB</span>
+                    </td>
+                    <td>10-10-2022</td>
+                    <td>$2,2.00</td>
+                  </tr> 
+                  <tr>
+                    <td>#002</td>
+                    <td>
+                      <span class="badge green">Completé</span>
+                    </td>
+                    <td>
+                      <img src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/vendor/flag-icons/24/IT.png" alt="">
+                    </td>
+                    <td>
+                      <span class="round__badge">GB</span>
+                    </td>
+                    <td>10-10-2022</td>
+                    <td>$2,2.00</td>
+                  </tr>
+                  <tr>
+                    <td>#003</td>
+                    <td>
+                      <span class="badge yellow">En attente</span>
+                    </td>
+                    <td>
+                      <img src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/vendor/flag-icons/24/IT.png" alt="">
+                    </td>
+                    <td>
+                      <span class="round__badge">GB</span>
+                    </td>
+                    <td>10-10-2022</td>
+                    <td>$2,2.00</td>
+                  </tr>
+                  <tr>
+                    <td>#004</td>
+                    <td>
+                      <span class="badge">Annulé</span>
+                    </td>
+                    <td>
+                      <img src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/vendor/flag-icons/24/IT.png" alt="">
+                    </td>
+                    <td>
+                      <span class="round__badge">GB</span>
+                    </td>
+                    <td>10-10-2022</td>
+                    <td>$2,2.00</td>
+                  </tr>
+                  <tr>
+                    <td>#005</td>
+                    <td>
+                      <span class="badge">Annulé</span>
+                    </td>
+                    <td>
+                      <img src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/vendor/flag-icons/24/IT.png" alt="">
+                    </td>
+                    <td>
+                      <span class="round__badge">GB</span>
+                    </td>
+                    <td>10-10-2022</td>
+                    <td>$2,2.00</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -385,7 +477,7 @@
               },
             },
             layout: {
-              // padding: 10
+              padding: 10
             },
           },
           plugins: {
@@ -436,6 +528,7 @@
               y: {
                 beginAtZero: true,
               },
+              
             }
           },
           plugins: {
