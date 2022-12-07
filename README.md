@@ -2,4 +2,4 @@
 Template admin pour gérer un site ecommerce
 
 #token
-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
+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

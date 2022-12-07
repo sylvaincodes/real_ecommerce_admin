@@ -289,7 +289,7 @@ h6 {
   visibility: visible;
   height: 98px;
   top: 58px;
-  right: 42px;
+  left: calc(100% - 273px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   width: 233px;
   background: #fff;
@@ -585,7 +585,7 @@ header .middle__header {
         display: flex;
         justify-content: space-between;
         column-gap: 30px; }
-      header .middle__header .container .wrapper .center .search__content_desktop {
+      header .middle__header .container .wrapper .center {
         display: none; }
       header .middle__header .container .wrapper .right {
         display: flex;
@@ -734,8 +734,7 @@ header .middle__header {
   .card__list .container .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    animation: show 0.6s cubic-bezier(0.33, 0.85, 0.4, 0.96); }
+    gap: 10px; }
     .card__list .container .wrapper .card__item {
       background: #fff;
       color: #212a2f;
@@ -819,6 +818,37 @@ header .middle__header {
     .widgets .container .wrapper #myChart {
       padding-inline: 20px; }
 
+header .middle__header.pages {
+  height: auto; }
+
+.parametres .card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .parametres .card__item h5 {
+    text-align: center; }
+
+.breadcrumbs {
+  background: #fff;
+  box-shadow: 0 12px 30px -10px rgba(36, 36, 36, 0.1);
+  padding-block-start: 90px;
+  padding-block-end: 10px; }
+  .breadcrumbs .container {
+    padding-inline: 40px;
+    padding-block: 20px; }
+    .breadcrumbs .container nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center; }
+      .breadcrumbs .container nav ul li:first-child a {
+        font-size: 2rem; }
+      .breadcrumbs .container nav ul li:last-child a {
+        font-size: 1.5rem;
+        margin-left: 10px;
+        font-weight: 100; }
+
 @media (min-width: 575px) {
   .container {
     max-width: 540px;
@@ -826,7 +856,9 @@ header .middle__header {
   .card__list .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr !important;
-    gap: 10px; } }
+    gap: 10px; }
+  .dropdown__content.active {
+    left: calc(100% - 345px); } }
 
 @media (min-width: 768px) {
   .container {
@@ -865,31 +897,36 @@ header .middle__header {
     gap: 20px; }
     .charts .container .chart-bar {
       height: fit-content; }
-  header .middle__header .container .wrapper .center .search__content_desktop {
-    display: block;
-    background: #fff;
-    width: 300px;
-    border-radius: 25px; }
-    header .middle__header .container .wrapper .center .search__content_desktop form {
-      width: 100%; }
-      header .middle__header .container .wrapper .center .search__content_desktop form .search__input {
-        padding-inline-start: 10px;
-        padding-block: 12px;
-        background: white;
-        color: black;
-        font-size: var(--fs-8);
-        border-radius: 21px; }
-    header .middle__header .container .wrapper .center .search__content_desktop i {
-      background: white;
-      color: black; } }
+  header .middle__header .container {
+    position: relative; }
+    header .middle__header .container .wrapper .center {
+      display: block !important; }
+      header .middle__header .container .wrapper .center .search__content_desktop {
+        background: #fff;
+        width: 300px;
+        border-radius: 25px; }
+        header .middle__header .container .wrapper .center .search__content_desktop form {
+          width: 100%; }
+          header .middle__header .container .wrapper .center .search__content_desktop form .search__input {
+            padding-inline-start: 10px;
+            padding-block: 12px;
+            background: white;
+            color: black;
+            font-size: var(--fs-8);
+            border-radius: 21px; }
+        header .middle__header .container .wrapper .center .search__content_desktop i {
+          background: white;
+          color: black; } }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
     margin-inline: auto; }
-  .card__list .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr !important;
-    gap: 10px; }
+  .card__list {
+    position: relative; }
+    .card__list .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr !important;
+      gap: 10px; }
   .menu__fixed.active {
     width: 300px; } }

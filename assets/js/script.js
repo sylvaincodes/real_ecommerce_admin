@@ -69,10 +69,9 @@ close_search.addEventListener('click', function () {
 
 document.addEventListener('click', function (event) {
     if (event.target.matches('.close__menufixed') || event.target.matches('.btn__menufixed')  ||  event.target.matches('.menu__fixed')) {
-        console.log("zezsssssssss");
     }else{
         closeMenuFixed()
     }
-    console.log(event.target.parentNode);
+    // console.log(event.target.parentNode);
     
 })

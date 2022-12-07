@@ -25,7 +25,7 @@
   visibility: visible;
   height: 98px;
   top: 58px;
-  right: 42px;
+  left: calc(100% - 273px);
   box-shadow: $shadow-2;
   width: 233px;
   background: $white;

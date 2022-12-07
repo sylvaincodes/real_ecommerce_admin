@@ -1,26 +1,31 @@
 .breadcrumbs {
-   
-}
+  background: $white;
+  box-shadow: $shadow;
+  padding-block-start: 90px;
+  padding-block-end: 10px;
+  .container {
+    padding-inline: 40px;
+    padding-block: 20px;
 
-.breadcrumbs {
-    background: $white;
-    box-shadow: $shadow;
-    .container{
-        padding-inline : 40px;
-        padding-block : 20px;
-        .wrapper{
-            display: flex;
-            justify-content: space-between;
-            nav{
-                font-size: $fs-8;
-                align-self: center;
-                ol {
-                    display:flex;
-                    align-items: center;
-                    gap:10px;
-                }
-            } 
+    nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        li:first-child {
+          a {
+            font-size: $fs-6;
+          }
         }
-        
+        li:last-child {
+          a {
+            font-size: $fs-7;
+            margin-left: 10px;
+            font-weight: 100;
+          }
+        }
+      }
     }
+  }
 }

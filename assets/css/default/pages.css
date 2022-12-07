@@ -1,0 +1,10 @@
+header .middle__header.pages {
+  height: auto; }
+
+.parametres .card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .parametres .card__item h5 {
+    text-align: center; }

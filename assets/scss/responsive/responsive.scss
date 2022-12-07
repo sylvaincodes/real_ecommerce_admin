@@ -11,6 +11,14 @@
       gap: 10px;
     }
   }
+
+  .dropdown__content
+  {
+    &.active{
+      left: calc(100% - 345px);
+    }
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -96,14 +104,14 @@
     .middle__header {
 
       .container {
-
+        position:relative;
         .wrapper
         {
 
           .center {
 
+            display: block !important;
             .search__content_desktop{
-              display: block;
             background: $white;
             width: 300px;
             border-radius: 25px;
@@ -143,6 +151,8 @@
   }
 
   .card__list {
+
+    position: relative;
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr !important;

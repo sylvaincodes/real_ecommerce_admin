@@ -13,7 +13,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 10px;
-      animation: show .6s $cubic-out;
+      // animation: show .6s $cubic-out;
       .card__item {
         background: $white;
         color: $black;
