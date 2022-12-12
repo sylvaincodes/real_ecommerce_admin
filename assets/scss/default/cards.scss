@@ -43,12 +43,15 @@
           
         }
 
-        &:hover {
-          border-bottom: 4px solid $first-color; 
+        &:hover{
           z-index: 99;  
-          i{
-            text-shadow: 14px 14px 14px $black;
+          border: 2px solid $white ; 
+          background: $black;
+          
+          :is(h6,span,.icon-large,p){
+            color: $white;
           }
+         
         }
 
       }

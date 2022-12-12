@@ -17,9 +17,9 @@
     <!-- icons css 
     ------------->
 
-    <link rel="stylesheet" href="../../assets/icons/flaticons.css" />
+    <link rel="stylesheet" href=".././assets/icons/flaticons.css" />
     <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
-    <link rel="stylesheet" href="../../assets/icons/peicons.min.css" />
+    <link rel="stylesheet" href="..//../assets/icons/peicons.min.css" />
     <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
   </head>
 
@@ -27,119 +27,72 @@
     <!-- site
         -------- -->
     <div class="site">
-
-      <!-- profil  -->
-      <div class="dropdown__content">
-        <ul>
-        <li class="dropdown__item">
-          <i class="ri-user-line" title="Mon Compte"></i>
-          <span>Profil</span>
-        </li>
-
-        <li class="dropdown__item">
-          <i class="ri-logout-circle-r-line" title="Mon Compte"></i>
-          <span>Se déconnecter</span>
-        </li>
-
-        </ul>
-      </div>
       
-      <!-- search -->
+
       <div class="search__content">
-
         <i class="ri-close-line btn close-btn" title="GO"></i>
-
         <form>
-          
-        <div class="">
-          <input type="text" name="search" class="search__input" placeholder="Recherche">
-        </div>
-        
-        <i class="ri-search-line btn" title="GO"></i>
-      </form>
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="Recherche"
+            id="search__input"
+            autofocus
+          />
+          <!-- <i class="ri-search-line btn" title="GO"></i> -->
+        </form>
       </div>
+
+     
 
       <!-- Menu fixed -->
       <div class="menu__fixed">
         <div class="wrapper">
           <div class="header">
             <div class="logo">
-              <span>
-                Real Ecommerce <br> Admin
-              </span> 
+              <h6>ADMIN</h6>
             </div>
-            <i title="fermer le menu" class="ri-close-fill close__menufixed"></i>
+            <i
+              title="fermer le menu"
+              class="ri-close-fill close__menufixed"
+            ></i>
           </div>
           <div class="menu__container">
-
             <ul>
-              <p>Tableau de Bord</p>
-              <li class="menu__item"> 
-                <a href="">
-                  <i class="ri-home-line"></i>
-                  <h6>
-                    Tableau de Bord
-                  </h6>
-                </a> 
-              </li>
-              <p>Paramètres</p>
-              <li class="menu__item"> 
+              <li class="menu__item ">
                 <a href="../../index.html">
-                  <i class="ri-list-settings-line"></i>
-                  <h6>
-                    Paramètres
-                  </h6>
-                  <i class="ri-arrow-right-s-line"></i>
-                  <i class="ri-arrow-down-s-line"></i>
-                </a> 
-                  <ul class="sub__menu">
-                    <li>
-                      <a href="#">Générales</a>
-                    </li><li>
-                      <a href="#">Email</a>
-                    </li><li>
-                      <a href="#">Média</a>
-                    </li><li>
-                      <a href="#">Permalink</a>
-                    </li><li>
-                      <a href="#">Social Login</a>
-                    </li>
-                  </ul>
+                  <i class="ri-home-line"></i>
+                  <h6>Tableau de Bord 1</h6>
+                </a>
               </li>
-              
-              <li class="menu__item"> 
+
+              <li class="menu__item active">
+                <a href="./pages/parametres/index.html">
+                  <i class="ri-list-settings-line"></i>
+                  <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
+                </a>
+              </li>
+
+              <li class="menu__item">
                 <a href="#">
                   <i class="ri-user-settings-line"></i>
-                  <h6>
-                    Administrations
-                  </h6>
-                  <i class="ri-arrow-right-s-line"></i>
-                  <i class="ri-arrow-down-s-line"></i>
-                </a> 
-                  <ul class="sub__menu">
-                    <li>
-                      <a href="#">Rôles et Permissions</a>
-                    </li><li>
-                      <a href="#">Utilisateurs</a>
-                    </li><li>
-                      <a href="#">Systémes</a>
-                    </li><li>
-                      <a href="#">Gestion des caches</a>
-                    </li><li>
-                      <a href="#">Activités</a>
-                    </li><li>
-                      <a href="#">Sauvegardes</a>
-                    </li>
-                  </ul>
+                  <h6>Administrations</h6>
+                </a>
               </li>
             </ul>
+          </div>
+
+          <div class="footer">
+            <p>2022 Template</p>
           </div>
         </div>
       </div>
 
       <!-- overlay -->
-      <div class="overlay">
-      </div>
+      <div class="overlay"></div>
 
       <!-- Mobile menu  -->
       <div class="mobile__menu">
@@ -148,9 +101,7 @@
             <li>
               <div class="left">
                 <i class="ri-home-line"> </i>
-                 <span>
-                   pages
-                 </span> 
+                <span> pages </span>
               </div>
               <i class="ri-arrowdown-line"></i>
             </li>
@@ -161,48 +112,54 @@
       <!-- header
             ---------- -->
       <header>
-        <div class="top__header">
+
+        <div class="middle__header pages">
           <div class="container">
             <div class="wrapper">
-              <p> Publicite here</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="middle__header">
-          <div class="container">
-            <div class="wrapper">
-
-        
               <div class="left">
                 <i class="ri-menu-line icon btn__menufixed"></i>
                 <i class="ri-search-line icon search__btn"></i>
               </div>
 
-              <div class="right">
+              <div class="center">
+                <div class="search__content_desktop">
+                  <i class="ri-close-line btn close-btn" title="GO"></i>
+                  <form>
+                    <input
+                      type="text"
+                      name="search"
+                      class="search__input"
+                      placeholder="Recherche"
+                      id="search__input"
+                      autofocus
+                    />
+                    <!-- <i class="ri-search-line btn" title="GO"></i> -->
+                  </form>
+                </div>
+              </div>
 
+              <div class="right">
                 <a href="#" class="commandes__button">
                   <span>
-                  <span class="indicator__value"></span>
-                  <i class="ri-shopping-bag-line icon" title="Commandes"></i>
-                </span>
+                    <span class="indicator__value"></span>
+                    <i class="ri-shopping-bag-line icon" title="Commandes"></i>
+                  </span>
                 </a>
 
                 <div class="dropdown__btn user__account">
-                  <h6 class="hide">John Doe</h6>
                   <img
                     src="../../assets/images/avatar/avatar-1.png"
                     alt="avatar__profil"
                     width="35"
-                    height="35" class="img__avatar"
-                    />
-                    <i class="ri-arrow-down-s-line icon" title=""></i>
-                  
+                    height="35"
+                    class="img__avatar"
+                  />
+                  <h6 class="hide">John Doe</h6>
+                  <!-- <i class="ri-arrow-down-s-line icon" title=""></i> -->
                 </div>
-   
               </div>
             </div>
-            
+
           </div>
         </div>
       </header>
@@ -211,128 +168,248 @@
             ------ -->
 
       <main>
-
         <!-- breadcrumbs -->
         <div class="breadcrumbs">
           <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">
+                    Paramètres > 
+                  </a>
+                </li>
+                <li>
+                  
+                  <a href="#">
+                  Générales
+                  </a>
+
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        
+        <!-- Card content -->
+        <div class="card__body">
+          <div class="container">
+
+            <h1>Générales</h1>
             <div class="wrapper">
-              <div class="title">
-                <h6>Générales</h6>
+
+              <div class="card__content">
+                <h2>Informations</h2>
+                  <form>
+                    <div class="input-group">
+                       <label for="site__name">Nom du site</label>
+                       <input id="site__name" type="text" class="text__input">
+                    </div>
+                    <div class="input-group">
+                       <label for="site__desc">Description du site</label>
+                       <textarea id="site__desc" rows="10" col="30" class="text__input"> 
+
+                       </textarea>
+                    </div>
+                    <div class="input-group">
+                      <label for="email">Email du site</label>
+                      <input id="email" type="email" class="text__input">
+                    </div> 
+                    
+        
+                    <div class="input-group">
+                      <label for="langue">Langue</label>
+                      <select id="langue">
+                        <option value="">Français</option>
+                        <option value="">Anglais</option>
+                      </select>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="direction">Direction du site</label>
+                      <div class="flex__column">
+                        <div class="row">
+                          <input name="direction" type="radio">
+                          Gauche à Droite
+                        </div>
+
+                        <div class="row">
+                          <input name="direction" type="radio">
+                          Droite à Gauche
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="editor">Editeur de text</label>
+                      <div class="flex__column">
+
+                        <div class="row">
+                          <input name="edito" type="radio" class="custom__radio">
+                          CKEditeur
+                        </div>
+                        
+                        <div class="row">
+                          <input name="edito" type="radio" class="custom__radio">
+                          TinyMCE
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="input-group">
+                      <label for="langue">Theme admin</label>
+                      <select id="langue">
+                        <option value="">Black</option>
+                        <option value="">Blanc</option>
+                      </select>
+                    </div>    <div class="input-group">
+                      <label for="langue">Site web theme</label>
+                      <select id="langue">
+                        <option value="">Theme 1</option>
+                        <option value="">Theme 1</option>
+                      </select>
+                    </div>    
+                    
+                    <div class="input-group">
+                      <label for="langue">Site web layout </label>
+                      <select id="langue">
+                        <option value="">Layout 1</option>
+                        <option value="">Layout 2</option>
+                      </select>
+                    </div>
+
+
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Sauvegarder</button>
+                    </div>
+                   
+                  </form>
               </div>
-              <nav>
-                <ol>
-                  <li>
-                    <a href="#">
-                      Paramètres >
-                    </a>
-                  </li>
+   
+              <div class="card__content">
+                <h2>Apparence</h2>
+                  <form action="" method="POST">
+                    
+                    <div class="input-group">
+                      <label for="timezone">Logo light</label>
+                      <input type="file" name="logo__light" id="logo__light" class="custom__file">
+                      <div class="preview__image">
+                        <img src="../../assets/images/placehoders/placeholder.png" class="" alt="" id="logo__light__preview">
+                      </div>
+                    </div> 
+                    <div class="input-group">
+                      <label for="date__format">Logo dark</label>
+                      <input type="file" name="logo__dark" id="logo__dark" class="custom__file">
+                      <div class="preview__image">
+                        <img src="../../assets/images/placehoders/placeholder.png" class="" alt="" id="logo__dark__preview">
+                      </div>
+                    </div> 
 
-                  <li>
-                    <a href="#">
-                      Génrales
-                    </a>
-                    </li>
-                </ol>
-              </nav>
+                    <div class="input-group">
+                      <label for="time__format">Favicon</label>
+                      <input type="file" name="favicon" id="favicon" class="custom__file">
+                      <div class="preview__image">
+                        <img src="../../assets/images/placehoders/placeholder.png" class="" alt="" id="logo__favicon__preview">
+                      </div>
+                    </div> 
+                    
+                    <div class="input-group">
+                      <label for="time__format">Login background</label>
+                      <input type="file" name="login__bg" id="login__bg" class="custom__file">
+                      <div class="preview__image">
+                        <img src="../../assets/images/placehoders/placeholder.png" class="" alt="" id="logo__login__preview">
+                      </div>
+                    </div> 
+
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Sauvegarder</button>
+                    </div>
+                  
+                  </form>
+              </div>
+              
+              <div class="card__content">
+                <h2>Cache</h2>
+                  <form action="" method="POST">
+                     
+                    <div class="row">
+                      <input checked name="cache" type="radio" class="custom__radio">
+                      Activé
+                    </div>
+                    
+                    <div class="row">
+                      <input name="cache" type="radio" class="custom__radio">
+                      Désactivé
+                    </div>
+
+                    <div class="input-group">
+                      <label for="cache_min">Cache (min) </label>
+                      <input type="text" value="10"class="text__input" name="cache_min">
+                    </div>
+
+                    <div class="input-group">
+                      <label for="cache_admin_menu">Cacher le menu admin </label>
+                      <div class="row">
+                        <input checked name="cache_admin_menu" type="radio" class="custom__radio">
+                      Activé
+                    </div>
+                    
+                    <div class="row">
+                      <input name="cache_admin_menu" type="radio" class="custom__radio">
+                      Désactivé
+                    </div>
+                    
+                  </div>
+
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Sauvegarder</button>
+                    </div>
+                  
+                  </form>
+              </div>
+
+              <div class="card__content">
+                <h2>Date et Heure</h2>
+                  <form action="" method="POST">
+                    
+                    <div class="input-group">
+                      <label for="timezone">Timezone</label>
+                      <select id="timezone">
+                        <option value="">UTC</option>
+                        <option value="">Africa/Abidjan</option>
+                      </select>
+                    </div> 
+                    <div class="input-group">
+                      <label for="date__format">Date format</label>
+                      <select id="date__format">
+                        <option value="d__m__y">11/08/2022 (d/m/Y)</option>
+                        <option value="m__d__y">11/08/2022 (Y/m/d)</option>
+                        <option value="custom">Personnalisé</option>
+                      </select>
+                    </div> 
+
+                    <div class="input-group">
+                      <label for="time__format">Time format</label>
+                      <select id="time__format">
+                        <option value="d__m__y">1:10 AM (am)</option>
+                        <option value="m__d__y">13:10 (24h)</option>
+                        <option value="custom">Personnalisé</option>
+                      </select>
+                    </div> 
+
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Sauvegarder</button>
+                    </div>
+                  
+                  </form>
+              </div> 
+
             </div>
           </div>
+
+          
         </div>
-
-
-       <div class="tabs">
-        <div class="container">
-          <div class="wrapper">
-            <div class="tab__item">
-              <h6>Informations</h6>
-            </div>
-            <div class="tab__item">
-              <h6>Apparence</h6>
-            </div>
-              <div class="tab__item">
-              <h6>Cache</h6>
-            </div>
-          </div>
-        </div>
-       </div>
-
-
-       <div class="tabs__content">
-        <div class="container">
-          <div class="wrapper">
-
-            <h6>Informations</h6>
-            <div class="tab__item" id="tab__1">
-                <form id="tab__form__1" action="" method="post">
-
-                  <div class="input-group">
-                    <input type="text" name="email" id="" class="input__text" placeholder="Admin Email">
-                    <i class="ri-add-line add__more"></i>
-                  </div>
-
-                  <!-- <div class="alert-info">
-                    <i class="ri-alert-line"></i>
-                    <p>Ajouter au plus quatre emails</p>
-                  </div> -->
-
-                  <div class="input-group">
-                    <input type="text" name="timezone" id="" class="input__text" placeholder="Timezone">
-                  </div> 
-                  
-                  
-                  <div class="input-group">
-                    <input type="text" name="langue" id="" class="input__text" placeholder="Langue">
-                  </div>
-                  
-                  
-                  <div class="input-group">
-                    <label for="direction">Direction:</label>
-                    Gauche :<input type="radio" name="direction" checked>
-                    Droite :<input type="radio" name="direction" >
-                  </div>
-                  
-                  <div class="input-group">
-                      <input type="button" value="Enregistrer" class="btn animated"/>
-                  </div>
-
-
-                
-                </form>
-            </div>
-            
-            
-            <h6>Apparence</h6>
-            <div class="tab__item" id="tab__1">
-                <form id="tab__form__1" action="" method="post">
-
-                 <div class="input-group">
-                  <label class="logo_label" for="logo">Logo
-                    <input type="file" name="logo" class="logo__upload">
-                    <span class=""></span>
-                  </label>
-                 </div>
-                 
-                 <div class="input-group">
-
-                      <label for="favicon">Favicon
-                        <input type="file" name="favicon" id="">
-                      </label>
-                      
-                 </div>
-                  
-                  <div class="input-group">
-                      <input type="button" value="Enregistrer" class="btn animated"/>
-                  </div>
-
-
-                
-                </form>
-            </div>
-
-
-          </div>
-
-        </div>
-       </div>
 
       </main>
 
@@ -340,9 +417,14 @@
             --------->
       <footer></footer>
 
-
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
+      <script src="../../assets/js/drag_drop.js"></script>
+      <script src="../../assets/js/load_image.js"></script>
+      
+
+
+
     </div>
   </body>
 </html>

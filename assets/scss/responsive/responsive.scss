@@ -113,7 +113,7 @@
             display: block !important;
             .search__content_desktop{
             background: $white;
-            width: 300px;
+            width: 500px;
             border-radius: 25px;
 
             form {
@@ -139,9 +139,23 @@
       }
     }
     }
+
   
   
   }
+
+
+.card__body{
+  .container{
+    .wrapper{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+  }
+}
+
+
 }
 
 @media (min-width: 1200px) {
@@ -153,6 +167,11 @@
   .card__list {
 
     position: relative;
+
+    h1{
+      color:$white;
+      font-size: $fs-5;
+    }
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr !important;
@@ -165,4 +184,6 @@
       width: 300px;
     }
   }
+
+
 }

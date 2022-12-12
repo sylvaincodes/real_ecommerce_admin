@@ -224,9 +224,9 @@ i {
 /* INPUT GROUP */
 .input-group {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction:column;
   position: relative;
+  gap: 10px;
 }
 
 .alert-info {
@@ -250,10 +250,7 @@ i {
 }
 
 input[type="text"] {
-  outline: none;
-  border: none;
-  width: 100%;
-  border-width: 0px;
+  
 }
 
 input[type="radio"] {
@@ -288,6 +285,11 @@ input[type="radio"] {
   background: transparent;
   color: white;
   font-size: $fs-5;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-width: 0px;
+
 }
 
 .text-end{
@@ -364,4 +366,77 @@ thead{
 
 .p__inline__20{
   padding-inline: 20px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.text__input{
+  border: 1px solid silver;
+  padding: 5px;
+}
+
+select{
+  padding: 10px;
+}
+
+.flex__item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-primary{
+  background: $first-color;
+  color: $white;
+}
+
+.custom__file{
+  border: 1px solid $black;
+  padding-block: 10px;
+  padding-inline: 10px;
+}
+
+.custom__file::-webkit-file-upload-button{
+  visibility: hidden;
+}
+
+.custom__file::before{
+  content : 'Cliquer ici';
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: $fs-7;
+}
+
+.custom__file:hover::before{
+  cursor: pointer;
+}
+
+.custom__file:hover{
+  cursor: pointer;
+  background: $silver;
+  color: $black;
+  transition: color .6s;
+}
+
+.preview__image{
+  border:2px  dashed $silver;
+  padding:10px;
+  img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.flex__column{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  gap: 20px;
+  font-size: medium;
 }
