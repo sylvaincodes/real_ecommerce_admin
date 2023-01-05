@@ -1,0 +1,7 @@
+.card__body .btn__group:hover .dropdown__content {
+  visibility: visible;
+  height: 100%;
+  width: 150px;
+  padding-inline: 10px; }
+  .card__body .btn__group:hover .dropdown__content li {
+    padding-block: 5px; }

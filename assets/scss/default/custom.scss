@@ -118,7 +118,7 @@ span {
 }
 
 .hide {
-  display: none;
+  display: none !important;
   cursor: drag;
 }
 
@@ -300,7 +300,6 @@ input[type="radio"] {
 .text-start{
   margin-right: auto;
   float: left;
-
 }
 
 table{
@@ -439,4 +438,134 @@ select{
   display: flex;
   gap: 20px;
   font-size: medium;
+}
+
+.text__content{
+  font-size:$fs-7;
+}
+
+.large{
+  font-size: $fs-7;
+}
+
+.link{
+  color:$first-color;
+}
+
+
+// LABEL Radio box 
+.switch{
+  position: relative;
+  display:inline-block;
+  width: 50px;
+  height: 25px;
+  
+   input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+    &:checked + .slider {
+      background-color: $first-color;
+    } 
+    
+    &:checked + .slider::before {
+      transition: .4s;
+      transform: translateX(23px);
+    }
+
+   }
+
+   .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $silver;
+    transition: .4s;
+
+    
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: $white;
+      left: 4px;
+      bottom: 2px;
+      transition: .4s;
+      transform: translateX(0);
+    }
+    
+    
+    &.round{
+      border-radius: 34px;
+
+      &::before{
+        border-radius: 50%;
+      }
+    }
+
+   }
+
+}
+
+
+.m-l-10 {
+  margin-inline-start: 20px;
+}
+
+.fs_8{
+  font-size: $fs-8;
+}
+
+.inherit{
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+
+.show{
+  display: show !important;
+  animation: show .5s ease;
+}
+
+.col-12{
+  flex:1;
+}
+
+.grid-none{
+  grid-template-columns:1fr !important;
+}
+
+.btn-success{
+  background: $first-color;
+  color: $white;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-secondary{
+  border: 1px solid $black;
+}
+.align-center{
+  text-align: center;
+}
+
+.preview__link{
+  background: $silver;
+  color: $black ;
+  padding: 10px;
+  font-weight: bold;
+  a{
+    color: $first-color;
+    font-size:$fs-7;
+  }
 }

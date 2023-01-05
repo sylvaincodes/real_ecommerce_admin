@@ -68,7 +68,7 @@
               </li>
 
               <li class="menu__item active">
-                <a href="./pages/parametres/index.html">
+                <a href="./index.html">
                   <i class="ri-list-settings-line"></i>
                   <h6>Paramètres</h6>
                   <!-- <i class="ri-arrow-right-s-line"></i>
@@ -174,14 +174,14 @@
             <nav>
               <ul>
                 <li>
-                  <a href="../../index.html">
-                    Tableau de bord > 
+                  <a href="#">
+                    Paramètres > 
                   </a>
                 </li>
                 <li>
                   
-                  <a href="../../index.html">
-                  Paramètres
+                  <a href="#">
+                  Permalink
                   </a>
 
                 </li>
@@ -190,55 +190,64 @@
           </div>
         </div>
 
-         <!-- card -->
-        <div class="card__list parametres">
-            <div class="container">
-              <div class="wrapper">
-                <div class="card__item">
-                  <a href="./generales.html">
-                    <i class="ri-add-box-line icon-large"></i>
-                    <h6>Générales</h6>
-                    <p>Gérer les informations sur le site</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./email.html">
-                    <i class="ri-mail-open-line icon-large"></i>
-                    <h6>Email</h6>
-                    <p>Gérer les adresses du site</p>
-                  </a>
-                </div> 
-                
-                <div class="card__item">
-                  <a href="./media.html">
-                    <i class="ri-image-add-line icon-large"></i>
-                    <h6>Media</h6>
-                    <p>Gérer les images du site</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./permalink.html">
-                  <i class="ri-links-line icon-large"></i>
-                  <h6>Liens</h6>
-                  <p>Gérer les liens du site</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./sociallogin.html">
-                  <i class="ri-edit-line icon-large"></i>
-                  <h6>Connexion</h6>
-                  <p>Gérer les connexions au site </p>
-                  </a>
-                </div>
+        
+        <!-- Card content -->
+        <div class="card__body">
+          <div class="container">
+
+            <h1>Permalink</h1>
+            <div class="wrapper grid__1fr">
+
+              <div class="card__content">
+               
+                  <form>
+                    
+                    <div class="input-group">
+                        <label for="pages">Pages</label>
+                        <input name="pages" id="pages" value="" type="text" class="text__input">
+                        <p class="preview__link">  Prévisualiser : <a href="http://localhost:8000/your-url-here">http://localhost:8000/your-url-here</a>   </p>
+                     </div> 
+                     
+                     <div class="input-group">
+                        <label for="produits">Produits </label>
+                        <input id="produits" name="produits" type="text" class="text__input">
+                        <p class="preview__link">  Prévisualiser : <a href="http://localhost:8000/your-url-here">http://localhost:8000/your-url-here</a>   </p>
+                     </div>
+                     
+                     
+                     <div class="input-group">
+                        <label for="produits">Produits catégories</label>
+                        <input id="categories" name="categories" type="text" class="text__input">
+                        <p class="preview__link">  Prévisualiser : <a href="http://localhost:8000/your-url-here">http://localhost:8000/your-url-here</a>   </p>
+                     </div>
+
+                     <div class="input-group">
+                        <label for="produits">Produits tags</label>
+                        <input id="categories" name="categories" type="text" class="text__input">
+                        <p class="preview__link">  Prévisualiser : <a href="http://localhost:8000/your-url-here">http://localhost:8000/your-url-here</a>   </p>
+                     </div> 
+                     
+                     <div class="input-group">
+                        <label for="marques">Marques </label>
+                        <input id="marques" name="marques" type="text" class="text__input">
+                        <p class="preview__link">  Prévisualiser : <a href="http://localhost:8000/your-url-here">http://localhost:8000/your-url-here</a>   </p>
+                     </div> 
+                     
+                    
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Sauvegarder</button>
+                    </div>
+                   
+                  </form>
+              </div>
+              
+             
+   
+            </div>
+          </div>
 
           
-              </div>
-            </div>
         </div>
-
 
       </main>
 
@@ -249,6 +258,8 @@
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
       <script src="../../assets/js/drag_drop.js"></script>
+      
+
 
 
     </div>

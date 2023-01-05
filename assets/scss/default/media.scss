@@ -1,0 +1,227 @@
+.rv-media-main-wrapper {
+  .rv-media-top-header {
+    display: flex;
+
+    .rv-media-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+          background: $white;
+          color: $first-color;
+        }
+      }
+      .btn-group {
+        ul {
+          position: absolute;
+          visibility: hidden;
+          height: 0;
+          background: $white;
+        }
+        &:hover {
+          ul {
+            visibility: visible;
+            width: 150px;
+            padding-inline: 10px;
+            box-shadow: $shadow-5;
+            z-index: 999999;
+            height: auto;
+
+            li {
+              padding-block: 5px;
+              a {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                color: $black;
+                font-size: $fs-7;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rv-media-search {
+      margin-left: auto;
+      form {
+        position: relative;
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          line-height: 33px;
+          padding-inline: 10px;
+        }
+        input {
+          border: 1px solid $black;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+
+  .rv-media-bottom-header {
+    display: flex;
+    flex-direction: row;
+    background: $white;
+    margin-block-start: 20px;
+    align-items: center;
+    padding-inline: 10px;
+
+    .rv-media-tools {
+      margin-left: auto;
+      display: flex;
+      align-items: flex-start;
+      padding-block: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .btn-group {
+        display: flex;
+        .dropdown {
+          position: relative;
+
+          button {
+            display: flex;
+            align-items: center;
+          }
+          ul {
+            position: absolute;
+            visibility: hidden;
+            height: 0;
+
+            a {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+              color: $black;
+              font-size: $fs-7;
+            }
+          }
+
+          &:hover {
+            ul {
+              visibility: visible;
+              width: 150px;
+              padding-inline: 10px;
+              box-shadow: $shadow-5;
+              z-index: 999999;
+              height: auto;
+              background: $white;
+              font-size: $fs-8;
+              padding-block: 5px;
+              li {
+                padding-block-end: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rv-media-main {
+    border: 1px solid $silver;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background: $white;
+
+    .rv-media-grid {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        li {
+          position: relative;
+          background: $silver;
+          margin: 5px;
+
+          .rv-media-item {
+            background: hsla(0, 0%, 86%, 0.3);
+            .media-item {
+              position: absolute;
+              height: 25px;
+              width: 25px;
+              top: 5px;
+              right: 5px;
+              background: $first-color;
+              padding: 5px;
+              border-radius: 50%;
+             visibility: hidden;
+
+              svg {
+                fill: $white;
+              }
+
+            
+            }
+
+            .rv-media-thumbnail {
+              padding-inline: 20px;
+              padding-block: 5px;
+
+              i {
+                font-size: 80px;
+              }
+            }
+
+            .rv-media-description {
+              padding-inline: 30px;
+              padding-block: 10px;
+              background: #ddd;
+              .title {
+                font-size: $fs-7;
+              }
+            }
+
+            &:hover {
+              border: 1px solid $first-color;
+
+              .rv-media-description {
+                background: $first-color;
+                color: $white;
+              }
+
+              .media-item {
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .rv-media-details {
+      border-left: 1px solid $silver;
+
+      .rv-media-thumbnail {
+        padding: 40px;
+        border-bottom: 1px solid $silver;
+        i {
+          font-size: $fs-1;
+        }
+      }
+
+      .rv-media-description {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          font-size: $fs-7;
+        }
+      }
+    }
+  }
+}

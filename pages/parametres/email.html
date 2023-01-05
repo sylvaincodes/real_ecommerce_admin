@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'acceuil - Admin</title>
+
+    <!-- scss style 
+    --------------->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+
+    <!-- fonts style
+    ------------- -->
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+
+    <!-- icons css 
+    ------------->
+
+    <link rel="stylesheet" href=".././assets/icons/flaticons.css" />
+    <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
+    <link rel="stylesheet" href="..//../assets/icons/peicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+  </head>
+
+  <body>
+    <!-- site
+        -------- -->
+    <div class="site">
+      
+
+      <div class="search__content">
+        <i class="ri-close-line btn close-btn" title="GO"></i>
+        <form>
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="Recherche"
+            id="search__input"
+            autofocus
+          />
+          <!-- <i class="ri-search-line btn" title="GO"></i> -->
+        </form>
+      </div>
+
+     
+
+      <!-- Menu fixed -->
+      <div class="menu__fixed">
+        <div class="wrapper">
+          <div class="header">
+            <div class="logo">
+              <h6>ADMIN</h6>
+            </div>
+            <i
+              title="fermer le menu"
+              class="ri-close-fill close__menufixed"
+            ></i>
+          </div>
+          <div class="menu__container">
+            <ul>
+              <li class="menu__item ">
+                <a href="../../index.html">
+                  <i class="ri-home-line"></i>
+                  <h6>Tableau de Bord 1</h6>
+                </a>
+              </li>
+
+              <li class="menu__item active">
+                <a href="./index.html">
+                  <i class="ri-list-settings-line"></i>
+                  <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#">
+                  <i class="ri-user-settings-line"></i>
+                  <h6>Administrations</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <p>2022 Template</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+
+      <!-- Mobile menu  -->
+      <div class="mobile__menu">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <div class="left">
+                <i class="ri-home-line"> </i>
+                <span> pages </span>
+              </div>
+              <i class="ri-arrowdown-line"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- header
+            ---------- -->
+      <header>
+
+        <div class="middle__header pages">
+          <div class="container">
+            <div class="wrapper">
+              <div class="left">
+                <i class="ri-menu-line icon btn__menufixed"></i>
+                <i class="ri-search-line icon search__btn"></i>
+              </div>
+
+              <div class="center">
+                <div class="search__content_desktop">
+                  <i class="ri-close-line btn close-btn" title="GO"></i>
+                  <form>
+                    <input
+                      type="text"
+                      name="search"
+                      class="search__input"
+                      placeholder="Recherche"
+                      id="search__input"
+                      autofocus
+                    />
+                    <!-- <i class="ri-search-line btn" title="GO"></i> -->
+                  </form>
+                </div>
+              </div>
+
+              <div class="right">
+                <a href="#" class="commandes__button">
+                  <span>
+                    <span class="indicator__value"></span>
+                    <i class="ri-shopping-bag-line icon" title="Commandes"></i>
+                  </span>
+                </a>
+
+                <div class="dropdown__btn user__account">
+                  <img
+                    src="../../assets/images/avatar/avatar-1.png"
+                    alt="avatar__profil"
+                    width="35"
+                    height="35"
+                    class="img__avatar"
+                  />
+                  <h6 class="hide">John Doe</h6>
+                  <!-- <i class="ri-arrow-down-s-line icon" title=""></i> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- main
+            ------ -->
+
+      <main>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">
+                    Paramètres > 
+                  </a>
+                </li>
+                <li>
+                  
+                  <a href="#">
+                  Email
+                  </a>
+
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        
+        <!-- Card content -->
+        <div class="card__body">
+          <div class="container">
+
+            <h1>Email</h1>
+            <div class="wrapper">
+
+              <div class="card__content">
+                <h2>Configuration</h2>
+                  <form>
+
+
+                    <div class="input-group">
+                        <label for="langue">Mailer</label>
+                        <select id="langue" name="langue">
+                          <option value="smtp">SMTP</option>
+                          <option value="sendmail">Sendmail</option>
+                          <option value="mailgun">Mailgun</option>
+                          <option value="ses">SES</option>
+                          <option value="ppstmark">Postmark</option>
+                          <option value="log">Log</option>
+                          <option value="array">Array</option>
+                        </select>
+                      </div>
+
+                      
+                      <!-- Sendmail -->
+                    
+                    <div id="sendmail" class="items inherit">
+
+                      <div class="input-group">
+                        <label for="send_mail_path">Sendmail Path</label>
+                       <input id="send_mail_path" value="/usr/sbin/sendmail -bs" type="text" class="text__input">
+                    </div>
+                    
+                    
+                  </div>
+
+                  <div id="smtp" class="items active inherit">
+                    <!-- Smtp  -->
+                    <div class="input-group">
+                      <label for="smtp_port">Port</label>
+                      <input id="smtp_port" value="585" type="text" class="text__input">
+                    </div>
+                   
+                   <div class="input-group">
+                      <label for="smtp_host">Host</label>
+                      <input id="smtp_host" value="smtp.mailgun.org" type="text" class="text__input">
+                   </div>
+                   
+                   <div class="input-group">
+                      <label for="smtp_username">Nom d'utilisateur</label>
+                      <input id="smtp_username" value="tagshleg@gmail.com" type="text" class="text__input">
+                   </div>
+                   
+                   <div class="input-group">
+                      <label for="smtp_password">Mot de passe</label>
+                      <input id="smtp_password" value="" type="password" class="text__input">
+                   </div>
+
+    
+                  </div>
+                  
+                  <div id="mailgun" class="items  inherit">
+                    <!-- Smtp  -->
+                    <div class="input-group">
+                      <label for="domain">Domain</label>
+                      <input id="domain" value="" type="text" class="text__input">
+                    </div>
+                   
+                   <div class="input-group">
+                      <label for="secret">Secret</label>
+                      <input id="secret" value="" type="text" class="text__input">
+                   </div>
+                   
+                   <div class="input-group">
+                      <label for="endpoint">Endpoint</label>
+                      <input id="endpoint" value="api.mailgun.net" type="text" class="text__input">
+                   </div>
+              
+                  </div>
+
+
+                  <div class="input-group">
+                    <label for="smtp_sender_email">Nom Emétteur</label>
+                    <input id="smtp_sender_email" value="tagshleg@gmail.com" type="email" class="text__input">
+                    </div> 
+                    
+                    
+                    <div class="input-group">
+                      <label for="smtp_sender_name">Email Emetteur </label>
+                      <input id="smtp_sender_name" value="" type="text" class="text__input">
+                    </div>
+                    
+
+                    
+                    <div class="row">
+                    <input id="note" value="" type="checkbox" class="text__input">
+                    <small >Utilisation du travail de file d'attente pour envoyer des e-mails (doit d'abord configurer la file d'attente https://laravel.com/docs/queues#supervisor-configuration)</p>
+                    </div>
+        
+                    <div class="btn__submit">
+                      <button class="btn bg-primary" type="submit">Faire un test</button>
+                    </div>
+                   
+                  </form>
+              </div>
+              
+              <div class="card__content">
+                <h2>ACL </h2>
+                 
+                <ul class="responsive__table">
+                    <li class="table__header">
+                        <div> Template </div>
+                        <div> Actif </div>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>En tete des emails</a> <i title="Le template email pour les en-têtes" class="m-l-10 ri-question-line"></i>  </div>
+                        
+                    </li>
+
+                    <li class="table__row">
+                        <div class="flex__item"><a>Pied de page des emails</a> <i title="Le template email pour les pieds de page" class="m-l-10  ri-question-line"></i>  </div>
+                        
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a> Modification de mot de passe </a> <i title="Envoyer un email pour un changement de mot de passe" class="m-l-10  ri-question-line"></i>  </div>
+                      
+                        <label for="reset__pass" class="switch">
+                            <input  type="checkbox" name="reset__pass" id="reset__pass">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+ 
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Ajout d'un contact</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="add_contact" class="switch">
+                            <input  type="checkbox" name="add_contact" id="add_contact">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+
+
+                </ul>
+              </div> 
+              
+              <div class="card__content">
+                <h2>Ecommerce </h2>
+                 
+                <ul class="responsive__table">
+                    <li class="table__header">
+                        <div> Template </div>
+                        <div> Actif </div>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Welcome</a> <i title="Le template email pour les en-têtes" class="m-l-10 ri-question-line"></i>  </div>
+                        <label for="welcom" class="switch">
+                            <input  type="checkbox" name="welcom" id="welcom">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+
+                    <li class="table__row">
+                        <div class="flex__item"><a>Confirmation DE L'Email</a> <i title="Le template email pour les pieds de page" class="m-l-10  ri-question-line"></i>  </div>
+                        
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a> Modification de mot de passe </a> <i title="Envoyer un email pour un changement de mot de passe" class="m-l-10  ri-question-line"></i>  </div>
+                        
+                        
+                    </li>
+ 
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Confirmation de commande</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="order_confirm" class="switch">
+                            <input  type="checkbox" name="order_confirm" id="order_confirm">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Annulation de commande</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="cancel_order" class="switch">
+                            <input  type="checkbox" name="cancel_order" id="cancel_order">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Livraison de commande</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="delivering_order" class="switch">
+                            <input  type="checkbox" name="delivering_order" id="delivering_order">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Ajout de commande</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="add_order" class="switch">
+                            <input  type="checkbox" name="add_order" id="add_order">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Confirmation de paiement</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="payment_confirm" class="switch">
+                            <input  type="checkbox" name="payment_confirm" id="payment_confirm">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Commande inachevée</a> <i title="Envoyer un email des l'ajout d'un nouveau contact" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="incomplete_order" class="switch">
+                            <input  type="checkbox" name="incomplete_order" id="incomplete_order">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+
+
+                </ul>
+              </div>
+              
+              
+              <div class="card__content">
+                <h2>Newsletter </h2>
+                 
+                <ul class="responsive__table">
+                    <li class="table__header">
+                        <div> Template </div>
+                        <div> Actif </div>
+                    </li>
+                    
+                    
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a>Email à envoyer à l'utilisateur</a> <i title="Envoyer un email à l'utilsateur" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="newletter" class="switch">
+                            <input  type="checkbox" name="newletter" id="newletter">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+                    <li class="table__row">
+                        <div class="flex__item"> <a> Email à envoyer à l'administrateur</a> <i title="Envoyer un email à l'administrateur" class="m-l-10  ri-question-line"></i>  </div>
+                        <label for="newletter_admin" class="switch">
+                            <input  type="checkbox" name="newletter_admin" id="newletter_admin">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    
+
+                    
+                </ul>
+              </div>
+   
+            </div>
+          </div>
+
+          
+        </div>
+
+      </main>
+
+      <!-- footer 
+            --------->
+      <footer></footer>
+
+      <!-- Scripts -->
+      <script src="../../assets/js/script.js"></script>
+      <script src="../../assets/js/drag_drop.js"></script>
+      
+
+
+
+    </div>
+  </body>
+</html>

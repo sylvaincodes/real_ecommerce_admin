@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'acceuil - Admin</title>
+
+    <!-- scss style 
+    --------------->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../../assets/librairies/media/css/media.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/media/libraries/jquery-context-menu/jquery.contextMenu.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/media/libraries/fancybox/jquery.fancybox.min.css" /> -->
+
+    <!-- fonts style
+    ------------- -->
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+
+    <!-- icons css 
+    ------------->
+
+    <link rel="stylesheet" href=".././assets/icons/flaticons.css" />
+    <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
+    <link rel="stylesheet" href="..//../assets/icons/peicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+  </head>
+
+  <body>
+    <!-- site
+        -------- -->
+    <div class="site">
+      
+
+      <div class="search__content">
+        <i class="ri-close-line btn close-btn" title="GO"></i>
+        <form>
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="Recherche"
+            id="search__input"
+            autofocus
+          />
+          <!-- <i class="ri-search-line btn" title="GO"></i> -->
+        </form>
+      </div>
+
+     
+
+      <!-- Menu fixed -->
+      <div class="menu__fixed">
+        <div class="wrapper">
+          <div class="header">
+            <div class="logo">
+              <h6>ADMIN</h6>
+            </div>
+            <i
+              title="fermer le menu"
+              class="ri-close-fill close__menufixed"
+            ></i>
+          </div>
+          <div class="menu__container">
+            <ul>
+              <li class="menu__item ">
+                <a href="../../index.html">
+                  <i class="ri-home-line"></i>
+                  <h6>Tableau de Bord 1</h6>
+                </a>
+              </li>
+
+              <li class="menu__item active">
+                <a href="./index.html">
+                  <i class="ri-list-settings-line"></i>
+                  <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#">
+                  <i class="ri-user-settings-line"></i>
+                  <h6>Administrations</h6>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <p>2022 Template</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+
+      <!-- Mobile menu  -->
+      <div class="mobile__menu">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <div class="left">
+                <i class="ri-home-line"> </i>
+                <span> pages </span>
+              </div>
+              <i class="ri-arrowdown-line"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- header
+            ---------- -->
+      <header>
+
+        <div class="middle__header pages">
+          <div class="container">
+            <div class="wrapper">
+              <div class="left">
+                <i class="ri-menu-line icon btn__menufixed"></i>
+                <i class="ri-search-line icon search__btn"></i>
+              </div>
+
+              <div class="center">
+                <div class="search__content_desktop">
+                  <i class="ri-close-line btn close-btn" title="GO"></i>
+                  <form>
+                    <input
+                      type="text"
+                      name="search"
+                      class="search__input"
+                      placeholder="Recherche"
+                      id="search__input"
+                      autofocus
+                    />
+                    <!-- <i class="ri-search-line btn" title="GO"></i> -->
+                  </form>
+                </div>
+              </div>
+
+              <div class="right">
+                <a href="#" class="commandes__button">
+                  <span>
+                    <span class="indicator__value"></span>
+                    <i class="ri-shopping-bag-line icon" title="Commandes"></i>
+                  </span>
+                </a>
+
+                <div class="dropdown__btn user__account">
+                  <img
+                    src="../../assets/images/avatar/avatar-1.png"
+                    alt="avatar__profil"
+                    width="35"
+                    height="35"
+                    class="img__avatar"
+                  />
+                  <h6 class="hide">John Doe</h6>
+                  <!-- <i class="ri-arrow-down-s-line icon" title=""></i> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- main
+            ------ -->
+
+      <main>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">
+                    Paramètres > 
+                  </a>
+                </li>
+                <li>
+                  
+                  <a href="#">
+                  Média
+                  </a>
+
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <!-- content here -->
+
+        <div class="card__body">
+            <div class="container">
+              <h1>Media</h1>
+    
+                  <div class="rv-media-main-wrapper">
+
+                    <header class="rv-media-header">
+                        <div class="rv-media-top-header">
+                            <div class="rv-media-actions">
+                                <label for="media_aside_collapse" class="btn btn-danger collapse-sidebar hide">
+                                    <i class="fa fa-bars"></i>
+                                </label>
+                                
+                                    <button class="btn btn-success js-dropzone-upload">
+                                      <i class="ri-upload-cloud-2-fill"></i> <span>Upload</span>   
+                                    </button>
+        
+                                    <button class="btn btn-success js-download-action" data-toggle="modal" data-target="#modal_download_url">
+                                      <i class="ri-download-cloud-2-fill"></i> <span>Download</span>
+                                    </button>
+                               
+                                    <button class="btn btn-success" data-toggle="modal" data-target="#modal_add_folder">
+                                      <i class="ri-folder-2-fill"></i> <span>Créer un dossier</span>     
+                                    </button>
+                                
+                                    <button class="btn btn-success js-change-action" data-type="refresh">
+                                      <i class="ri-refresh-fill"></i> <span>Actualiser</span> 
+                                    </button>
+                               
+                                    <div class="btn-group" role="group">
+                                        <div class="dropdown">
+                                            <button class="btn btn-success dropdown-toggle js-rv-media-change-filter-group js-filter-by-type" type="button" data-toggle="dropdown">
+                                              <i class="ri-filter-fill"></i> <span>Filtrer</span> <i class="ri-arrow-down-s-line"></i> <span class="js-rv-media-filter-current"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#" class="js-rv-media-change-filter" data-type="filter" data-value="everything">
+                                                          <i class="ri-recycle-fill"></i>
+                                                          Tout
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="#" class="js-rv-media-change-filter" data-type="filter" data-value="image">
+                                                          <i class="ri-image-2-fill"></i>
+                                                          Image
+                                                        </a>
+                                                    </li>
+                                            
+                                                    <li>
+                                                        <a href="#" class="js-rv-media-change-filter" data-type="filter" data-value="video">
+                                                          <i class="ri-video-fill"></i>
+                                                          Vidéo
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="#" class="js-rv-media-change-filter" data-type="filter" data-value="document">
+                                                          <i class="ri-file-2-fill"></i>
+                                                          Document
+                                                        </a>
+                                                    </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+        
+                                    <div class="btn-group" role="group">
+                                        <div class="dropdown">
+                                            <button class="btn btn-success dropdown-toggle js-rv-media-change-filter-group js-filter-by-view-in" type="button" data-toggle="dropdown">
+                                              <i class="ri-search-eye-fill"></i> <span>Afficher</span>     <i class="ri-arrow-down-s-line"></i>  <span class="js-rv-media-filter-current"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#" class="js-rv-media-change-filter" data-type="view_in" data-value="all_media">
+                                                      <i class="ri-recycle-fill"></i>
+                                                      Tout
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="js-rv-media-change-filter" data-type="view_in" data-value="trash">
+                                                      <i class="ri-delete-row"></i>
+                                                      Supprimés
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="js-rv-media-change-filter" data-type="view_in" data-value="recent">
+                                                      <i class="ri-anticlockwise-fill"></i>
+                                                      Récentes
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="js-rv-media-change-filter" data-type="view_in" data-value="favorites">
+                                                      <i class="ri-star-fill"></i>
+                                                      Favoris
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                               
+                                    <button class="btn btn-danger js-files-action hide" data-action="empty_trash">
+                                      <i class="ri-delete-row"></i> Vide
+                                    </button>
+                                
+                            </div>
+                            <div class="rv-media-search">
+                                <form class="input-search-wrapper" action="" method="GET">
+                                  <input type="text" name="search" id="search" class="text__input" placeholder="Rechercher">
+                                  <button>
+                                    <i class="ri-search-line"></i>
+                                  </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="rv-media-bottom-header">
+                            <div class="rv-media-breadcrumb">
+                                <ul class="breadcrumb">
+                                     <h6>
+                                       Tous les médias
+
+                                     </h6> 
+                                </ul>
+                            </div>
+                            <div class="rv-media-tools">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle"
+                                                type="button"
+                                                data-toggle="dropdown">
+                                            <span> Trier </span> &nbsp;  <i class="ri-sort-asc"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="name-asc">
+                                                    <i class="ri-sort-asc"></i> Nom : A - Z
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="name-desc">
+                                                    <i class="ri-sort-desc"></i> Nom :  Z - A
+                                                </a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="created_at-asc">
+                                                    <i class="ri-sort-asc"></i> Date : Croissant
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="created_at-desc">
+                                                    <i class="ri-sort-desc"></i> Date : Décroissant
+                                                </a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="size-asc">
+                                                    <i class="ri-sort-asc"></i> Taille : Croissant
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                   class="js-rv-media-change-filter"
+                                                   data-type="sort_by"
+                                                   data-value="size-desc">
+                                                    <i class="ri-sort-desc"></i> Taille : Décroissant
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown rv-dropdown-actions disabled">
+                                        <button class="btn btn-secondary dropdown-toggle"
+                                                type="button" data-toggle="dropdown">
+                                            Plus &nbsp;<i class="ri-snowy-line"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                          <li>
+                                              <a href="#"
+                                                 class="js-rv-media-change-filter"
+                                                 data-type="sort_by"
+                                                 data-value="name-asc">
+                                                  <i class="ri-edit-2-fill"></i> Renommer
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#"
+                                                 class="js-rv-media-change-filter"
+                                                 data-type="sort_by"
+                                                 data-value="name-desc">
+                                                  <i class="ri-copyleft-fill"></i> Faire une copie
+                                              </a>
+                                          </li>
+                                          <li role="separator" class="divider"></li>
+                                          <li>
+                                              <a href="#"
+                                                 class="js-rv-media-change-filter"
+                                                 data-type="sort_by"
+                                                 data-value="created_at-asc">
+                                                  <i class="ri-star-fill"></i> Ajouter aux favoris
+                                              </a>
+                                          </li>
+                                          <li>
+                                              <a href="#"
+                                                 class="js-rv-media-change-filter"
+                                                 data-type="sort_by"
+                                                 data-value="created_at-desc">
+                                                  <i class="ri-download-2-fill"></i> Télécharger
+                                              </a>
+                                          </li>
+                                          <li role="separator" class="divider"></li>
+                                          <li>
+                                              <a href="#"
+                                                 class="js-rv-media-change-filter"
+                                                 data-type="sort_by"
+                                                 data-value="size-asc">
+                                                  <i class="ri-delete-back-2-fill"></i> Supprimer
+                                              </a>
+                                          </li>
+                                         
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group js-rv-media-change-view-type" role="group">
+                                    <button class="btn btn-secondary" type="button" data-type="tiles">
+                                        <i class="ri-menu-fill"></i>
+                                    </button>
+                                    <button class="btn btn-secondary" type="button" data-type="list">
+                                      <i class="ri-menu-2-fill"></i>
+                                    </button>
+                                </div>
+                                <label for="media_details_collapse" class="btn btn-link collapse-panel hide">
+                                    <i class="ri-snowy-line"></i>
+                                </label>
+                            </div>
+                        </div>
+                    </header>
+
+
+                    <main class="rv-media-main">
+                      <div class="rv-media-items">
+
+                        <div class="rv-media-grid">
+                            <ul id="media-items">
+                                
+                              <li class="rv-media-list-title js-media-list-title js-context-menu" data-context="folder" data-id="44">
+                                <input type="checkbox" class="hide">
+                                <div class="rv-media-item" title="testimonials">
+                                    <span class="media-item hide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="rv-media-thumbnail">
+                                        <i class="ri-folder-2-fill"></i>
+                                    </div>
+                                    <div class="rv-media-description">
+                                        <div class="title">Dossier 1</div>
+                                    </div>
+                                </div>
+                              </li><li class="rv-media-list-title js-media-list-title js-context-menu" data-context="folder" data-id="44">
+                                <input type="checkbox" class="hide">
+                                <div class="rv-media-item" title="testimonials">
+                                    <span class="media-item hide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="rv-media-thumbnail">
+                                        <i class="ri-folder-2-fill"></i>
+                                    </div>
+                                    <div class="rv-media-description">
+                                        <div class="title">Dossier 2</div>
+                                    </div>
+                                </div>
+                              </li><li class="rv-media-list-title js-media-list-title js-context-menu" data-context="folder" data-id="44">
+                                <input type="checkbox" class="hide">
+                                <div class="rv-media-item" title="testimonials">
+                                    <span class="media-item hide">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"></path>
+                                        </svg>
+                                    </span>
+                                    <div class="rv-media-thumbnail">
+                                        <i class="ri-folder-2-fill"></i>
+                                    </div>
+                                    <div class="rv-media-description">
+                                        <div class="title">Dossier 3</div>
+                                    </div>
+                                </div>
+                              </li>
+
+                            </ul>
+                        </div>
+
+                      </div>
+
+                      <div class="rv-media-details">
+                        <div class="rv-media-thumbnail">
+                          <i class="ri-folder-fill"></i>
+                        </div>
+                        <div class="rv-media-description">
+                          <div class="rv-media-name">
+                            <p>Name</p>
+                            <span title="sliders">sliders</span>
+                          </div>
+                          <div class="rv-media-name"><p>Uploaded at</p><span title="2021-07-02 23:03:28">2021-07-02 23:03:28</span></div>
+                          <div class="rv-media-name"><p>Modified at</p><span title="2021-07-02 23:03:28">2021-07-02 23:03:28</span></div>
+                        </div>
+                      </div>
+
+                    </main>
+                 
+
+                  </div>
+                
+              </div>
+        </div>
+        
+      </main>
+
+      <!-- footer 
+            --------->
+      <footer></footer>
+
+      <script src="../../assets/js/script.js"></script>
+      
+      
+      <!-- Scripts -->
+      <!-- <script src="../../assets/librairies/media/libraries/jquery/jquery.js"></script> -->
+      <!-- <script src="../../assets/librairies/media/js/jquery.addMedia.js"></script> -->
+      <!-- <script src="../../assets/librairies/media/js/integrate.js"></script> -->
+      <!-- <script src="../../assets/librairies/media/js/media.js"></script>
+      <script src="../../assets/librairies/media/libraries/clipboard/clipboard.min.js"></script>
+      <script src="../../assets/librairies/media/libraries/dropzone/dropzone.js"></script>
+      <script src="../../assets/librairies/media/libraries/fancybox/jquery.fancybox.min.js"></script>
+      <script src="../../assets/librairies/media/libraries/lodash/lodash.min.js"></script> -->
+    
+    </div>
+  </body>
+</html>

@@ -1,9 +1,10 @@
-// DROPDOWN
+// VARIABLES
 const btn_dropdown = document.querySelector('.dropdown__btn');
 const dropdown_content = document.querySelector('.dropdown__content');
 const overlay = document.querySelector('.overlay');
 const menu__item = document.querySelectorAll('.menu__item');
 const search__input = document.querySelector('#search__input');
+const text__input = document.querySelector('.text__input');
 search__input.focus();
 
 
@@ -75,3 +76,34 @@ document.addEventListener('click', function (event) {
     // console.log(event.target.parentNode);
     
 })
+
+
+const langue = document.querySelector('#langue');
+const smtp = document.querySelector('#smtp');
+const sendmail = document.querySelector('#sendmail');
+const mailgun = document.querySelector('#mailgun');
+
+if (langue) {
+
+langue.addEventListener('change', function(e) {
+    let langue__value= e.target.value;
+    if (langue__value=="smtp") {
+        smtp.classList.add('active');
+        sendmail.classList.toggle('active');
+    }
+    else if (langue__value=='sendmail'){
+            smtp.classList.remove('active');
+            sendmail.classList.toggle('active');
+    } 
+    else if (langue__value=='mailgun'){
+            smtp.classList.remove('active');
+            sendmail.classList.remove('active');
+            mailgun.classList.toggle('active');
+    }
+})
+    
+}
+
+
+text__input.setAttribute('maxlenght', 10);
+
