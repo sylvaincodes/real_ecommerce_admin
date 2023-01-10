@@ -49,8 +49,6 @@
         </form>
       </div>
 
-     
-
       <!-- Menu fixed -->
       <div class="menu__fixed">
         <div class="wrapper">
@@ -114,8 +112,7 @@
         </div>
       </div>
 
-      <!-- header
-            ---------- -->
+      <!-- header ---------- -->
       <header>
 
         <div class="middle__header pages">
@@ -169,8 +166,7 @@
         </div>
       </header>
 
-      <!-- main
-            ------ -->
+      <!-- main ------ -->
 
       <main>
         <!-- breadcrumbs -->
@@ -186,7 +182,7 @@
                 <li>
                   
                   <a href="#">
-                  Rôles 
+                  Systémes 
                   </a>
 
                 </li>
@@ -195,60 +191,126 @@
           </div>
         </div>
 
-         <!-- card -->
-         <div class="card__body ">
+        <!-- card -->
+        <div class="card__body">
             <div class="container">
-              <div class="wrapper d-inherit">
+                <div class="wrapper">
+                    <div class="card__content">
+                        <table class="table__list">
+                            <h6>Liste des packages installés et leurs versions </h6>  
+                            <thead>
+                                <tr>
+                                    <th>Package : version</th>
+                                    <th>Dépendance : version</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Laravel / framework  :  <span class="version"> ^8.12 </span> </td>
+                                    <td>
+                                        <div class="column">
+                                            
+                                            <p>
+                                                php : <span class="version">^7.3|^8.0</span> 
+                                            </p>
+                                            
+                                            <p>
+                                                ext-json : <span class="version">*</span> 
+                                            </p>
+                                            
+                                            <p>
+                                                ext-mbstring : <span class="version">*</span> 
+                                            
+                                            </p>
+                                            
+                                        </div>
 
-                <div class="card__content">
-                    
-                  <div class="m-b-10 row">
-                    <button class="btn btn-primary">
-                      Ajouter
-                    </button>
-                  </div>
-                      
-                         
-                    <table id="example" class="display" style="width:100%">
-                      <thead>
-                          <tr>
-                              <th>Libellé</th>
-                              <th>Description</th>
-                              <th>Crée le</th>
-                              <th>Crée par </th>
-                              <th>Opérations</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>Rôle 1</td>
-                              <td>Description</td>
-                              
-                              <td>2011-04-25</td>
-                              <td>2011-04-25</td>
-                              
-                              
-                              <td>
-                                <button class="btn btn-primary" title="Supprimer">Supprimer</button>
-                                <button class="btn btn-primary" title="Afficher">Aficher</button>
-                              </td>
+                                    </td>
 
-                          </tr>
-                          
-
-                          </tbody>
-                          </table>
-
-                      </div>
-    
-                  </div>
-    
-
-              </div>
+                                </tr> 
+                                <tr>
+                                    <td>Laravel / framework  :  <span class="version"> ^8.12 </span> </td>
+                                    <td>
+                                        <div class="column">
+                                            
+                                            <p>
+                                                php : <span class="version">^7.3|^8.0</span> 
+                                            </p>
+                                            
+                                            <p>
+                                                ext-json : <span class="version">*</span> 
+                                            </p>
+                                            
+                                            <p>
+                                                ext-mbstring : <span class="version">*</span> 
+                                            </p>
+                                            
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card__content">
+                        <table class="table__list m-b-10">
+                            <h6>Environnement système </h6>  
+                            
+                            <tbody>
+                                <tr>
+                                    <td>CMS Version: 5.19.1  </td>
+                                </tr> 
+                                <tr>
+                                    <td>Framework Version: 8.52.0 </td>
+                                </tr> 
+                                
+                                <tr>
+                                    <td>Timezone: UTC </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="flex-row">Debug Mode: <i class="ri-2x ri-check-line success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex-row">Cache Dir Writable:  <i class="ri-check-line ri-2x success"></i> </td>
+                                </tr> 
+                                
+                                <tr>
+                                    <td class="flex-row">App Size: 220,86 MB  <i class="ri-2x ri-check-line danger"></i> </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        
+                        <table class="table__list ">
+                            <h6>Environnement serveur </h6>  
+                            
+                            <tbody>
+                                <tr>
+                                    <td>PHP Version: 7.4.33   </td>
+                                </tr> 
+                                <tr>
+                                    <td>Server Software: PHP 7.4.33 Development Server </td>
+                                </tr> 
+                                
+                                <tr>
+                                    <td>Server OS: <br> Linux sylvain-Latitude-E5430-non-vPro 5.15.0-43-generic  <br> #46-Ubuntu SMP Tue Jul 12 10:30:17 UTC 2022 x86_64 </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="flex-row">Database: mysql <i class="ri-2x ri-check-line success"></i> </td>
+                                </tr>
+                                <tr>
+                                    <td class="flex-row">Cache Driver: file   <i class="ri-2x ri-close-line danger"></i> </td>
+                                </tr> 
+                                
+                            
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
-
-
       </main>
 
       <!-- footer 

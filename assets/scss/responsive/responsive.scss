@@ -42,6 +42,16 @@
       // padding-inline: 10px;
     }
   }
+
+  .dataTables_filter {
+    display: block !important;
+    padding: 0;
+    position: absolute;
+    top: -10px !important;
+    right: 0;
+    text-align:none !important
+}
+
 }
 
 @media (min-width: 992px) {
@@ -149,7 +159,7 @@
   .container{
     .wrapper{
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2,auto);
       gap: 10px;
     
     }

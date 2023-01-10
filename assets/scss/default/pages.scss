@@ -50,8 +50,12 @@ header {
                 background:$white;
                 color:$black;
                 height:fit-content;
-
+                overflow: auto;
                 
+
+                td{
+                  text-align:left;
+                }
                 .items{
                   visibility: hidden;
                   height: 0;

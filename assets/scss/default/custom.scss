@@ -313,6 +313,7 @@ thead, tbody, tfoot, tr, td, th {
   border-style: solid;
   border-width: 0;
   text-align: left;
+  position:relative;
 }
 
 thead{
@@ -568,4 +569,98 @@ select{
     color: $first-color;
     font-size:$fs-7;
   }
+}
+
+
+.d-inherit{
+  display:inherit !important;
+}
+
+.m-b-10{
+  margin-block: 10px;
+}
+
+.badge{
+  background:$first-color;
+  color:$white;
+}
+
+.btn__fill{
+  background: $first-color;
+  color: $white;
+  padding: 10px;
+}
+
+.role{
+
+  position: relative;
+  cursor: pointer;
+  .tooltip{
+
+    position: absolute;
+    left: 100%;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid silver;
+    padding-block: 5px;
+    padding-inline: 5px;
+    z-index: 999999;
+    box-shadow: $shadow-2;
+    background: $silver;
+    visibility: hidden;
+    
+    .header{
+      padding-block: 10px;
+      text-align: center;
+      border-bottom: 1px solid silver;
+      font-size: $fs-6;
+    }
+  
+    .content{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .arrow::before{
+      position: absolute;
+      content: '';
+      top: 40%;
+      left: -11%;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent $black transparent transparent;
+      border-right-color: $first-color;
+    }
+    
+  }
+
+  
+  &:hover{
+
+    .tooltip{
+      visibility: visible;
+     
+    }
+  }
+
+}
+
+.version{
+  color: $white;
+  background: $first-color;
+  padding: 5px;
+}
+
+
+.success{
+  color: $green;
+  font-weight: bolder;
+}
+
+.danger{
+  font-weight: bolder;
+  color: $red;
 }

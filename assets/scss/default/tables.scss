@@ -4,6 +4,7 @@
         justify-content: space-between;
     }
 
+
     .table__header{
         font-size: $fs-7;
         color: $black;
@@ -19,6 +20,35 @@
             color: $first-color;
             font-weight: $fw-500;
         }
+    }
+
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.table__list{
+    border: 1px solid silver;
+    width: 100%;
+    
+    h6{
+        font-size: $fs-8;
+    }
+
+    p{
+        color: $black;
+        font-size: $fs-7;
+        margin-block:10px;
+    }
+    th{
+        font-size: $fs-7;
+        padding: 10px;
+    }
+    td{
+        font-size: $fs-7;
+        border: 1px solid silver;
+        padding: 10px;
     }
 
 }

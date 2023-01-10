@@ -69,11 +69,13 @@ close_search.addEventListener('click', function () {
 
 
 document.addEventListener('click', function (event) {
-    if (event.target.matches('.close__menufixed') || event.target.matches('.btn__menufixed')  ||  event.target.matches('.menu__fixed')) {
+    if ( event.target.matches('.overlay')) {
+    // if (event.target.matches('.close__menufixed') || event.target.matches('.btn__menufixed')  ||  event.target.matches('.menu__fixed')  || event.target.matches('.overlay active')) {
+        // console.log(event.target.parentNode);
+        closeMenuFixed();
     }else{
-        closeMenuFixed()
+        console.log(event.target);
     }
-    // console.log(event.target.parentNode);
     
 })
 
@@ -105,5 +107,5 @@ langue.addEventListener('change', function(e) {
 }
 
 
-text__input.setAttribute('maxlenght', 10);
+// text__input.setAttribute('maxlenght', 10);
 
