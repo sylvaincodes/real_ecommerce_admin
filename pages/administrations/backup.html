@@ -9,6 +9,7 @@
     <!-- scss style 
     --------------->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/table/css/table.css" />
 
     <!-- fonts style
     ------------- -->
@@ -21,6 +22,10 @@
     <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
     <link rel="stylesheet" href="..//../assets/icons/peicons.min.css" />
     <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+
+    <!-- data tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
   </head>
 
   <body>
@@ -174,14 +179,14 @@
             <nav>
               <ul>
                 <li>
-                  <a href="../../index.html">
-                    Tableau de bord > 
+                  <a href="./index.html">
+                    Administrations > 
                   </a>
                 </li>
                 <li>
                   
                   <a href="#">
-                  Administrations
+                  Back up 
                   </a>
 
                 </li>
@@ -191,58 +196,55 @@
         </div>
 
          <!-- card -->
-        <div class="card__list parametres">
+         <div class="card__body ">
             <div class="container">
-              <div class="wrapper">
-                <div class="card__item">
-                  <a href="./roles.html">
-                    <i class="ri-key-2-fill icon-large"></i>
-                    <h6>Rôles</h6>
-                    <p>Gérer les permissions des utilisateurs</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./users.html">
-                    <i class="ri-user-2-fill icon-large"></i>
-                    <h6>Utilisateurs</h6>
-                    <p>Gérer les comptes utilisateurs</p>
-                  </a>
-                </div> 
-                
-                <div class="card__item">
-                  <a href="./systems.html">
-                    <i class="ri-boxing-fill icon-large"></i>
-                    <h6>Systèmes</h6>
-                    <p>Gérer les informations du système</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./cache.html">
-                  <i class="ri-book-line icon-large"></i>
-                  <h6>Cache</h6>
-                  <p>Gérer les Caches</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./logging.html">
-                  <i class="ri-login-box-fill icon-large"></i>
-                  <h6>Logs</h6>
-                  <p>Gérer les activités du site</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./backup.html">
-                  <i class="ri-edit-line icon-large"></i>
-                  <h6>Backups</h6>
-                  <p>Gérer les sauvegardes du système</p>
-                  </a>
-                </div>
+              <div class="wrapper d-inherit">
 
-          
+                <div class="card__content">
+                    
+                  <div class="m-b-10 row">
+                    <button class="btn">
+                      Générer
+                    </button>
+                  </div>
+                      
+                         
+                    <table id="example" class="display" style="width:100%">
+                      <thead>
+                          <tr>  
+                              <th>Libellé</th>
+                              <th>Description</th>
+                              <th>Taille</th>
+                              <th>Date</th>
+                              <th>Opérations</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              
+                              <td>  Sauvegarde de la base </td>
+                              
+                              <td> Sauvegarde de la base du 15 janvier 2022 </td>
+                              <td> 5mo </td>
+                              <td> 10-10-22 </td>
+                                                            
+                              <td class="flex-row justify-space-between">
+                                <i class="ri-2x ri-download-2-fill" title="Télécharger"></i>
+                                <i class="ri-2x ri-delete-bin-7-fill" title="Supprimer"></i>
+                                <i class="ri-2x ri-restart-fill" title="Restaurer"></i>
+                              </td>
+
+                          </tr> 
+                          
+
+                          </tbody>
+                          </table>
+
+                      </div>
+    
+                  </div>
+    
+
               </div>
             </div>
         </div>
@@ -256,8 +258,16 @@
 
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
-      <script src="../../assets/js/drag_drop.js"></script>
-
+     
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+      
+    
+      <script >
+        $(document).ready(function () {
+    $('#example').DataTable();
+    });
+      </script>
 
     </div>
   </body>

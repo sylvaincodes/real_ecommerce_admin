@@ -188,6 +188,88 @@
     - RESET CSS
 --------------------------*/
 html {
+  font-family: "Recoleta", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  background: 5px 5px 5px 5px black; }
+  html body {
+    background: #212a2f;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: #212a2f;
+    animation: opacity 1s ease; }
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #fff; }
+
+::-webkit-scrollbar-thumb {
+  background: #292929; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.text-link {
+  text-decoration: underline;
+  color: #212a2f; }
+
+img {
+  height: auto; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+em,
+strong,
+a {
+  color: #212a2f; }
+
+h1 {
+  color: #212a2f !important;
+  font-size: 2rem; }
+
+h2 {
+  color: #212a2f;
+  font-size: 3rem; }
+
+h3 {
+  color: #212a2f;
+  font-size: 4rem; }
+
+h4 {
+  color: #212a2f;
+  font-size: 5rem; }
+
+h5 {
+  color: #212a2f;
+  font-size: 6rem; }
+
+h6 {
+  color: #212a2f;
+  font-size: 7rem; }
+
+/* ------------------------
+    - RESET CSS
+--------------------------*/
+html {
   font-family: "Recoleta", sans-serif, "Gordita", sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
@@ -245,27 +327,27 @@ a {
 
 h1 {
   color: #212a2f;
-  font-size: 7rem; }
+  font-size: 2rem; }
 
 h2 {
   color: #212a2f;
-  font-size: 6rem; }
+  font-size: 3rem; }
 
 h3 {
   color: #212a2f;
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 h4 {
   color: #212a2f;
-  font-size: 4rem; }
+  font-size: 5rem; }
 
 h5 {
   color: #212a2f;
-  font-size: 3rem; }
+  font-size: 6rem; }
 
 h6 {
   color: #212a2f;
-  font-size: 2rem; }
+  font-size: 7rem; }
 
 .capitalize:first-letter {
   text-transform: capitalize; }
@@ -419,6 +501,15 @@ form {
 
 .btn:hover {
   background: #0f3e58;
+  color: #fff; }
+
+.btn-danger {
+  background: #dc3545;
+  color: #fff;
+  padding: 8px; }
+
+.btn-danger:hover {
+  background: #212a2f;
   color: #fff; }
 
 .overlay.active {
@@ -768,6 +859,20 @@ select {
 .danger {
   font-weight: bolder;
   color: #dc3545; }
+
+.justify-space-between {
+  justify-content: space-between; }
+
+.w__50 {
+  width: 50px; }
+
+.bg__color {
+  background: #0f3e58;
+  color: #fff;
+  padding-inline: 10px; }
+
+.align-center {
+  text-align: center !important; }
 
 /* HEADER TOP */
 header .top__header {

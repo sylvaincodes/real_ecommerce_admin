@@ -199,6 +199,18 @@ form {
   background: $first-color;
   color: $white;
 }
+
+.btn-danger{
+  background:$red;
+  color: $white;
+  padding: 8px;
+}
+
+.btn-danger:hover{
+  background:$black;
+  color: $white;
+}
+
 .overlay.active {
   position: absolute;
   z-index: 9999;
@@ -663,4 +675,22 @@ select{
 .danger{
   font-weight: bolder;
   color: $red;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+
+.w__50{
+  width: 50px;
+}
+
+.bg__color{
+  background: $first-color;
+  color: $white;
+  padding-inline: 10px;
+}
+
+.align-center{
+  text-align: center !important;
 }

@@ -9,6 +9,7 @@
     <!-- scss style 
     --------------->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/table/css/table.css" />
 
     <!-- fonts style
     ------------- -->
@@ -21,6 +22,10 @@
     <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
     <link rel="stylesheet" href="..//../assets/icons/peicons.min.css" />
     <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+
+    <!-- data tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
   </head>
 
   <body>
@@ -43,8 +48,6 @@
           <!-- <i class="ri-search-line btn" title="GO"></i> -->
         </form>
       </div>
-
-     
 
       <!-- Menu fixed -->
       <div class="menu__fixed">
@@ -109,8 +112,7 @@
         </div>
       </div>
 
-      <!-- header
-            ---------- -->
+      <!-- header ---------- -->
       <header>
 
         <div class="middle__header pages">
@@ -164,8 +166,7 @@
         </div>
       </header>
 
-      <!-- main
-            ------ -->
+      <!-- main ------ -->
 
       <main>
         <!-- breadcrumbs -->
@@ -174,14 +175,14 @@
             <nav>
               <ul>
                 <li>
-                  <a href="../../index.html">
-                    Tableau de bord > 
+                  <a href="./index.html">
+                    Administrations > 
                   </a>
                 </li>
                 <li>
                   
                   <a href="#">
-                  Administrations
+                  Caches 
                   </a>
 
                 </li>
@@ -190,64 +191,93 @@
           </div>
         </div>
 
-         <!-- card -->
-        <div class="card__list parametres">
+        <!-- card -->
+        <div class="card__body">
             <div class="container">
-              <div class="wrapper">
-                <div class="card__item">
-                  <a href="./roles.html">
-                    <i class="ri-key-2-fill icon-large"></i>
-                    <h6>Rôles</h6>
-                    <p>Gérer les permissions des utilisateurs</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./users.html">
-                    <i class="ri-user-2-fill icon-large"></i>
-                    <h6>Utilisateurs</h6>
-                    <p>Gérer les comptes utilisateurs</p>
-                  </a>
-                </div> 
-                
-                <div class="card__item">
-                  <a href="./systems.html">
-                    <i class="ri-boxing-fill icon-large"></i>
-                    <h6>Systèmes</h6>
-                    <p>Gérer les informations du système</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./cache.html">
-                  <i class="ri-book-line icon-large"></i>
-                  <h6>Cache</h6>
-                  <p>Gérer les Caches</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./logging.html">
-                  <i class="ri-login-box-fill icon-large"></i>
-                  <h6>Logs</h6>
-                  <p>Gérer les activités du site</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./backup.html">
-                  <i class="ri-edit-line icon-large"></i>
-                  <h6>Backups</h6>
-                  <p>Gérer les sauvegardes du système</p>
-                  </a>
-                </div>
+                <div class="wrapper">
+                   
+                    <div class="card__content">
+                        <table class="table__list m-b-10">
+                            <h6>Effacer les commandes du cache </h6>  
+                            
+                            <tbody>
+                                <tr>
+                                    <td>Effacer la mise en cache du CMS : mise en cache de la base de données, 
+                                        blocs statiques... Exécutez cette commande lorsque vous ne voyez pas les modifications après la mise à jour des données.
+                                    </td>
 
-          
-              </div>
+                                    <td>
+
+                                        <button class="btn btn-danger">
+                                          <i class="ri-delete-bin-line"></i> 
+                                        </button>
+
+                                    </td>
+
+                                </tr> 
+                                <tr>
+                                    <td>Effacez les vues compilées pour mettre les vues à jour. </td>
+
+                                    <td>
+
+                                      <button class="btn btn-danger">
+                                        <i class="ri-delete-bin-line"></i> 
+                                      </button>
+                                        
+                                    </td>
+
+                                </tr> 
+                                
+                                <tr>
+                                    <td>Vous devrez peut-être actualiser la mise en cache de la configuration lorsque vous modifiez quelque chose dans l'environnement de production. </td>
+
+                                    <td>
+
+                                      <button class="btn btn-danger">
+                                        <i class="ri-delete-bin-line"></i> 
+                                      </button>
+                                        
+                                    </td>
+
+                                </tr> 
+                                
+                                <tr>
+                                    <td>Effacer le routage du cache. </td>
+
+                                    <td>
+
+                                      <button class="btn btn-danger">
+                                        <i class="ri-delete-bin-line"></i> 
+                                      </button>
+                                        
+                                    </td>
+
+                                </tr> 
+                                
+                                
+                                <tr>
+                                    <td>Effacer les fichiers journaux du système. </td>
+
+
+                                    <td>
+
+                                      <button class="btn btn-danger">
+                                        <i class="ri-delete-bin-line"></i> 
+                                      </button>
+                                        
+                                    </td>
+
+                                </tr> 
+                                
+                                
+                            </tbody>
+                        </table>
+                        
+                        
+                    </div>
+                </div>
             </div>
         </div>
-
-
       </main>
 
       <!-- footer 
@@ -256,8 +286,16 @@
 
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
-      <script src="../../assets/js/drag_drop.js"></script>
-
+     
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+      
+    
+      <script >
+        $(document).ready(function () {
+    $('#example').DataTable();
+    });
+      </script>
 
     </div>
   </body>

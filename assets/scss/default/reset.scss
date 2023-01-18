@@ -22,8 +22,6 @@ html {
     animation: opacity 1s ease;
   }
 
-
-
   *,
   ::after,
   ::before {
@@ -79,30 +77,30 @@ html {
   
   h1 {
     color: $black;
-    font-size: $fs-1;
+    font-size: $fs-6;
   }
-  
+
   h2 {
-    color: $black;
-    font-size: $fs-2;
-  }
-  
-  h3 {
-    color: $black;
-    font-size: $fs-3;
-  }
-  
-  h4 {
-    color: $black;
-    font-size: $fs-4;
-  }
-  
-  h5 {
     color: $black;
     font-size: $fs-5;
   }
   
+  h3 {
+    color: $black;
+    font-size: $fs-4;
+  }
+  
+  h4 {
+    color: $black;
+    font-size: $fs-3;
+  }
+  
+  h5 {
+    color: $black;
+    font-size: $fs-2;
+  }
+  
   h6 {
     color: $black;
-    font-size: $fs-6;
+    font-size: $fs-1;
   }
