@@ -1,0 +1,45 @@
+.form__body{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .form__group{
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap:10px;
+
+    label{
+        font-size: $fs-6;
+        display: flex;
+        gap: 10px;
+    
+        &.required::after{
+            content: '*';
+            color: $red;
+        }
+    }
+
+    input{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $first-color;
+        font-size: $fs-6;
+    }
+
+    small{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: $fs-7;
+    }
+}
+
+}
+
+.rules{
+    border-left: 3px solid $silver;
+    padding-inline-start: 20px;
+}

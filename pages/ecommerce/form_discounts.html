@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'acceuil - Admin</title>
+
+    <!-- scss style 
+    --------------->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/table/css/table.css" />
+
+    <!-- fonts style
+    ------------- -->
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+
+    <!-- icons css 
+    ------------->
+
+    <link rel="stylesheet" href=".././assets/icons/flaticons.css" />
+    <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/peicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+
+    
+  </head>
+
+  <body>
+    <!-- site
+        -------- -->
+    <div class="site">
+
+
+      <div class="search__content">
+        <i class="ri-close-line btn close-btn" title="GO"></i>
+        <form>
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="Recherche"
+            id="search__input"
+            autofocus
+          />
+          <!-- <i class="ri-search-line btn" title="GO"></i> -->
+        </form>
+      </div>
+
+     
+
+      <!-- Menu fixed -->
+      <div class="menu__fixed">
+        <div class="wrapper">
+          <div class="header">
+            <div class="logo">
+              <h6>ADMIN</h6>
+            </div>
+            <i
+              title="fermer le menu"
+              class="ri-close-fill close__menufixed"
+            ></i>
+          </div>
+          <div class="menu__container">
+            <ul>
+              <li class="menu__item ">
+                <a href="../../index.html">
+                  <i class="ri-home-line"></i>
+                  <h6>Tableau de Bord 1</h6>
+                </a>
+              </li>
+
+              <li class="menu__item active">
+                <a href="./pages/parametres/index.html">
+                  <i class="ri-list-settings-line"></i>
+                  <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#">
+                  <i class="ri-user-settings-line"></i>
+                  <h6>Administrations</h6>
+                </a>
+              </li>
+
+
+              <li class="menu__item">
+                <a href="./index.html">
+                  <i class="ri-store-line"></i>
+                  <h6>Ecommerce</h6>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="footer">
+            <p>2022 Template</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+
+      <!-- Mobile menu  -->
+      <div class="mobile__menu">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <div class="left">
+                <i class="ri-home-line"> </i>
+                <span> pages </span>
+              </div>
+              <i class="ri-arrowdown-line"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- header
+            ---------- -->
+      <header>
+
+        <div class="middle__header pages">
+          <div class="container">
+            <div class="wrapper">
+              <div class="left">
+                <i class="ri-menu-line icon btn__menufixed"></i>
+                <i class="ri-search-line icon search__btn"></i>
+              </div>
+
+              <div class="center">
+                <div class="search__content_desktop">
+                  <i class="ri-close-line btn close-btn" title="GO"></i>
+                  <form>
+                    <input
+                      type="text"
+                      name="search"
+                      class="search__input"
+                      placeholder="Recherche"
+                      id="search__input"
+                      autofocus
+                    />
+                    <!-- <i class="ri-search-line btn" title="GO"></i> -->
+                  </form>
+                </div>
+              </div>
+
+              <div class="right">
+                <a href="#" class="commandes__button">
+                  <span>
+                    <span class="indicator__value"></span>
+                    <i class="ri-shopping-bag-line icon" title="Commandes"></i>
+                  </span>
+                </a>
+
+                <div class="dropdown__btn user__account">
+                  <img
+                    src="../../assets/images/avatar/avatar-1.png"
+                    alt="avatar__profil"
+                    width="35"
+                    height="35"
+                    class="img__avatar"
+                  />
+                  <h6 class="hide">John Doe</h6>
+                  <!-- <i class="ri-arrow-down-s-line icon" title=""></i> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- main
+            ------ -->
+
+      <main>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="./index.html">
+                    Ecommerce > 
+                  </a>
+                </li>
+                <li>
+                  
+                  <a href="#">
+                  Clients 
+                  </a>
+
+                  <a class="active">
+                   > Créer un client 
+                  </a>
+
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+         <!-- card -->
+         <form action="" method="post">
+         <div class="card__body ">
+            <div class="container">
+              <div class="wrapper">
+
+                  <div class="card__content">
+                      
+                    <div class="form__body">
+                        <div class="form__group">
+                            <label for="nom_client" class="control__label required" aria-required="true">
+                                Coupon code
+                            </label>
+                            <input maxlength="120" class="is-valid" type="text" name="coupon_code" id="coupon_code" required placeholder="">
+                            <p>les clients vont entrer ce code lors du paiement.</p>
+                            <small class=""> Générer un code </small>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email_client" class="control__label required" aria-required="true">
+                              Catégorie 
+                            </label>
+                            <select name="categorie_coupon" id="categorie_coupon">
+                                <option value="coupon">Coupon</option>
+                                <option value="promotion">Promotion</option>
+                            </select>
+
+                            <label for="can_use_with_promotion">
+                                <input type="checkbox" name="can_use_with_promotion" id="can_use_with_promotion">
+                                <span>Peut être utilisé avec une promotion</span>
+                            </label>
+                            
+                            <label for="is_unlimited">
+                                <input type="checkbox" name="is_unlimited" id="is_unlimited">
+                                <span>Coupon illimité</span>
+                            </label>
+
+                        </div> 
+                        
+                        <div class="form__group">
+
+                            <label for="type_option" class="required">Type de coupon</label>
+                            <select required name="type_option" id="type_option">
+                                <option value="montant">$</option>
+                                <option value="pourcentage">%</option>
+                                <option value="free">Livraison gratuite</option>
+                            </select>
+                           
+                        </div> 
+                        
+                        <div class="form__group">
+
+                            <label for="montant_coupon" id="montant" class="required">Montant fixe</label>
+                            <label for="montant_coupon" id="pourcentage" class="required hide">Pourcentage de réduction ( % )</label>
+                            <label for="montant_coupon" id="free" class="required hide">Frais de livraison supérieur à ( 0 si aucun)  </label>
+                            <input type="tex" name="montant_coupon" id="montant_coupon" required>
+                        
+                        </div>
+                        
+                        <div class="form__group">
+
+                            <label for="apply_on" class="required">Appliquer sur </label>
+                            <select required name="apply_on" id="apply_on">
+                                <option value="all_order">Toutes les commandes</option>
+                                <option value="order_amount_from">Montant supérieur à</option>
+                                <option value="product_collection">Une collection</option>
+                                <option value="product">Un produit</option>
+                                <option value="variant">Une variante de produit</option>
+                            </select>
+                        
+                        </div>
+
+                        <div id="order_amount_from_value" class="form__group hide">
+                          <label for="">Montant supérieur à </label>
+                            <input type="text" name="order_amount_from_value" id="order_amount_from_value">
+                        </div>
+
+                        <div id="product_collection_value" class="form__group hide">
+                            <select  name="product_collection_value" id="product_collection_value">
+                                <option value="product_collection_value">product_collection_value</option>
+                            </select>
+                        </div>
+                        
+                        <div id="product_value" class="form__group hide">
+                            <select  name="product_value" id="product_value">
+                                <option value="product">Product</option>
+                            </select>
+                        </div>
+                        
+                        <div id="variant_value" class="form__group hide">
+                            <select  name="variant_value" id="variant_value">
+                                <option value="variant_value">Variante</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="time">Date de début</label>
+                            <input type="date" name="date_debut" id="date_debut">
+                            <input type="time" name="temps_debut" id="temps_debut">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="time">Date de fin</label>
+                            <input type="date" name="date_fin" id="date_fin">
+                            <input type="time" name="temps_fin" id="temps_fin">
+                            <label for="unlimited_time">
+                              <input type="checkbox" name="unlimited_time" id="unlimited_time">
+                              <span>Pas d'expiration</span>
+                            </label>
+                        </div> 
+                        
+
+
+                        
+                    </div>
+                  </div>
+                  
+                  <aside class="flex__colum">
+                      <div class="card__content p__i__0">
+                            <div class="widget">
+
+                              <div class="widget__title">
+                                <h1>Publier</h1>
+                              </div>
+                          
+                              <div class="widget__body">
+
+                                  <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-save"> </i>
+                                    <span>Enregistrer</span>
+                                  </button> 
+                                  <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-check-circle"> </i>
+                                  <span>Enr. et Modifier
+                                  </span>                                   
+                                </button>
+                              
+                              </div>
+
+                            </div>
+                      </div>
+                      
+                      <div class="card__content p__i__0">
+                            <div class="widget">
+
+                              <div class="widget__title">
+                                <h1>Status</h1>
+                              </div>
+                        
+                              
+                              <div class="widget__body">
+
+                                  <div class="form__group">
+
+                                    <select  name="status" id="status">
+                                      <option value="published">Publié</option>
+                                      <option value="published">Brouillon</option>
+                                      <option value="published">En attente</option>
+                                    </select> 
+                                  </div>
+
+                                  
+
+                              </div>
+
+                            </div>
+                      </div>
+                  </aside>
+
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+      </main>
+
+      <!-- footer 
+            --------->
+      <footer></footer>
+
+      <!-- Scripts -->
+      
+      <script src="../../assets/librairies/media/libraries/jquery/jquery.js"></script>
+      <script src="../../assets/js/script.js"></script>
+      <script src="../../assets/js/input_validations.js"></script>
+        
+      <script>
+        // Caracteres restants sur les inputs
+        $(document).ready(function () {
+          $("#nom_client").on("keyup", function () {
+              
+              let string = $("#nom_client").val();
+              let counter = $("#nom_client").data("counter");
+              let left = counter - string.length;
+  
+              let counterElement = $("#nom_client")[0].nextElementSibling ;
+              counterElement.innerHTML =  '( ' +left+ ' caractère(s) restantes'
+          });
+          
+          $("#email_client").on("keyup", function () {
+              
+              let string = $("#email_client").val();
+              let counter = $("#email_client").data("counter");
+              let left = counter - string.length;
+  
+              let counterElement = $("#email_client")[0].nextElementSibling ;
+              counterElement.innerHTML =  '( ' +left+ ' caractère(s) restantes'
+          }); 
+          
+          $("#password").on("keyup", function () {
+              
+              let string = $("#password").val();
+              let counter = $("#password").data("counter");
+              let left = counter - string.length;
+  
+              let counterElement = $("#password")[0].nextElementSibling ;
+              counterElement.innerHTML =  '( ' +left+ ' caractère(s) restantes'
+          });
+          
+          $("#c_password").on("keyup", function () {
+              
+              let string = $("#c_password").val();
+              let counter = $("#c_password").data("counter");
+              let left = counter - string.length;
+  
+              let counterElement = $("#c_password")[0].nextElementSibling ;
+              counterElement.innerHTML =  '( ' +left+ ' caractère(s) restantes'
+
+          });
+          
+          
+          $("#unlimited_time").on("click", function () {
+              
+              let checked = $(this).is(':checked');
+
+              if (checked) {
+                
+                $("#date_debut").attr("disabled",'true');
+                $("#temps_debut").attr("disabled",'true');
+                $("#date_fin").attr("disabled",'true');
+                $("#temps_fin").attr("disabled",'true');
+
+              }else{
+
+                $("#date_debut").removeAttr("disabled");
+                $("#temps_debut").removeAttr("disabled");
+                $("#date_fin").removeAttr("disabled");
+                $("#temps_fin").removeAttr("disabled");
+
+              }
+
+          });
+          
+          
+          $("#type_option").on("change", function () {
+
+              let type_option = $(this).val();
+             if (type_option=="pourcentage") {
+                $("#free").addClass('hide');
+                $("#pourcentage").removeClass('hide');
+                $("#montant").addClass('hide');
+             }if (type_option=="montant") {
+                $("#free").addClass('hide');
+                $("#pourcentage").addClass('hide');
+                $("#montant").removeClass('hide');
+             }if (type_option=="free") {
+                $("#free").removeClass('hide');
+                $("#pourcentage").addClass('hide');
+                $("#montant").addClass('hide');
+             }
+          });
+          
+          
+          $("#apply_on").on("change", function () {
+
+            let apply_on = $(this).val();
+            console.log(apply_on);
+
+             if (apply_on=="all_order") {
+                $("#order_amount_from_value").addClass('hide');
+                $("#collection_value").addClass('hide');
+                $("#product_value").addClass('hide');
+                $("#variant_value").addClass('hide');
+              }
+              
+              if (apply_on=="order_amount_from") {
+                $("#order_amount_from_value").removeClass('hide');
+                $("#all_order").addClass('hide');
+                $("#product_value").addClass('hide');
+                $("#variant_value").addClass('hide');
+             }
+             
+             if (apply_on=="free") {
+                $("#all_order").addClass('hide');
+                $("#order_amount_from_value").addClass('hide');
+                $("#order_amount_from_value").addClass('hide');
+                $("#product_value").addClass('hide');
+                $("#variant_value").addClass('hide');
+             }
+             
+             if (apply_on=="product_collection") {
+                $("#product_collection_value").removeClass('hide');
+                $("#order_amount_from_value").addClass('hide');
+                $("#product_value").addClass('hide');
+                $("#variant_value").addClass('hide');
+             }
+             
+             if (apply_on=="product") {
+                $("#product_value").removeClass('hide');
+                $("#order_amount_from_value").addClass('hide');
+                $("#product_collection_value").addClass('hide');
+                $("#variant_value").addClass('hide');
+             }
+             
+             if (apply_on=="variant") {
+                $("#product").removeClass('hide');
+                $("#variant_value").removeClass('hide');
+                $("#variant_value").removeClass('hide');
+                $("#order_amount_from_value").addClass('hide');
+                $("#product_collection_value").addClass('hide');
+                $("#variante_value").addClass('hide');
+             }
+
+          });
+        });
+       
+        </script>
+
+    </div>
+  </body>
+</html>

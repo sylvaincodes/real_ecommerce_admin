@@ -183,7 +183,7 @@ form {
 .btn {
   height: auto;
   cursor: pointer;
-  padding-inline: 20px;
+  padding-inline: 10px;
   padding-block: 10px;
   border: none;
 }
@@ -192,9 +192,16 @@ form {
   background: $white;
   padding-block: 10px;
   color: $first-color;
-  border: 1px solid $first-color;
+  border: 1px solid $silver;
 }
 
+.p-10{
+  padding:10px;
+}
+
+.info{
+  color:$blue;
+}
 .btn:hover {
   background: $first-color;
   color: $white;
@@ -315,9 +322,31 @@ input[type="radio"] {
 }
 
 table{
-  border-collapse: collapse;
-  padding: 10px;
+  // border-collapse: collapse;
+  // padding: 10px;
+  // margin-left: 20px;
+  tbody
+  {
+    tr{
+      background: $silver;
+      font-size: $fs-7;
+
+      // &:hover ~ tr{
+      //     td{
+      //       display:block;
+      //     }
+      // } 
+    }
+
+  }
+
+  thead{
+    tr{
+      font-size: $fs-7;
+    }
+  }
 }
+
 
 
 thead, tbody, tfoot, tr, td, th {
@@ -326,7 +355,27 @@ thead, tbody, tfoot, tr, td, th {
   border-width: 0;
   text-align: left;
   position:relative;
+  padding-block: 5px;
+  padding-inline: 5px;
+  width: auto;
 }
+
+  .text_left{
+    display: none !important;
+    position: absolute;
+    background: #0c354c;
+    color: #fff;
+    padding-inline: 4px;
+    border-radius: 50%;
+    left: -50%;
+    border: 1px solid white;
+    box-shadow: 0 0 0.8rem black;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    display: flex;
+    font-size: 10px;
+  }
 
 thead{
   border-bottom: 1px solid $silver;
@@ -395,7 +444,16 @@ select{
 
 .flex__item{
   display: flex;
-  justify-content: space-between;
+}
+
+
+.justify-content-between{
+  justify-content:space-between;
+}
+
+.underline{
+
+  text-decoration: underline;
 }
 
 .bg-primary{
@@ -463,6 +521,7 @@ select{
 
 .link{
   color:$first-color;
+  text-decoration: underline;
 }
 
 
@@ -512,7 +571,6 @@ select{
       transform: translateX(0);
     }
     
-    
     &.round{
       border-radius: 34px;
 
@@ -542,7 +600,7 @@ select{
 
 .show{
   display: show !important;
-  animation: show .5s ease;
+  animation: growDown .5s ease;
 }
 
 .col-12{
@@ -586,6 +644,7 @@ select{
 
 .d-inherit{
   display:inherit !important;
+  grid-template-columns: auto;
 }
 
 .m-b-10{
@@ -693,4 +752,129 @@ select{
 
 .align-center{
   text-align: center !important;
+}
+
+.pd__inline__10{
+  padding-inline: 10px;
+}
+
+.input__radio{
+  font-size: 20px;
+}
+
+.w_100{
+  width: 100%;
+}
+
+.m-l-10{
+  margin-left: 10px;
+}
+
+.btn-primary{
+  background: $first-color;
+  color:$white;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap: 10px;
+  width: fit-content;
+}
+
+input[type="checkbox"]{
+  cursor:pointer;
+  height: 25px;
+  width: 25px;
+  background-color: $first-color;
+
+  &:checked{
+    color: $first-color;
+  }
+}
+
+.custom__checkox{
+  
+  padding: 10px;
+  border: 2px solid $first-color;
+}
+
+.child{
+
+  td{
+    // display: none;
+    ul{
+    width: max-content;
+    li{
+      display: flex;
+      justify-content: space-between;
+
+      span{
+        margin-left:20px;
+      }
+
+      div{
+        margin-left:20px;
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    li{
+
+      display:flex;
+      align-items:center;
+      i{
+        color: $white;
+        align-self: center;
+        &:hover{
+         transform: scale(1.2);
+        }
+      }
+      a{
+        color: $white;
+        font-size: $fs-5;
+
+        &.active{
+          background:$white;
+          padding-inline:10px;
+          color:$first-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.d-none{
+  display:none;
+}
+
+.flex__colum{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex__row{
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+}
+
+.p-l-10{
+  padding-left: 10px;
+}
+
+.p-t-10{
+  padding-top: 10px;
 }

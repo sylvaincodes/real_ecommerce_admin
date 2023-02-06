@@ -1,0 +1,68 @@
+.tabs {
+  background: var(--silver); }
+  .tabs .container {
+    padding-block: 10px;
+    padding-inline: 10px; }
+    .tabs .container .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: auto;
+      gap: 60px; }
+      .tabs .container .wrapper h6 {
+        font-size: var(--fs-7);
+        font-weight: 400; }
+      .tabs .container .wrapper .tabs__content .container {
+        padding-inline: 40px;
+        padding-block: 20px; }
+        .tabs .container .wrapper .tabs__content .container .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: justify-content;
+          row-gap: 20px; }
+          .tabs .container .wrapper .tabs__content .container .wrapper .tab__item {
+            background: var(--white);
+            color: var(--black);
+            box-shadow: var(--shadow-2);
+            width: 100%;
+            cursor: pointer;
+            border-radius: var(--radius-xm);
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            justify-content: flex-start;
+            padding-block: 40px;
+            padding-inline: 40px; }
+            .tabs .container .wrapper .tabs__content .container .wrapper .tab__item form {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              gap: 20px; }
+            .tabs .container .wrapper .tabs__content .container .wrapper .tab__item .input__text {
+              border-bottom: 2px solid var(--white);
+              padding-block: 10px;
+              width: 100%; }
+              .tabs .container .wrapper .tabs__content .container .wrapper .tab__item .input__text:focus {
+                border-bottom: 2px solid var(--first-color);
+                animation: width .9s ease-out; }
+            .tabs .container .wrapper .tabs__content .container .wrapper .tab__item .add__more {
+              position: absolute;
+              top: 5px;
+              right: 0;
+              color: var(--first-color);
+              font-size: var(--fs-7); }
+      .tabs .container .wrapper .tabs__content h6 {
+        border-bottom: 1px solid var(--black); }
+      .tabs .container .wrapper::-webkit-scrollbar {
+        display: none; }
+
+.tabs
+.tabs
+.tabs
+.logo__upload {
+  visibility: hidden;
+  appearance: inherit; }
+
+.logo_label {
+  background: var(--first-color); }

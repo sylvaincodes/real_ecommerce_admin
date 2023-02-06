@@ -44,7 +44,7 @@ header {
         .wrapper{
             .card__content{
                 margin-block: 10px;
-                padding-block: 10px;
+                padding-block: 20px;
                 padding-inline: 20px;
                 border-radius: 1px;
                 background:$white;
@@ -52,7 +52,27 @@ header {
                 height:fit-content;
                 overflow: auto;
                 
+                &.p__i__0{
+                  padding-inline:0 !important;
+                }
 
+                .widget__title{
+                  border-bottom: 1px solid $black;
+                  padding-inline-start: 20px;
+                }
+
+                .widget__body{
+                  padding-block-start: 10px;
+                  padding-inline: 20px;
+                  display:flex;
+                  gap: 10px;
+                  flex-direction: row;
+                  justify-content: space-between;
+
+                  &button{
+                    display:flex;
+                  }
+                }
                 td{
                   text-align:left;
                 }

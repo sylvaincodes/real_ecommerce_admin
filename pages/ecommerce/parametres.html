@@ -35,7 +35,6 @@
         -------- -->
     <div class="site">
       
-
       <div class="search__content">
         <i class="ri-close-line btn close-btn" title="GO"></i>
         <form>
@@ -89,6 +88,15 @@
                   <h6>Administrations</h6>
                 </a>
               </li>
+
+              <li class="menu__item">
+                <a href="./index.html">
+                  <i class="ri-store-line"></i>
+                  <h6>Ecommerce</h6>
+                </a>
+              </li>
+
+
             </ul>
           </div>
 
@@ -182,13 +190,13 @@
               <ul>
                 <li>
                   <a href="./index.html">
-                    Paramètres > 
+                    Ecommerce > 
                   </a>
                 </li>
                 <li>
                   
                   <a href="#">
-                  Générales
+                  Paramètres
                   </a>
 
                 </li>
@@ -203,13 +211,13 @@
           <div class="container">
 
             <h1>Générales</h1>  
-            <div class="wrapper">
+            <div class="wrapper no_">
 
               <div class="card__content">
                 <h1>Information de base</h1>
-                <h2>
+                <p>
                     Cette adresse apparaîtra sur votre facture et sera utilisée pour calculer votre prix d'expédition.
-                </h2>
+                </p>
                   <form>
                     <div class="input-group">
                        <label for="shop__name">Nom de la boutique</label>
@@ -240,7 +248,7 @@
                     
         
                     <div class="input-group">
-                      <label for="shop__country">Pays</label>
+                      <label for="shop__check">Pays</label>
                       <input type="" name="" id="countries" class="text__input">
                     </div>
 
@@ -288,9 +296,9 @@
               
               <div class="card__content">
                 <h1>Format numéro de commande</h1>
+                <p>Modifier le format du code de commande (facultatif)</p>
                
                   <form>
-                    <h2>Modifier le format du code de commande (facultatif)</h2>
                     <div class="input-group">
                        <label for="order_number__first">Commence par</label>
                        <input maxlength="10" id="order_number__first" type="text" class="text__input" >
@@ -317,11 +325,10 @@
                   </form>
               </div>
               
-
-                            
+             
               <div class="card__content">
                 <h1>Monnaies</h1>
-                <h2>Liste des devises utilisées sur le site Web</h2>
+                <p>Liste des devises utilisées sur le site Web</p>
                   <form>
                    
                     <div class="input-group">
@@ -351,13 +358,12 @@
                   </form>
               </div>
 
-
-                            
+                           
               <div class="card__content">
                 <h1>Information de base</h1>
-                <h2>
+                <p>
                     Cette adresse apparaîtra sur votre facture et sera utilisée pour calculer votre prix d'expédition.
-                </h2>
+                </p>
                   <form>
                     <table  class="middle__table" style="width:100%">
                       <thead class="bg__color">
@@ -429,12 +435,312 @@
                           </tbody>
                     </table>
 
-                    <a id="add_new_monnaie" href="#" class="">Ajouter un nouveau </a>
-
+                    <div>
+                      <button class="btn bg-primary">Ajouter</button>
+                    </div>
                  
                   </form>
               </div> 
    
+
+              <div class="card__content">
+                <h1>Locatoins</h1>
+                <p>
+                    Cette adresse apparaîtra sur votre facture et sera utilisée pour calculer votre prix d'expédition.
+                </p>
+                  <form>
+                    <table  class="middle__table" style="width:100%">
+                      <thead class="bg__color">
+                          <tr>  
+                              <th>Nom</th>
+                              <th>Email</th>
+                              <th>Téléphone</th>
+                              <th>Adresse</th>
+                              <th>Par default</th>
+                              <th>Opérations</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody id="monnaie__row">
+                        
+                          <tr>
+
+                            <td>Bulbière</td>
+                            <td>bulbiere@site.com</td>
+                            <td>+22098767576</td>
+                            <td>Adresse ici</td>
+                            <td>Oui</td>
+                            <td>
+                              <button> <i class="ri-edit-line"> </i> </button>
+                            </td>
+
+                          </tr>                         
+
+                          </tbody>
+                    </table>
+
+                   
+                    <div>
+                      <button class="btn bg-primary">Ajouter</button>
+                      <button class="btn bg-primary">Changer de location</button>
+                    </div>
+                 
+                  </form>
+              </div> 
+
+              <div class="card__content">
+                <h1>Autres options</h1>
+                <p>Paniers , commentaires etc......</p>
+
+
+                <form>
+                  <table  class="middle__table" style="width:100%">
+                   
+                    <tbody id="">
+                      
+                        <tr>
+                          
+                          <td>
+                            <h2> Activer le panier ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_cart_yes flex__item">
+                              <input id="enable__shopping_cart_yes" class="input__radio" type="radio" name="enable__shopping_cart" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_cart_no">
+                              <input id="enable__shopping_cart_no" class="input__radio" type="radio" name="enable__shopping_cart" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        
+                        </tr> 
+                        
+                        <tr>
+                          
+                          <td>
+                            <h2> Activer la tax ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_tax_yes">
+                              <input id="enable__shopping_tax_yes" class="input__radio" type="radio" name="enable__shopping_tax" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_tax_no">
+                              <input id="enable__shopping_tax_no" class="input__radio" type="radio" name="enable__shopping_tax" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        
+                        </tr> 
+                        
+                        
+                        <tr>
+                          
+                          <td>
+                            <h2> Afficher les prix avec la taxe ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_tax_price_yes">
+                              <input id="enable__shopping_tax_price_yes" class="input__radio" type="radio" name="enable__shopping_tax_price" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_tax_price_no">
+                              <input id="enable__shopping_tax_price_no" class="input__radio" type="radio" name="enable__shopping_tax_price" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>
+                        
+                        <tr>
+                          
+                          <td>
+                            <h2> Activer les commentaires ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_review_yes">
+                              <input id="enable__shopping_review_yes" class="input__radio" type="radio" name="enable__shopping_review" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_review_no">
+                              <input id="enable__shopping_review_no" class="input__radio" type="radio" name="enable__shopping_review" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>  <tr>
+                          
+                          <td>
+                            <h2> Activer les achats rapides ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_quick_add_yes">
+                              <input id="enable__shopping_quick_add_yes" class="input__radio" type="radio" name="enable__shopping_quick_add" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_quick_add_no">
+                              <input id="enable__shopping_quick_add_no" class="input__radio" type="radio" name="enable__shopping_quick_add" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>  <tr>
+                          
+                          <td>
+                            <h2> Aller directement sur la page de paiement ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_quick_checkout_yes">
+                              <input id="enable__shopping_quick_checkout_yes" class="input__radio" type="radio" name="enable__shopping_quick_checkout" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_quick_checkout_no">
+                              <input id="enable__shopping_quick_checkout_no" class="input__radio" type="radio" name="enable__shopping_quick_checkout" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>  <tr>
+                          
+                          <td>
+                            <h2> Activer les zip codes ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_zip_code_yes">
+                              <input id="enable__shopping_zip_code_yes" class="input__radio" type="radio" name="enable__shopping_zip_code" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_zip_code_no">
+                              <input id="enable__shopping_zip_code_no" class="input__radio" type="radio" name="enable__shopping_zip_code" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>  <tr>
+                          
+                          <td>
+                            <h2> Verifier l'email du client ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_email_verify_yes">
+                              <input id="enable__shopping_email_verify_yes" class="input__radio" type="radio" name="enable__shopping_email_verify" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_email_verify_no">
+                              <input id="enable__shopping_email_verify_no" class="input__radio" type="radio" name="enable__shopping_email_verify" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>   
+                        
+                        <tr>
+                          
+                          <td>
+                            <h2> Activer le paiement pour les visiteurs ? </h2>
+                          </td>
+
+                          <td class="flex__item">  
+                            
+                            <label for="enable__shopping_guest_yes">
+                              <input id="enable__shopping_guest_yes" class="input__radio" type="radio" name="enable__shopping_guest" id=""> Oui 
+                            </label>
+                            
+                            <label for="enable__shopping_guest_no">
+                              <input id="enable__shopping_guest_no" class="input__radio" type="radio" name="enable__shopping_guest" id=""> Non 
+                            </label>
+                            
+                          </td>
+
+                        </tr>  
+                        
+                        <tr>
+
+                          <td>
+
+                            <label for="minimum_order">
+                              Montant minimum d'une commande : 
+                              <input type="text" class="text__input w_100" name="">
+                            </label>
+                          </td>
+
+
+
+                        </tr> 
+                        
+                        
+                        <tr>
+
+                          <td>
+
+                            <label for="minimum_order">
+                              Pays disponibles : 
+                             
+                              <ul>
+                                <li>
+                                  <label for="check__all">
+                                    <input type="checkbox" name="check__input" id="check__all"> Tous
+                                  </label>
+                                </li>
+                                
+                                <li class="m-l-10">
+                                  <label for="france">
+                                    <input name="available_countries[]" type="checkbox" name="check__input" name="" id="france" class="check"> France
+                                  </label>
+                                </li>
+                                
+                                <li class="m-l-10">
+                                  <label for="paysbas">
+                                    <input id="paysbas" name="available_countries[]" type="checkbox" name="check__input" class="check"> Pays bas
+                                  </label>
+                                </li>   
+                                
+                                <li class="m-l-10">
+                                  <label for="allemangne">
+
+                                    <input id="allemangne" name="available_countries[]" type="checkbox" name="check__input" class="check"> Allemangne
+                                  </label>
+                                </li>
+
+                                
+                              </ul>
+                            </label>
+                          </td>
+                          
+                        </tr>
+                        
+                                           
+                    </tbody>
+
+                  </table>
+
+                 
+                  <div>
+                    <button class="btn bg-primary">Sauvegarder</button>
+                  </div>
+               
+                </form>
+
+              </div>
               
 
             </div>
@@ -451,8 +757,6 @@
 
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
-      <script src="../../assets/js/drag_drop.js"></script>
-      <script src="../../assets/js/load_image.js"></script>
 
       <script>
         $( function() {
@@ -468,7 +772,6 @@
         </script>
 
      
-
       <script>
            $( function() {
             $( "#order_number__first" ).keyup(function(e) {
@@ -486,9 +789,20 @@
       <script>
         
         $(document).ready(function (){
-          $("#add_new_monnaie").click(function(){
-            console.log("yessss");
-            $("#monnaie__row").append('<tr><td> <input type="text" name="" id="" class="text__input w__50"></td><td> <input type="text" name="" id="" class="text__input w__50"></td><td> <input type="text" name="" id="" class="text__input w__50"></td><td> <input type="text" name="" id="" class="text__input w__50"></td></tr><td class="align-center"><select id="" class="text__input"><option value="before__number">Avant le nombre</option><option value="after__number">Après le nombre</option></select></td><td class="align-center"><input type="radio" name="default__currency" id=""></td><td class="align-center"><i class="ri-2x ri-delete-bin-7-fill" title="Supprimer"></i></td>');
+          $("#check__all").click(function(){
+
+            if(this.checked) {
+
+              $('.check').prop('checked', true);
+              
+            }
+
+            else
+            {
+
+              $('.check').prop('checked', false)
+
+            }
           });
         });
 

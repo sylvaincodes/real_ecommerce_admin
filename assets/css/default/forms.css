@@ -1,0 +1,8 @@
+.form__group {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .form__group small {
+    position: absolute;
+    right: 0;
+    top: 0; }

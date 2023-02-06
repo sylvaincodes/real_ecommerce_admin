@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'acceuil - Admin</title>
+
+    <!-- scss style 
+    --------------->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/table/css/table.css" />
+
+    <!-- fonts style
+    ------------- -->
+    <link rel="stylesheet" href="../../assets/fonts/font.css" />
+
+    <!-- icons css 
+    ------------->
+
+    <link rel="stylesheet" href=".././assets/icons/flaticons.css" />
+    <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/peicons.min.css" />
+    <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+
+    <!-- data tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
+  </head>
+
+  <body>
+    <!-- site
+        -------- -->
+    <div class="site">
+      
+
+      <div class="search__content">
+        <i class="ri-close-line btn close-btn" title="GO"></i>
+        <form>
+          <input
+            type="text"
+            name="search"
+            class="search__input"
+            placeholder="Recherche"
+            id="search__input"
+            autofocus
+          />
+          <!-- <i class="ri-search-line btn" title="GO"></i> -->
+        </form>
+      </div>
+
+     
+
+      <!-- Menu fixed -->
+      <div class="menu__fixed">
+        <div class="wrapper">
+          <div class="header">
+            <div class="logo">
+              <h6>ADMIN</h6>
+            </div>
+            <i
+              title="fermer le menu"
+              class="ri-close-fill close__menufixed"
+            ></i>
+          </div>
+          <div class="menu__container">
+            <ul>
+              <li class="menu__item ">
+                <a href="../../index.html">
+                  <i class="ri-home-line"></i>
+                  <h6>Tableau de Bord 1</h6>
+                </a>
+              </li>
+
+              <li class="menu__item active">
+                <a href="./pages/parametres/index.html">
+                  <i class="ri-list-settings-line"></i>
+                  <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
+                </a>
+              </li>
+
+              <li class="menu__item">
+                <a href="#">
+                  <i class="ri-user-settings-line"></i>
+                  <h6>Administrations</h6>
+                </a>
+              </li>
+
+
+              <li class="menu__item">
+                <a href="./index.html">
+                  <i class="ri-store-line"></i>
+                  <h6>Ecommerce</h6>
+                </a>
+              </li>
+
+
+
+            </ul>
+          </div>
+
+          <div class="footer">
+            <p>2022 Template</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+
+      <!-- Mobile menu  -->
+      <div class="mobile__menu">
+        <div class="wrapper">
+          <ul>
+            <li>
+              <div class="left">
+                <i class="ri-home-line"> </i>
+                <span> pages </span>
+              </div>
+              <i class="ri-arrowdown-line"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- header
+            ---------- -->
+      <header>
+
+        <div class="middle__header pages">
+          <div class="container">
+            <div class="wrapper">
+              <div class="left">
+                <i class="ri-menu-line icon btn__menufixed"></i>
+                <i class="ri-search-line icon search__btn"></i>
+              </div>
+
+              <div class="center">
+                <div class="search__content_desktop">
+                  <i class="ri-close-line btn close-btn" title="GO"></i>
+                  <form>
+                    <input
+                      type="text"
+                      name="search"
+                      class="search__input"
+                      placeholder="Recherche"
+                      id="search__input"
+                      autofocus
+                    />
+                    <!-- <i class="ri-search-line btn" title="GO"></i> -->
+                  </form>
+                </div>
+              </div>
+
+              <div class="right">
+                <a href="#" class="commandes__button">
+                  <span>
+                    <span class="indicator__value"></span>
+                    <i class="ri-shopping-bag-line icon" title="Commandes"></i>
+                  </span>
+                </a>
+
+                <div class="dropdown__btn user__account">
+                  <img
+                    src="../../assets/images/avatar/avatar-1.png"
+                    alt="avatar__profil"
+                    width="35"
+                    height="35"
+                    class="img__avatar"
+                  />
+                  <h6 class="hide">John Doe</h6>
+                  <!-- <i class="ri-arrow-down-s-line icon" title=""></i> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- main
+            ------ -->
+
+      <main>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs">
+          <div class="container">
+            <nav>
+              <ul>
+                <li>
+                  <a href="./index.html">
+                    Ecommerce > 
+                  </a>
+                </li>
+                <li>
+                  
+                  <a href="#">
+                  Coupons 
+                  </a>
+
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+         <!-- card -->
+         <div class="card__body ">
+            <div class="container">
+              <div class="wrapper d-inherit">
+
+                <div class="card__content">
+                   
+                  <div class="m-b-10 row">
+                    <a href="./form_discounts.html" class="btn btn-primary">
+                        <i class="fa fa-plus"> </i>
+                        <span class="m-l-10">
+                           Ajouter
+                        </span>
+                      </a>
+                  </div>
+                      
+                         
+                  <table id="" class="display" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th> <input type="checkbox" name="" id=""> </th>
+                              <th>ID</th>
+                              <th>Detail</th>
+                              <th>Utilisé</th>
+                              <th>Date de début</th>
+                              <th>Date de fin</th>
+                              <th class="hide">Opérations</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                            <tr class="parent">
+
+                              <!-- modal -->
+                                <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
+                                    
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">
+                                                   Confirmer la suppression
+                                                </h1>
+                                                <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                
+                                            <div class="modal-body">
+                                                <div>Etes vous sure de supprimer cet enregistrement ?</div>
+                                            </div>
+                                
+                                            <div class="modal-footer">
+                                              <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                            </div>
+
+
+                                        </div>
+                                    
+                                </div>
+
+                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td>1</td>
+                              <td>
+                                <ul class="">
+                                    <li>
+                                        <strong> Catégorie :  </strong>  <span> Coupon </span>
+                                    </li>
+                                    <li>
+                                        <strong> Type : </strong> <span> Pourcentage de réduction ( 10 % achat ) </span> 
+                                    </li>
+                                    <li>  
+                                        <strong>Appliquer sur  :</strong> <span> Tous les produits  </span>
+                                    </li>
+
+                                    <li>
+                                        <strong>Nombre de produits  :</strong> <span> 1 </span>
+                                    </li>
+
+
+                                </ul>
+                              </td>
+                              <td>  <strong> Quantité utilisé : </strong>  <span>  2 / Infini </span> </td>
+                              
+                              <td>2011-03-25</td>
+                              <td>2011-04-25</td>
+                              
+                              <td class="">
+
+                                <div class="flex__item">
+                                  
+                                <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                  <i data-toggle="tooltip" data-placement="top"
+                                    title="Supprimer"
+                                    class="fa fa-trash">
+                                      
+                                    </i>
+                                </a>
+                                
+                                </div>
+
+                                <!-- form delete -->
+                                <form class="hide" id="targetID1"
+                                  action=""
+                                  method="POST">
+                                 
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit"><i
+                                          class="fa fa-trash"></i>
+                                        </button>
+                                </form>
+
+                              </td>
+
+                            </tr>
+
+                            <tr class="child">
+                                    <td colspan="7">
+                                        <ul>
+                                          <li> 
+                                            
+                                          <strong> Opérations  :  </strong> 
+   
+                                              <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
+                                        
+                                          </li>
+                                        </ul>
+
+                                    </td>
+                              </tr> 
+
+                          </tbody>
+                          
+                          </table>
+
+                      </div>
+
+                      <div class="pagination">
+                         <ul>
+                          
+                          <li> <i class="ri-4x ri-arrow-left-circle-fill"> </i> </li>
+                          <li> <a href="">1</a> </li>
+                          <li> <a href="" class="active">2</a> </li>
+                          <li> <a href="">3</a> </li>
+                          <li> <i class="ri-4x ri-arrow-right-circle-fill"> </i> </li>
+                         </ul>
+                         
+                      </div>
+    
+                  </div>
+    
+
+              </div>
+            </div>
+        </div>
+
+
+      </main>
+
+      <!-- footer 
+            --------->
+      <footer></footer>
+
+      <!-- Scripts -->
+      <script src="../../assets/js/script.js"></script>
+     
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+      
+    
+      <script >
+        $(document).ready(function () {
+            $('#example').DataTable();
+            });
+
+        const text_left = document.querySelectorAll('.text_left');
+
+        text_left.forEach(element => {
+            
+            element.addEventListener('click', function(e) {
+                    console.log(element);
+            })
+      });
+
+
+      </script>
+
+    </div>
+  </body>
+</html>

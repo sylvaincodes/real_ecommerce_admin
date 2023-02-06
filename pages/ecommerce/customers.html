@@ -9,6 +9,7 @@
     <!-- scss style 
     --------------->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/librairies/table/css/table.css" />
 
     <!-- fonts style
     ------------- -->
@@ -21,6 +22,10 @@
     <link rel="stylesheet" href="../../assets/icons/ionicons.min.css" />
     <link rel="stylesheet" href="../../assets/icons/peicons.min.css" />
     <link rel="stylesheet" href="../../assets/icons/remixicons.css" />
+
+    <!-- data tables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
   </head>
 
   <body>
@@ -71,6 +76,8 @@
                 <a href="./pages/parametres/index.html">
                   <i class="ri-list-settings-line"></i>
                   <h6>Paramètres</h6>
+                  <!-- <i class="ri-arrow-right-s-line"></i>
+                  <i class="ri-arrow-down-s-line"></i> -->
                 </a>
               </li>
 
@@ -80,13 +87,15 @@
                   <h6>Administrations</h6>
                 </a>
               </li>
-              
+
+
               <li class="menu__item">
-                <a href="#">
+                <a href="./index.html">
                   <i class="ri-store-line"></i>
                   <h6>Ecommerce</h6>
                 </a>
               </li>
+
 
 
             </ul>
@@ -181,14 +190,14 @@
             <nav>
               <ul>
                 <li>
-                  <a href="../../index.html">
-                    Tableau de bord > 
+                  <a href="./index.html">
+                    Ecommerce > 
                   </a>
                 </li>
                 <li>
                   
                   <a href="#">
-                  Ecommerce
+                  Clients 
                   </a>
 
                 </li>
@@ -198,58 +207,89 @@
         </div>
 
          <!-- card -->
-        <div class="card__list parametres">
+         <div class="card__body ">
             <div class="container">
-              <div class="wrapper">
-                <div class="card__item">
-                  <a href="./parametres.html">
-                    <i class="ri-key-2-fill icon-large"></i>
-                    <h6>Paramètres</h6>
-                    <p>Gérer les paramètres </p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./taxes.html">
-                    <i class="ri-money-cny-box-fill icon-large"></i>
-                    <h6>Taxes</h6>
-                    <p>Gérer les taxes</p>
-                  </a>
-                </div> 
-                
-                <div class="card__item">
-                  <a href="./customers.html">
-                    <i class="ri-user-2-fill icon-large"></i>
-                    <h6>Clients</h6>
-                    <p>Gérer les clients</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./discounts.html">
-                  <i class="ri-gift-2-fill icon-large"></i>
-                  <h6>Coupons</h6>
-                  <p>Gérer les coupons</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./shippings.html">
-                  <i class="ri-ship-fill icon-large"></i>
-                  <h6>LIvraisons</h6>
-                  <p>Gérer les livraisons</p>
-                  </a>
-                </div>
-                
-                <div class="card__item">
-                  <a href="./backup.html">
-                  <i class="ri-keynote-line icon-large"></i>
-                  <h6>Commenatires</h6>
-                  <p>Gérer les commentaires</p>
-                  </a>
-                </div>
+              <div class="wrapper d-inherit">
 
-          
+                <div class="card__content">
+                   
+                  <div class="m-b-10 row">
+                    <a href="./form_customers.html" class="btn btn-primary">
+                        <i class="fa fa-plus"> </i>
+                        <span class="m-l-10">
+                           Ajouter
+                        </span>
+                      </a>
+                  </div> 
+                                               
+                  <table id="" class="display" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th> <input type="checkbox" name="" id=""> </th>
+                              <th>ID</th>
+                              <th>Nom</th>
+                              <th>Email</th>
+                              
+                              <th>Crée le </th>
+                              <th class="hide">Opérations</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                            <tr class="parent">
+                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td>1</td>
+                              <td>Nom</td>
+                              <td>Email</td>
+                              
+                              <td>2011-04-25</td>
+                              
+                              <td class="hide">
+                                <div class="flex__item">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa-trash"> </i> </button>
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr class="child">
+                                    <td colspan="7">
+                                        <ul>
+                                          <li> 
+                                            
+                                          <strong> Opérations  :  </strong> 
+
+                                            <div class="">
+                                              <button class="btn btn-primary" title="Modifier"> <i class="fa-2x a1 fa-edit"> </i> </button>
+                                              <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
+                                            </div>
+                                            
+                                          </li>
+                                        </ul>
+
+                                    </td>
+                              </tr> 
+
+                          </tbody>
+                          
+                          </table>
+
+                      </div>
+
+                      <div class="pagination">
+                         <ul>
+                          
+                          <li> <i class="ri-4x ri-arrow-left-circle-fill"> </i> </li>
+                          <li> <a href="">1</a> </li>
+                          <li> <a href="" class="active">2</a> </li>
+                          <li> <a href="">3</a> </li>
+                          <li> <i class="ri-4x ri-arrow-right-circle-fill"> </i> </li>
+                         </ul>
+                         
+                      </div>
+    
+                  </div>
+    
+
               </div>
             </div>
         </div>
@@ -263,8 +303,26 @@
 
       <!-- Scripts -->
       <script src="../../assets/js/script.js"></script>
-      <script src="../../assets/js/drag_drop.js"></script>
+     
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+      
+    
+      <script >
+        $(document).ready(function () {
+            $('#example').DataTable();
+            });
 
+        const text_left = document.querySelectorAll('.text_left');
+
+        text_left.forEach(element => {
+            
+            element.addEventListener('click', function(e) {
+                    console.log(element);
+            })
+      });
+
+      </script>
 
     </div>
   </body>
