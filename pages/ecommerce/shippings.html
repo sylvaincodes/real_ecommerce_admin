@@ -241,7 +241,7 @@
                                 </div>
                     
                                 <div class="modal-footer">
-                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">Enregistrer</button>
                                 </div>
                             </div>
                           </div>
@@ -261,8 +261,8 @@
                             </div>
                             
                             <div class="row">
-                                <strong> 100  - 200 </strong>
-                                <strong class="m-l-auto"> 200 </strong>
+                                <strong> 100 <span>$</span>  - 200  <span>$</span> </strong>
+                                <strong class="m-l-auto"> 200 <span>$</span> </strong>
                             </div>
                         </div> 
 
@@ -272,52 +272,74 @@
 
                                 <div id="modalDetail1" class="rules form__body hide show">
 
+
+                                  <div class="row">
+
                                     <div class="form__group">
-                                        <label for="title" class="control__label required" aria-required="true">
+                                      <label for="title" class="control__label required" aria-required="true">
                                         Libellé
-                                    </label>
-                                    <input maxlength="120" class="is-valid" type="text" name="libelle" id="libelle" required placeholder="" >
-                                    
+                                      </label>
+                                      <input maxlength="120" class="is-valid" type="text" name="libelle" id="libelle" required placeholder="" >
+                                      
                                     </div>
+
+                                    <div class="form__group">
+                                      <label for="rule_type" class="control__label required" aria-required="true">
+                                      Catégorie de mesure
+                                      </label>
+                                      <select required name="rule_type" id="rule_type">
+                                              <option value="poids">Poids</option>
+                                              <option value="promotion">Prix</option>
+                                      </select>
+                                      
+                                    </div>
+
+                                    <div class="form__group">
+                                      <label for="rule_type" class="control__label required" aria-required="true">
+                                      Valeur minimum :
+                                      </label>
+                                     <input required type="number" name="valeur_min" id="valeur_min">
+                                      
+                                  </div>
+
+                                  <div class="form__group">
+                                    <label for="rule_type" class="control__label required" aria-required="true">
+                                    Valeur Maximum :
+                                    </label>
+                                    <input required type="number" name="valeur_max" id="valeur_max">
+                                </div>
+                                
+
+                                  </div>
                                     
 
                                     <div class="row">
+ 
+                                       
+                                        
+                                        
 
                                         <div class="form__group">
-                                            <label for="rule_type" class="control__label required" aria-required="true">
-                                            Catégorie de mesure
-                                            </label>
-                                            <select required name="rule_type" id="rule_type">
-                                                    <option value="poids">Poids</option>
-                                                    <option value="promotion">Prix</option>
-                                            </select>
-                                            
+                                                <label for="rule_type" class="control__label required" aria-required="true">
+                                                    Frais de livraison
+                                                </label>
+                                                <input required type="number" name="shipping_fee" id="shipping_fee">
+                                                
                                         </div>
-                                        
-                                        <div class="form__group">
-                                            <label for="rule_type" class="control__label required" aria-required="true">
-                                            Valeur minimum :
-                                            </label>
-                                           <input required type="number" name="valeur_min" id="valeur_min">
-                                            
-                                        </div>
-                                        
-                                        <div class="form__group">
-                                            <label for="rule_type" class="control__label required" aria-required="true">
-                                            Valeur Maximum :
-                                            </label>
-                                            <input required type="number" name="valeur_max" id="valeur_max">
-                                        </div>
+
                                     </div>
 
 
-                                    <div class="form__group">
-                                            <label for="rule_type" class="control__label required" aria-required="true">
-                                                Frais de livraison
-                                            </label>
-                                            <input required type="number" name="shipping_fee" id="shipping_fee">
-                                            
+                                    <div class="row">
+ 
+                                       
+                                        
+
                                     </div>
+
+                                    
+
+
 
                                  
 

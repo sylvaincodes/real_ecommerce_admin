@@ -248,6 +248,10 @@ i {
   gap: 10px;
 }
 
+input{
+  width: 100%;
+}
+
 .alert-info {
   display: flex;
   align-items: center;
@@ -328,7 +332,7 @@ table{
   tbody
   {
     tr{
-      background: $silver;
+      // background: $silver;
       font-size: $fs-7;
 
       // &:hover ~ tr{
@@ -396,6 +400,14 @@ thead{
   color: $white;
   border-radius: 5px;
   font-weight: 900;
+
+  &.info{
+    background: $white;
+    font-size: $fs-7;
+    border-radius: 0px;
+    color: $black;
+    padding-inline: 0px;
+  }
 }
 
 
@@ -438,10 +450,6 @@ a:hover{
   padding: 5px;
 }
 
-select{
-  padding: 10px;
-}
-
 .flex__item{
   display: flex;
 }
@@ -449,6 +457,11 @@ select{
 
 .justify-content-between{
   justify-content:space-between;
+}
+
+
+.justify-content-center{
+  justify-content:center;
 }
 
 .underline{
@@ -509,6 +522,7 @@ select{
   display: flex;
   gap: 20px;
   font-size: medium;
+  
 }
 
 .text__content{
@@ -536,6 +550,7 @@ select{
     opacity: 0;
     height: 0;
     width: 0;
+    max-width: 200px;
 
     &:checked + .slider {
       background-color: $first-color;
@@ -806,6 +821,7 @@ input[type="checkbox"]{
     li{
       display: flex;
       justify-content: space-between;
+      gap: 20px;
 
       span{
         margin-left:20px;
@@ -877,4 +893,85 @@ input[type="checkbox"]{
 
 .p-t-10{
   padding-top: 10px;
+}
+
+
+input{
+  outline: none;
+  border: 2px solid $black;
+  padding: 10px;
+}
+
+
+select{
+  outline: none;
+  border: 2px solid $black;
+  padding: 10px;
+  background: transparent;
+  min-width: 200px;
+  
+  
+  option{
+    background: $white;
+    border: none;
+    outline: none;
+    
+    &:checked {
+      background: $first-color;
+    }
+    
+    &:not(:checked) {
+      background: $white;
+    }
+    
+    &:active{
+      background: $first-color;
+    }
+  }
+}
+
+
+// Ratings
+
+.rating_wrap{
+
+  position: relative;
+  width: 100px;
+  display: flex;
+  align-items: center;
+
+  .ratings{
+      position: absolute;
+    }
+    .product_rate{
+    position: absolute;
+
+      i{
+        color: orange;
+      }
+    
+  }
+
+
+}
+
+.d-inline-block{
+  display: inline-block;
+}
+
+
+input[type="color"]{
+  appearance: none;
+  background-color: transparent;
+  width: 61px;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: initial;
+  border: 2px solid black;
+}
+
+.no__gap{
+  gap:0;
 }
