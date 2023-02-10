@@ -325,45 +325,6 @@ input[type="radio"] {
   float: left;
 }
 
-table{
-  // border-collapse: collapse;
-  // padding: 10px;
-  // margin-left: 20px;
-  tbody
-  {
-    tr{
-      // background: $silver;
-      font-size: $fs-7;
-
-      // &:hover ~ tr{
-      //     td{
-      //       display:block;
-      //     }
-      // } 
-    }
-
-  }
-
-  thead{
-    tr{
-      font-size: $fs-7;
-    }
-  }
-}
-
-
-
-thead, tbody, tfoot, tr, td, th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-  text-align: left;
-  position:relative;
-  padding-block: 5px;
-  padding-inline: 5px;
-  width: auto;
-}
-
   .text_left{
     display: none !important;
     position: absolute;
@@ -380,10 +341,6 @@ thead, tbody, tfoot, tr, td, th {
     display: flex;
     font-size: 10px;
   }
-
-thead{
-  border-bottom: 1px solid $silver;
-}
 
 .text-center{
   text-align: center;
@@ -522,7 +479,7 @@ a:hover{
   display: flex;
   gap: 20px;
   font-size: medium;
-  
+  flex-direction: row;
 }
 
 .text__content{
@@ -754,6 +711,18 @@ a:hover{
 .justify-space-between{
   justify-content: space-between;
 }
+
+.center{
+  justify-content: center;
+  text-align: center;
+}
+
+
+.left{
+  justify-content: left;
+  text-align: left;
+}
+
 
 .w__50{
   width: 50px;

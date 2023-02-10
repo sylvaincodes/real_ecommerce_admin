@@ -599,22 +599,6 @@ input[type="radio"] {
   margin-right: auto;
   float: left; }
 
-table tbody tr {
-  font-size: 1.5rem; }
-
-table thead tr {
-  font-size: 1.5rem; }
-
-thead, tbody, tfoot, tr, td, th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-  text-align: left;
-  position: relative;
-  padding-block: 5px;
-  padding-inline: 5px;
-  width: auto; }
-
 .text_left {
   display: none !important;
   position: absolute;
@@ -630,9 +614,6 @@ thead, tbody, tfoot, tr, td, th {
   text-align: center;
   display: flex;
   font-size: 10px; }
-
-thead {
-  border-bottom: 1px solid #ebebeb; }
 
 .text-center {
   text-align: center; }
@@ -740,7 +721,8 @@ a:hover {
 .row {
   display: flex;
   gap: 20px;
-  font-size: medium; }
+  font-size: medium;
+  flex-direction: row; }
 
 .text__content {
   font-size: 1.5rem; }
@@ -906,6 +888,14 @@ a:hover {
 
 .justify-space-between {
   justify-content: space-between; }
+
+.center {
+  justify-content: center;
+  text-align: center; }
+
+.left {
+  justify-content: left;
+  text-align: left; }
 
 .w__50 {
   width: 50px; }
@@ -1417,42 +1407,24 @@ header .middle__header.pages {
       .breadcrumbs .container nav ul .active {
         color: #0f3e58; }
 
-.responsive__table li {
-  display: flex;
-  justify-content: space-between; }
-
-.responsive__table .table__header {
-  font-size: 1.5rem;
-  color: #212a2f;
-  font-weight: 900;
-  background: #ebebeb;
-  padding: 10px; }
-
-.responsive__table .table__row {
-  padding-block: 10px;
-  font-size: 1.5rem; }
-  .responsive__table .table__row a {
-    color: #0f3e58;
-    font-weight: 500; }
-
-.dataTables_filter {
-  display: none; }
-
-.table__list {
-  border: 1px solid silver;
-  width: 100%; }
-  .table__list h6 {
-    font-size: 1.2rem; }
-  .table__list p {
-    color: #212a2f;
-    font-size: 1.5rem;
-    margin-block: 10px; }
-  .table__list th {
-    font-size: 1.5rem;
-    padding: 10px; }
-  .table__list td {
-    font-size: 1.5rem;
-    border: 1px solid silver;
+#responsive__table {
+  overflow-x: auto;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.2rem; }
+  #responsive__table tr:nth-child(even) {
+    background: #ebebeb; }
+  #responsive__table tr:hover {
+    background-color: #ddd;
+    cursor: pointer; }
+  #responsive__table tr th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0f3e58;
+    color: #fff; }
+  #responsive__table tr td {
+    border: 1px solid #ebebeb;
     padding: 10px; }
 
 .rv-media-main-wrapper .rv-media-top-header {

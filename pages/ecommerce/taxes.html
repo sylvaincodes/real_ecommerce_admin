@@ -225,7 +225,7 @@
                   </div> 
                       
                          
-                  <table id="" class="display" style="width:100%">
+                  <table id="responsive__table">
                       <thead>
                           <tr>
                               <th> <input type="checkbox" name="" id=""> </th>
@@ -235,11 +235,27 @@
                               <th>Priorité</th>
                               <th>Status</th>
                               <th>Crée le </th>
-                              <th class="hide">Opérations</th>
+                              <th>Opérations</th>
                           </tr>
                       </thead>
                       <tbody>
                             <tr class="parent">
+
+                               <!-- form delete -->
+                               <div class="hide">
+
+                                 <form  id="targetID1"
+                                 action=""
+                                 method="POST">
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit">
+                                    <i
+                                          class="fa fa-trash"></i>
+                                  </button>
+                                </form>
+                              </div>
+
+
 
                               <!-- modal -->
                               <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
@@ -262,16 +278,7 @@
                                 </div>
                               </div>
 
-                              <!-- form delete -->
-                              <form class="hide" id="targetID1"
-                                action=""
-                                method="POST">
-                                <input type="hidden" name="discount_id" value="1" />
-                                <button type="submit"><i
-                                        class="fa fa-trash"></i>
-                                </button>
-                              </form>
-
+                             
                               <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
                               <td>1</td>
                               <td>TVA</td>
@@ -281,38 +288,83 @@
                               <td>  <span class="badge">Publié</span> </td>
                               <td>2011-04-25</td>
                               
-                              <td class="hide">
-                                <div class="flex__item">
+                              <td class="">
+                                <div class="row center">
                                   <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
                                   <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
                                     <i data-toggle="tooltip" data-placement="top"
                                       title="Supprimer"
                                       class="fa-2x fa fa-trash">
-                                        
+                                      </i>
+                                  </a>
+                                </div>
+                              </td>
+                            </tr>
+                            
+                            <tr class="parent">
+
+                               <!-- form delete -->
+                               <div class="hide">
+
+                                 <form  id="targetID1"
+                                 action=""
+                                 method="POST">
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit">
+                                    <i
+                                          class="fa fa-trash"></i>
+                                  </button>
+                                </form>
+                              </div>
+
+
+
+                              <!-- modal -->
+                              <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">
+                                           Confirmer la suppression
+                                        </h1>
+                                        <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div>Etes vous sure de supprimer cet enregistrement ?</div>
+                                    </div>
+                        
+                                    <div class="modal-footer">
+                                      <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                    </div>
+                                </div>
+                              </div>
+
+                             
+                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td>1</td>
+                              <td>TVA</td>
+                              <td>10%</td>
+                              <td>1</td>
+                              
+                              <td>  <span class="badge">Publié</span> </td>
+                              <td>2011-04-25</td>
+                              
+                              <td class="">
+                                <div class="row center">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                    <i data-toggle="tooltip" data-placement="top"
+                                      title="Supprimer"
+                                      class="fa-2x fa fa-trash">
                                       </i>
                                   </a>
                                 </div>
                               </td>
                             </tr>
 
-                            <tr class="child">
-                                    <td colspan="7">
-                                        <ul>
-                                          <li> 
-                                            
-                                          <strong> Opérations  :  </strong> 
-
-                                            <div class="">
-                                              <button class="btn btn-primary" title="Modifier"> <i class="fa-2x a1 fa-edit"> </i> </button>
-                                              <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
-                                            </div>
-                                            
-                                          </li>
-                                        </ul>
-
-                                    </td>
-                              </tr> 
-
+                             
+                            
                           </tbody>
                           
                           </table>
