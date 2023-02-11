@@ -225,7 +225,14 @@
                   <table id="responsive__table">
                       <thead>
                           <tr>
-                              <th> <input type="checkbox" name="" id=""> </th>
+
+                              <th> <label class="checkbox__container">
+                                <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                <span class="checkmark custom"> </span>
+                              </label> 
+                             </th>
+                            
+                            </th>
                               <th>ID</th>
                               <th>Nom</th>
                               <th>Email</th>
@@ -236,7 +243,14 @@
                       </thead>
                       <tbody>
                             <tr class="parent">
-                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td>
+
+                                <label class="checkbox__container">
+                                  <input type="checkbox" name="" class="custom__checkox"> 
+                                  <span class="checkmark"> </span>
+                                </label>
+                                
+                              </td>
                               <td>1</td>
                               <td>Nom</td>
                               <td>Email</td>
@@ -291,18 +305,23 @@
       
     
       <script >
-        $(document).ready(function () {
-            $('#example').DataTable();
-            });
+         $(document).ready(function (){
+          $("#check__all").click(function(){
 
-        const text_left = document.querySelectorAll('.text_left');
+            if(this.checked) {
 
-        text_left.forEach(element => {
-            
-            element.addEventListener('click', function(e) {
-                    console.log(element);
-            })
-      });
+              $('.custom__checkox').prop('checked', true);
+              
+            }
+
+            else
+            {
+
+              $('.custom__checkox').prop('checked', false)
+
+            }
+          });
+        });
 
       </script>
 

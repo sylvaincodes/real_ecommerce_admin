@@ -221,12 +221,16 @@
                         </span>
                       </a>
                   </div>
-                      
-                         
+                                               
                   <table id="responsive__table">
                       <thead>
                           <tr>
-                              <th> <input type="checkbox" name="" id=""> </th>
+                              <th> 
+                                <label class="checkbox__container">
+                                    <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                    <span class="checkmark custom"> </span>
+                                  </label> 
+                              </th>
                               <th>ID</th>
                               <th>Detail</th>
                               <th>Utilisé</th>
@@ -264,7 +268,14 @@
                                     
                                 </div>
 
-                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td> 
+
+                                <label class="checkbox__container">
+                                  <input type="checkbox" name="" class="custom__checkox"> 
+                                  <span class="checkmark"> </span>
+                                </label>
+                              
+                              </td>
                               <td>1</td>
                               <td>
                                 <ul class="left">
@@ -294,8 +305,7 @@
 
                                 <div class="row center">
                                   
-                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
-
+                                <button class="btn btn-primary" title="Modifier"> <i class="fa fa-edit"> </i> </button>
                                 <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
                                   <i data-toggle="tooltip" data-placement="top"
                                     title="Supprimer"
@@ -309,8 +319,7 @@
                                 <!-- form delete -->
                                 <form class="hide" id="targetID1"
                                   action=""
-                                  method="POST">
-                                 
+                                  method="POST">                                
                                   <input type="hidden" name="discount_id" value="1" />
                                   <button type="submit"><i
                                           class="fa fa-trash"></i>
@@ -361,24 +370,27 @@
       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
       <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
       
-    
-      <script >
-        $(document).ready(function () {
-            $('#example').DataTable();
-            });
+      <script>
 
-        const text_left = document.querySelectorAll('.text_left');
+        $(document).ready(function (){
+          $("#check__all").click(function(){
 
-        text_left.forEach(element => {
-            
-            element.addEventListener('click', function(e) {
-                    console.log(element);
-            })
-      });
+            if(this.checked) {
 
+              $('.custom__checkox').prop('checked', true);
+              
+            }
+
+            else
+            {
+
+              $('.custom__checkox').prop('checked', false)
+
+            }
+          });
+        });
 
       </script>
-
     </div>
   </body>
 </html>

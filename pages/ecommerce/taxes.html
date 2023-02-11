@@ -228,7 +228,13 @@
                   <table id="responsive__table">
                       <thead>
                           <tr>
-                              <th> <input type="checkbox" name="" id=""> </th>
+                              <th> <label class="checkbox__container">
+
+                                <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                <span class="checkmark custom"> </span>
+                                
+                              </label> 
+                             </th>
                               <th>ID</th>
                               <th>Libellé</th>
                               <th>Pourcentage</th>
@@ -279,7 +285,16 @@
                               </div>
 
                              
-                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td> <span class="text_left"> + </span> 
+                                
+                                <label class="checkbox__container">
+
+                                  <input type="checkbox" name="" id="" class="custom__checkox"> 
+                                  <span class="checkmark custom"> </span>
+                                  
+                                </label> 
+                              
+                              </td>
                               <td>1</td>
                               <td>TVA</td>
                               <td>10%</td>
@@ -341,7 +356,16 @@
                               </div>
 
                              
-                              <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
+                              <td> <span class="text_left"> + </span> 
+                              
+                                <label class="checkbox__container">
+
+                                  <input type="checkbox" name="" class="custom__checkox"> 
+                                  <span class="checkmark custom"> </span>
+                                  
+                                </label> </td>
+
+
                               <td>1</td>
                               <td>TVA</td>
                               <td>10%</td>
@@ -417,6 +441,24 @@
                     console.log(element);
             })
       });
+      $(document).ready(function (){
+          $("#check__all").click(function(){
+
+            if(this.checked) {
+
+              $('.custom__checkox').prop('checked', true);
+              
+            }
+
+            else
+            {
+
+              $('.custom__checkox').prop('checked', false)
+
+            }
+          });
+        });
+
 
       </script>
 

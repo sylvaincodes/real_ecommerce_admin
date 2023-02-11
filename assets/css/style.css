@@ -937,9 +937,37 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked {
     color: #0f3e58; }
 
-.custom__checkox {
-  padding: 10px;
-  border: 2px solid #0f3e58; }
+.checkbox__container {
+  position: relative; }
+  .checkbox__container:hover input ~ .checkmark {
+    background-color: #ccc; }
+  .checkbox__container .custom__checkox {
+    padding: 10px;
+    opacity: 0; }
+  .checkbox__container input:checked ~ .checkmark {
+    background: #0f3e58; }
+  .checkbox__container input:checked ~ .checkmark:after {
+    display: block; }
+  .checkbox__container .checkmark {
+    position: absolute;
+    top: -13px;
+    left: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ebebeb;
+    box-shadow: 0px 0px 7px black;
+    cursor: pointer; }
+    .checkbox__container .checkmark:after {
+      position: absolute;
+      content: '';
+      background: #fff;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      top: 7px;
+      left: 8px;
+      display: none; }
 
 .child td ul {
   width: max-content; }
