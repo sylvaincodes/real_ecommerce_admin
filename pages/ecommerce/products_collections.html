@@ -32,7 +32,8 @@
     <!-- site
         -------- -->
     <div class="site">
-    
+      
+
       <div class="search__content">
         <i class="ri-close-line btn close-btn" title="GO"></i>
         <form>
@@ -123,7 +124,7 @@
       </div>
 
       <!-- header
-      ----------->
+            ---------- -->
       <header>
 
         <div class="middle__header pages">
@@ -178,10 +179,9 @@
       </header>
 
       <!-- main
-      ------ -->
+            ------ -->
 
       <main>
-
         <!-- breadcrumbs -->
         <div class="breadcrumbs">
           <div class="container">
@@ -195,7 +195,7 @@
                 <li>
                   
                   <a href="#">
-                  Collection de produit 
+                  Labels de produit 
                   </a>
 
                 </li>
@@ -212,7 +212,7 @@
                 <div class="card__content">
                    
                   <div class="m-b-10 row">
-                      <a href="./form_collections.html" class="btn btn-primary">
+                    <a href="./form_collections.html" class="btn btn-primary">
                         <i class="fa fa-plus"> </i>
                         <span class="m-l-10">
                            Ajouter
@@ -220,285 +220,245 @@
                       </a>
                   </div>
                       
-                      <table class="table__list">
+                         
+                  <table id="responsive__table">
+                      <thead>
+                          <tr>
+                              <th>  
+                                <label class="checkbox__container">
+                                  <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                  <span class="checkmark custom"> </span>
+                                </label> 
+                              </th>
 
-                          <thead>
-                              <tr>
-                                  <th> <input type="checkbox" name="" id=""> </th>
-                                  <th>ID</th>
-                                  <th>Image</th>
-                                  <th>Libelle</th>
-                                  <th>Slug</th>
-                                  <th>Status</th>
-                                  <th>Créé le</th>
-                                  <th class="hide">Opérations</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                                <tr class="parent">
+                              <th>ID</th>
+                              <th>Image</th>
+                              <th>Libelle</th>
+                              <th>Slug</th>
+                            
+                              <th>Status</th>
+                              <th>Créé le</th>
+                              <th>Opérations</th>
+                          </tr>
+                      </thead>
 
-                                  <!-- modal -->
-                                  <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
-                                        
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title">
-                                                      Confirmer la suppression
-                                                    </h1>
-                                                    <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                                        <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
-                                                    </button>
-                                                </div>
+                      <tbody>
+                            <tr class="parent">
+
+                              <!-- modal -->
+                                <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
                                     
-                                                <div class="modal-body">
-                                                    <div>Etes vous sure de supprimer cet enregistrement ?</div>
-                                                </div>
-                                    
-                                                <div class="modal-footer">
-                                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
-                                                </div>
-
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">
+                                                   Confirmer la suppression
+                                                </h1>
+                                                <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                                </button>
                                             </div>
-                                        
-                                  </div>
-
-                                  <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
-                                  <td>1</td>
-                                  <td class=""> <img class="" width="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
-                                  <td>
-                                    <a class="link" href="#">
-                                        Offres Spéciales
-                                    </a>
-                                  </td>
-
-                                  <td>offres-special</td>
                                 
-                                  <td> <span class="badge">Publié</span> </td>
-                                  <td>2011-04-25</td>
-                                  
-                                  <td class="hide">
-
-                                    <div class="flex__item">
-                                      
-                                    <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
-                                      <i data-toggle="tooltip" data-placement="top"
-                                        title="Supprimer"
-                                        class="fa fa-trash">
-                                          
-                                        </i>
-                                    </a>
-                                    
-                                    </div>
-
-                                    <!-- form delete -->
-                                    <form class="hide" id="targetID1"
-                                      action=""
-                                      method="POST">
-                                    
-                                      <input type="hidden" name="discount_id" value="1" />
-                                      <button type="submit"><i
-                                              class="fa fa-trash"></i>
-                                            </button>
-                                    </form>
-
-                                  </td>
-
-                                </tr>
-
-                                <tr class="child">
-                                        <td colspan="7">
-                                            <ul>
-                                              <li> 
-                                                
-                                              <strong> Opérations  :  </strong> 
-      
-                                                  <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
-                                            
-                                              </li>
-                                            </ul>
-
-                                        </td>
-                                </tr>
-                                
-                                <tr class="parent">
-
-                                  <!-- modal -->
-                                    <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
-                                        
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title">
-                                                      Confirmer la suppression
-                                                    </h1>
-                                                    <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                                        <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
-                                                    </button>
-                                                </div>
-                                    
-                                                <div class="modal-body">
-                                                    <div>Etes vous sure de supprimer cet enregistrement ?</div>
-                                                </div>
-                                    
-                                                <div class="modal-footer">
-                                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
-                                                </div>
-
-
+                                            <div class="modal-body">
+                                                <div>Etes vous sure de supprimer cet enregistrement ?</div>
                                             </div>
-                                        
-                                    </div>
-
-                                  <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
-                                  <td>2</td>
-                                  <td class=""> <img class="" width="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
-                                  <td>
-                                    <a class="link" href="#">
-                                        Meilleurs ventes
-                                    </a>
-                                  </td>
-                                  <td>
-                                    best-sellers
-                                </td>
                                 
-                                
-                                  <td> <span class="badge">Publié</span> </td>
-                                  <td>2011-04-25</td>
-                                  
-                                  <td class="hide">
-
-                                    <div class="flex__item">
-                                      
-                                    <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
-                                      <i data-toggle="tooltip" data-placement="top"
-                                        title="Supprimer"
-                                        class="fa fa-trash">
-                                          
-                                        </i>
-                                    </a>
-                                    
-                                    </div>
-
-                                    <!-- form delete -->
-                                    <form class="hide" id="targetID1"
-                                      action=""
-                                      method="POST">
-                                    
-                                      <input type="hidden" name="discount_id" value="1" />
-                                      <button type="submit"><i
-                                              class="fa fa-trash"></i>
-                                            </button>
-                                    </form>
-
-                                  </td>
-
-                                </tr>
-
-                                <tr class="child">
-                                        <td colspan="7">
-                                            <ul>
-                                              <li> 
-                                                
-                                              <strong> Opérations  :  </strong> 
-      
-                                                  <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
-                                            
-                                              </li>
-                                            </ul>
-
-                                        </td>
-                                </tr> 
-                                
-                                <tr class="parent">
-
-                                  <!-- modal -->
-                                    <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
-                                        
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title">
-                                                      Confirmer la suppression
-                                                    </h1>
-                                                    <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                                        <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
-                                                    </button>
-                                                </div>
-                                    
-                                                <div class="modal-body">
-                                                    <div>Etes vous sure de supprimer cet enregistrement ?</div>
-                                                </div>
-                                    
-                                                <div class="modal-footer">
-                                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
-                                                </div>
-
-
+                                            <div class="modal-footer">
+                                              <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
                                             </div>
-                                        
-                                    </div>
 
-                                  <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
-                                  <td>3</td>
-                                  <td class=""> <img class="" width="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
-                          
-                                  <td>
-                                    <a class="link" href="#">
-                                        Nouveaux arrivages
-                                    </a>
-                                  </td>
-                                  <td>
-                                    new-arrivages
-                                </td>
-                                
-                                
-                                  <td> <span class="badge">Publié</span> </td>
-                                  <td>2011-04-25</td>
+
+                                        </div>
+                                    
+                                </div>
+
+                              <td> 
+                                <label class="checkbox__container">
+
+                                  <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                  <span class="checkmark custom"> </span>
                                   
-                                  <td class="hide">
-
-                                    <div class="flex__item">
-                                      
-                                    <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
-                                      <i data-toggle="tooltip" data-placement="top"
-                                        title="Supprimer"
-                                        class="fa fa-trash">
-                                          
-                                        </i>
-                                    </a>
-                                    
-                                    </div>
-
-                                    <!-- form delete -->
-                                    <form class="hide" id="targetID1"
-                                      action=""
-                                      method="POST">
-                                    
-                                      <input type="hidden" name="discount_id" value="1" />
-                                      <button type="submit"><i
-                                              class="fa fa-trash"></i>
-                                            </button>
-                                    </form>
-
-                                  </td>
-
-                                </tr>
-
-                                <tr class="child">
-                                        <td colspan="7">
-                                            <ul>
-                                              <li> 
-                                                
-                                              <strong> Opérations  :  </strong> 
-      
-                                                  <button class="btn btn-primary" title="Supprimer"> <i class="fa-2x fa fa fa-trash"> </i> </button>
-                                            
-                                              </li>
-                                            </ul>
-
-                                        </td>
-                                </tr> 
-
-                          </tbody>
+                                </label> 
                               
+                              </td>
+                              <td>1</td>
+                              <td> <img width="50"  height="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
+                              <td>
+                                Offres spéciales
+                              </td>
+                              <td> offres-speciales</td>
+                             
+                             
+                              <td> <span class="badge">Publié</span> </td>
+                              <td>2011-04-25</td>
+                              
+                              <td>
+
+                                <div class="row center">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                    <i data-toggle="tooltip" data-placement="top"
+                                      title="Supprimer"
+                                      class="fa-2x fa fa-trash">
+                                      </i>
+                                  </a>
+                                </div>
+
+                                <!-- form delete -->
+                                <form class="hide" id="targetID1"
+                                  action=""
+                                  method="POST">
+                                 
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit"><i
+                                          class="fa fa-trash"></i>
+                                        </button>
+                                </form>
+
+                              </td>
+                            </tr>
+
+                            <tr class="parent">
+
+                              <!-- modal -->
+                                <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
+                                    
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">
+                                                   Confirmer la suppression
+                                                </h1>
+                                                <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                
+                                            <div class="modal-body">
+                                                <div>Etes vous sure de supprimer cet enregistrement ?</div>
+                                            </div>
+                                
+                                            <div class="modal-footer">
+                                              <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                            </div>
+
+
+                                        </div>
+                                    
+                                </div>
+
+                              <td> <label class="checkbox__container">
+                                <input type="checkbox" name="" id="" class="custom__checkox"> 
+                                <span class="checkmark custom"> </span>
+                              </label>  </td>
+                              <td>2</td>
+                              <td> <img width="50"  height="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
+
+                              <td>
+                                 Meilleures ventes
+                              </td>
+
+                              <td>meilleures-ventes</td>
+                             
+                             
+                              <td> <span class="badge">Publié</span> </td>
+                              <td>2011-04-25</td>
+                              
+                              <td>
+                                <div class="row center">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                    <i data-toggle="tooltip" data-placement="top"
+                                      title="Supprimer"
+                                      class="fa-2x fa fa-trash">
+                                      </i>
+                                  </a>
+                                </div>
+
+                                <!-- form delete -->
+                                <form class="hide" id="targetID1"
+                                  action=""
+                                  method="POST">
+                                 
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit"><i
+                                          class="fa fa-trash"></i>
+                                        </button>
+                                </form>
+
+                              </td>
+
+                            </tr>
+
+                             <tr class="parent">
+
+                              <!-- modal -->
+                                <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
+                                    
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">
+                                                   Confirmer la suppression
+                                                </h1>
+                                                <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                
+                                            <div class="modal-body">
+                                                <div>Etes vous sure de supprimer cet enregistrement ?</div>
+                                            </div>
+                                
+                                            <div class="modal-footer">
+                                              <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                            </div>
+
+                                        </div>
+                                    
+                                </div>
+
+                              <td> <label class="checkbox__container">
+                                <input type="checkbox" name="" id="" class="custom__checkox"> 
+                                <span class="checkmark custom"> </span>
+                              </label> </td>
+                              <td>3</td>
+                              <td> <img width="50"  height="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
+                            
+                              <td>  <strong> Nouvelles arrivages </strong>  </td>
+
+                              <td>nouvelles-arrivages</td>
+                             
+                              <td> <span class="badge">Publié</span> </td>
+                              <td>2011-04-25</td>
+                              
+                              <td>
+
+                                <div class="row center">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                    <i data-toggle="tooltip" data-placement="top"
+                                      title="Supprimer"
+                                      class="fa-2x fa fa-trash">
+                                      </i>
+                                  </a>
+                                </div>
+
+                                <!-- form delete -->
+                                <form class="hide" id="targetID1"
+                                  action=""
+                                  method="POST">
+                                 
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit"><i
+                                          class="fa fa-trash"></i>
+                                        </button>
+                                </form>
+
+                              </td>
+
+                            </tr>
+
+
+                      </tbody>
+                          
                       </table>
 
                       </div>
@@ -519,9 +479,9 @@
     
 
               </div>
-         </div>
-
+            </div>
         </div>
+
 
       </main>
 
@@ -537,19 +497,22 @@
       
     
       <script >
-        $(document).ready(function () {
-            $('#example').DataTable();
-            });
+       
+       $("#check__all").click(function(){
 
-        const text_left = document.querySelectorAll('.text_left');
+            if(this.checked) {
 
-        text_left.forEach(element => {
-            
-            element.addEventListener('click', function(e) {
-                    console.log(element);
-            })
-      });
+              $('.custom__checkox').prop('checked', true);
+              
+            }
 
+            else
+            {
+
+              $('.custom__checkox').prop('checked', false)
+
+            }
+        });
 
       </script>
 

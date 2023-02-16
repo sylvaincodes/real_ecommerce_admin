@@ -30,9 +30,9 @@
 
   <body>
     <!-- site
-        -------- -->
+    --------->
     <div class="site">
-    
+      
       <div class="search__content">
         <i class="ri-close-line btn close-btn" title="GO"></i>
         <form>
@@ -44,7 +44,6 @@
             id="search__input"
             autofocus
           />
-          <!-- <i class="ri-search-line btn" title="GO"></i> -->
         </form>
       </div>
 
@@ -58,7 +57,8 @@
             <i
               title="fermer le menu"
               class="ri-close-fill close__menufixed"
-            ></i>
+            >
+            </i>
           </div>
           <div class="menu__container">
             <ul>
@@ -73,8 +73,6 @@
                 <a href="./pages/parametres/index.html">
                   <i class="ri-list-settings-line"></i>
                   <h6>Paramètres</h6>
-                  <!-- <i class="ri-arrow-right-s-line"></i>
-                  <i class="ri-arrow-down-s-line"></i> -->
                 </a>
               </li>
 
@@ -85,7 +83,6 @@
                 </a>
               </li>
 
-
               <li class="menu__item">
                 <a href="./index.html">
                   <i class="ri-store-line"></i>
@@ -93,14 +90,14 @@
                 </a>
               </li>
 
-
-
             </ul>
           </div>
 
           <div class="footer">
             <p>2022 Template</p>
           </div>
+
+
         </div>
       </div>
 
@@ -123,8 +120,9 @@
       </div>
 
       <!-- header
-      ----------->
+            ---------- -->
       <header>
+
         <div class="middle__header pages">
           <div class="container">
             <div class="wrapper">
@@ -177,10 +175,9 @@
       </header>
 
       <!-- main
-      ------ -->
+            ------ -->
 
       <main>
-
         <!-- breadcrumbs -->
         <div class="breadcrumbs">
           <div class="container">
@@ -194,7 +191,7 @@
                 <li>
                   
                   <a href="#">
-                    Marque de produit
+                  Marques de produit
                   </a>
 
                 </li>
@@ -211,7 +208,7 @@
                 <div class="card__content">
                    
                   <div class="m-b-10 row">
-                      <a href="./form_collections.html" class="btn btn-primary">
+                    <a href="./form_brands.html" class="btn btn-primary">
                         <i class="fa fa-plus"> </i>
                         <span class="m-l-10">
                            Ajouter
@@ -219,116 +216,115 @@
                       </a>
                   </div>
                       
-                      <table class="table__list">
+                         
+                  <table id="responsive__table">
+                      <thead>
+                          <tr>
+                              <th>  
+                                <label class="checkbox__container">
+                                  <input type="checkbox" name="" id="check__all" class="custom__checkox"> 
+                                  <span class="checkmark custom"> </span>
+                                </label> 
+                              </th>
 
-                          <thead>
-                              <tr>
-                                  <th> <input type="checkbox" name="" id=""> </th>
-                                  <th>ID</th>
-                                  <th>Libelle</th>
-                                  <th>Logo</th>
-                                  <th>Est présenté</th>
-                                  <th>Status</th>
-                                  <th>Créé le</th>
-                                  <th class="hide">Opérations</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                                <tr class="parent">
+                              <th>ID</th>
+                              <th>Image</th>
+                              <th>Libelle</th>
+                              
+                              <th>Status</th>
+                              <th>Créé le</th>
+                              <th>Opérations</th>
+                          </tr>
+                      </thead>
 
-                                  <!-- modal -->
-                                  <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
-                                        
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h1 class="modal-title">
-                                                      Confirmer la suppression
-                                                    </h1>
-                                                    <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                                        <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
-                                                    </button>
-                                                </div>
+                      <tbody>
+   
+                             <tr class="parent">
+                              <!-- modal -->
+                                <div class="hide modal show" id="modalID1" tabindex="-1" role="dialog" aria-labelledby="modalTitleID1" aria-hidden="true">
                                     
-                                                <div class="modal-body">
-                                                    <div>Etes vous sure de supprimer cet enregistrement ?</div>
-                                                </div>
-                                    
-                                                <div class="modal-footer">
-                                                  <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
-                                                </div>
-
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title">
+                                                   Confirmer la suppression
+                                                </h1>
+                                                <button onclick="document.getElementById('modalID1').classList.add('hide');" type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                                    <i aria-hidden="true"  title="Fermer" class="fa fa-close"></i>
+                                                </button>
                                             </div>
-                                        
-                                  </div>
-
-                                  <td> <span class="text_left"> + </span> <input type="checkbox" name="" id="" class="custom__checkox"> </td>
-                                  <td>1</td>
-                                  <td>
-                                    <a class="link" href="#">
-                                      Fashion
-                                    </a>
-                                  </td>
-                                  
-                                  <td class=""> <img class="" width="50" src="../../assets/images/storage/brands/1-150x150.png" alt=""> </td>
-                                  <td>Oui</td>
                                 
-                                  <td> <span class="badge">Publié</span> </td>
-                                  <td>2011-04-25</td>
-                                  
-                                  <td class="hide">
+                                            <div class="modal-body">
+                                                <div>Etes vous sure de supprimer cet enregistrement ?</div>
+                                            </div>
+                                
+                                            <div class="modal-footer">
+                                              <button onclick="document.getElementById('targetID1').submit();" type="button" class="btn btn-primary" data-dismiss="modal">OUI</button>
+                                            </div>
 
-                                    <div class="">                                                              
-                                    <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
-                                      <i data-toggle="tooltip" data-placement="top"
-                                        title="Supprimer"
-                                        class="fa fa-trash">                                          
-                                        </i>
-                                    </a>
+                                        </div>
                                     
-                                    </div>
+                                </div>
 
-                                    <!-- form delete -->
-                                    <form class="hide" id="targetID1"
-                                      action=""
-                                      method="POST">
-                                    
-                                      <input type="hidden" name="discount_id" value="1" />
-                                      <button type="submit"><i
-                                              class="fa fa-trash"></i>
-                                            </button>
-                                    </form>
-
-                                  </td>
-
-                                </tr>
-
+                              <td> <label class="checkbox__container">
+                                <input type="checkbox" name="" id="" class="custom__checkox"> 
+                                <span class="checkmark custom"> </span>
+                              </label> </td>
+                              <td>1</td>
+                              <td> <img width="50"  height="50" src="../../assets/images/icons/placeholder.png" alt=""> </td>
+                            
+                              <td>  <strong> Fashion live </strong> </td>
+                             
+                              <td> <span class="badge">Publié</span> </td>
+                              <td>2011-04-25</td>
                               
+                              <td>
 
-                          </tbody>
-                              
+                                <div class="row center">
+                                  <button class="btn btn-primary" title="Modifier"> <i class="fa-2x fa fa-edit"> </i> </button>
+                                  <a class="btn btn-primary" onclick="document.getElementById('modalID1').classList.remove('hide');" href="#">
+                                    <i data-toggle="tooltip" data-placement="top"
+                                      title="Supprimer"
+                                      class="fa-2x fa fa-trash">
+                                      </i>
+                                  </a>
+                                </div>
+
+                                <!-- form delete -->
+                                <form class="hide" id="targetID1"
+                                  action=""
+                                  method="POST">
+                                 
+                                  <input type="hidden" name="discount_id" value="1" />
+                                  <button type="submit"><i
+                                          class="fa fa-trash"></i>
+                                        </button>
+                                </form>
+
+                              </td>
+
+                            </tr>
+
+                      </tbody>
+                          
                       </table>
 
                       </div>
 
                       <div class="pagination">
                          <ul>
-                          
                           <li> <i class="ri-4x ri-arrow-left-circle-fill"> </i> </li>
                           <li> <a href="">1</a> </li>
                           <li> <a href="" class="active">2</a> </li>
                           <li> <a href="">3</a> </li>
                           <li> <i class="ri-4x ri-arrow-right-circle-fill"> </i> </li>
                          </ul>
-                         
-                      </div>
-    
+                      </div>   
                   </div>
     
-
               </div>
-         </div>
-
+            </div>
         </div>
+
 
       </main>
 
@@ -344,19 +340,22 @@
       
     
       <script >
-        $(document).ready(function () {
-            $('#example').DataTable();
-            });
+       
+       $("#check__all").click(function(){
 
-        const text_left = document.querySelectorAll('.text_left');
+            if(this.checked) {
 
-        text_left.forEach(element => {
-            
-            element.addEventListener('click', function(e) {
-                    console.log(element);
-            })
-      });
+              $('.custom__checkox').prop('checked', true);
+              
+            }
 
+            else
+            {
+
+              $('.custom__checkox').prop('checked', false)
+
+            }
+        });
 
       </script>
 
